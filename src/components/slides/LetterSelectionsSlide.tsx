@@ -26,7 +26,7 @@ const LetterSelectionsSlide = () => {
             Take specific letters from words - first letters, last letters, alternate letters, etc.
           </p>
           
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 gap-6 mb-6">
             <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center">
               <h4 className="text-xl font-semibold text-foreground mb-3">First Letters</h4>
               <p className="text-lg text-muted-foreground">"initially", "starts", "leaders"</p>
@@ -34,12 +34,19 @@ const LetterSelectionsSlide = () => {
 
             <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-6 border-2 border-green-300 dark:border-green-600 text-center">
               <h4 className="text-xl font-semibold text-foreground mb-3">Last Letters</h4>
-              <p className="text-lg text-muted-foreground">"finally", "ends", "ultimately"</p>
+              <p className="text-lg text-muted-foreground">"finally", "ends", "tails"</p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-purple-100 to-violet-100 dark:from-purple-900/30 dark:to-violet-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600 text-center">
+              <h4 className="text-xl font-semibold text-foreground mb-3">Alternate Letters</h4>
+              <p className="text-lg text-muted-foreground">"regularly", "odd", "even"</p>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-100 to-violet-100 dark:from-purple-900/30 dark:to-violet-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600 text-center">
-              <h4 className="text-xl font-semibold text-foreground mb-3">Alternate</h4>
-              <p className="text-lg text-muted-foreground">"regularly", "odd", "even"</p>
+            <div className="bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/20 rounded-2xl p-6 border-2 border-amber-300 dark:border-amber-600 text-center">
+              <h4 className="text-xl font-semibold text-foreground mb-3">Middle Letters</h4>
+              <p className="text-lg text-muted-foreground">"central", "heart", "core"</p>
             </div>
           </div>
         </div>
