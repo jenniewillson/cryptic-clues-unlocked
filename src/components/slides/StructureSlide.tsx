@@ -12,9 +12,16 @@ const StructureSlide = () => {
         <div className="bg-card border border-border rounded-lg p-8 text-center">
           <h3 className="text-2xl font-semibold text-foreground mb-4">The Standard Format</h3>
           <div className="text-6xl font-bold text-primary mb-4">15×15</div>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-muted-foreground mb-6">
             The classic British cryptic crossword grid
           </p>
+          <div className="flex justify-center">
+            <img 
+              src="/lovable-uploads/131ba7f8-e9ae-4f64-97e1-0ed9700c9235.png" 
+              alt="15x15 cryptic crossword grid showing numbered squares and black squares in a symmetric pattern"
+              className="max-w-md w-full h-auto rounded-lg border border-border shadow-lg"
+            />
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
