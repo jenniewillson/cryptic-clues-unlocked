@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -10,6 +9,11 @@ import StructureSlide from './slides/StructureSlide';
 import ClueStructureSlide from './slides/ClueStructureSlide';
 import ClueTypesOverviewSlide from './slides/ClueTypesOverviewSlide';
 import AnagramsSlide from './slides/AnagramsSlide';
+import DoubleDefinitionsSlide from './slides/DoubleDefinitionsSlide';
+import CharadesSlide from './slides/CharadesSlide';
+import HiddenWordsSlide from './slides/HiddenWordsSlide';
+import HomophonesSlide from './slides/HomophonesSlide';
+import CrypticDefinitionsSlide from './slides/CrypticDefinitionsSlide';
 
 const slides = [
   { id: 1, component: IntroSlide, title: "Introduction" },
@@ -19,7 +23,12 @@ const slides = [
   { id: 5, component: StructureSlide, title: "Modern Structure" },
   { id: 6, component: ClueStructureSlide, title: "Clue Structure" },
   { id: 7, component: ClueTypesOverviewSlide, title: "Types of Clues" },
-  { id: 8, component: AnagramsSlide, title: "Anagrams" }
+  { id: 8, component: AnagramsSlide, title: "Anagrams" },
+  { id: 9, component: DoubleDefinitionsSlide, title: "Double Definitions" },
+  { id: 10, component: CharadesSlide, title: "Charades" },
+  { id: 11, component: HiddenWordsSlide, title: "Hidden Words" },
+  { id: 12, component: HomophonesSlide, title: "Homophones" },
+  { id: 13, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" }
 ];
 
 const Presentation = () => {
