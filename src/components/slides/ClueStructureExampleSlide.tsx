@@ -10,7 +10,7 @@ const ClueStructureExampleSlide = () => {
       <div className="space-y-10 w-full">
         <div className="bg-white dark:bg-slate-800 rounded-2xl p-10 border-2 border-orange-300 dark:border-orange-600 text-center">
           <p className="text-5xl font-semibold text-foreground mb-6">
-            "Confusing <span className="text-red-600 dark:text-red-400 bg-red-100 dark:bg-red-900/30 px-3 py-1 rounded-lg">parrot</span> for <span className="text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 px-3 py-1 rounded-lg">bird of prey</span> (6)"
+            "<span className="text-red-600 dark:text-red-400 bg-red-100 dark:bg-red-900/30 px-3 py-1 rounded-lg">Confusing</span> <span className="text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-900/30 px-3 py-1 rounded-lg">parrot</span> for <span className="text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 px-3 py-1 rounded-lg">bird of prey</span> (6)"
           </p>
         </div>
 
