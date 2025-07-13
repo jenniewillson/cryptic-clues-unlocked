@@ -6,12 +6,14 @@ import IntroSlide from './slides/IntroSlide';
 import HistorySlide from './slides/HistorySlide';
 import CrypticHistorySlide from './slides/CrypticHistorySlide';
 import XimenesSlide from './slides/XimenesSlide';
+import StructureSlide from './slides/StructureSlide';
 
 const slides = [
   { id: 1, component: IntroSlide, title: "Introduction" },
   { id: 2, component: HistorySlide, title: "History of Crosswords" },
   { id: 3, component: CrypticHistorySlide, title: "Birth of Cryptic Crosswords" },
-  { id: 4, component: XimenesSlide, title: "Ximenes and the Golden Age" }
+  { id: 4, component: XimenesSlide, title: "Ximenes and the Golden Age" },
+  { id: 5, component: StructureSlide, title: "Modern Structure" }
 ];
 
 const Presentation = () => {
