@@ -13,8 +13,10 @@ import AnagramsIntroSlide from './slides/AnagramsIntroSlide';
 import AnagramsIndicatorsSlide from './slides/AnagramsIndicatorsSlide';
 import AnagramsExampleSlide from './slides/AnagramsExampleSlide';
 import AnagramsTipsSlide from './slides/AnagramsTipsSlide';
-import DoubleDefinitionsSlide from './slides/DoubleDefinitionsSlide';
-import CharadesSlide from './slides/CharadesSlide';
+import DoubleDefinitionsIntroSlide from './slides/DoubleDefinitionsIntroSlide';
+import DoubleDefinitionsExampleSlide from './slides/DoubleDefinitionsExampleSlide';
+import CharadesIntroSlide from './slides/CharadesIntroSlide';
+import CharadesExampleSlide from './slides/CharadesExampleSlide';
 import HiddenWordsSlide from './slides/HiddenWordsSlide';
 import HomophonesSlide from './slides/HomophonesSlide';
 import CrypticDefinitionsSlide from './slides/CrypticDefinitionsSlide';
@@ -32,11 +34,13 @@ const slides = [
   { id: 10, component: AnagramsIndicatorsSlide, title: "Anagrams - Indicators" },
   { id: 11, component: AnagramsExampleSlide, title: "Anagrams - Example" },
   { id: 12, component: AnagramsTipsSlide, title: "Anagrams - Tips" },
-  { id: 13, component: DoubleDefinitionsSlide, title: "Double Definitions" },
-  { id: 14, component: CharadesSlide, title: "Charades" },
-  { id: 15, component: HiddenWordsSlide, title: "Hidden Words" },
-  { id: 16, component: HomophonesSlide, title: "Homophones" },
-  { id: 17, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" }
+  { id: 13, component: DoubleDefinitionsIntroSlide, title: "Double Definitions - Introduction" },
+  { id: 14, component: DoubleDefinitionsExampleSlide, title: "Double Definitions - Example" },
+  { id: 15, component: CharadesIntroSlide, title: "Charades - Introduction" },
+  { id: 16, component: CharadesExampleSlide, title: "Charades - Example" },
+  { id: 17, component: HiddenWordsSlide, title: "Hidden Words" },
+  { id: 18, component: HomophonesSlide, title: "Homophones" },
+  { id: 19, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" }
 ];
 
 const Presentation = () => {
