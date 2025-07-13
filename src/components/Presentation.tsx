@@ -17,8 +17,10 @@ import DoubleDefinitionsIntroSlide from './slides/DoubleDefinitionsIntroSlide';
 import DoubleDefinitionsExampleSlide from './slides/DoubleDefinitionsExampleSlide';
 import CharadesIntroSlide from './slides/CharadesIntroSlide';
 import CharadesExampleSlide from './slides/CharadesExampleSlide';
-import HiddenWordsSlide from './slides/HiddenWordsSlide';
-import HomophonesSlide from './slides/HomophonesSlide';
+import HiddenWordsIntroSlide from './slides/HiddenWordsIntroSlide';
+import HiddenWordsExampleSlide from './slides/HiddenWordsExampleSlide';
+import HomophonesIntroSlide from './slides/HomophonesIntroSlide';
+import HomophonesExampleSlide from './slides/HomophonesExampleSlide';
 import CrypticDefinitionsSlide from './slides/CrypticDefinitionsSlide';
 
 const slides = [
@@ -38,9 +40,11 @@ const slides = [
   { id: 14, component: DoubleDefinitionsExampleSlide, title: "Double Definitions - Example" },
   { id: 15, component: CharadesIntroSlide, title: "Charades - Introduction" },
   { id: 16, component: CharadesExampleSlide, title: "Charades - Example" },
-  { id: 17, component: HiddenWordsSlide, title: "Hidden Words" },
-  { id: 18, component: HomophonesSlide, title: "Homophones" },
-  { id: 19, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" }
+  { id: 17, component: HiddenWordsIntroSlide, title: "Hidden Words - Introduction" },
+  { id: 18, component: HiddenWordsExampleSlide, title: "Hidden Words - Example" },
+  { id: 19, component: HomophonesIntroSlide, title: "Homophones - Introduction" },
+  { id: 20, component: HomophonesExampleSlide, title: "Homophones - Example" },
+  { id: 21, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" }
 ];
 
 const Presentation = () => {
