@@ -11,13 +11,13 @@ const AnagramsSlide = () => {
 
   const examples = [
     {
-      key: 'wildcat',
-      clue: 'Confused cat in hat is a mammal (7)',
-      definition: 'a mammal',
-      indicator: 'Confused',
-      fodder: 'cat in hat',
-      answer: 'WILDCAT',
-      explanation: 'Anagram of "catinhat" → WILDCAT'
+      key: 'raptor',
+      clue: 'Confusing parrot for bird of prey (6)',
+      definition: 'bird of prey',
+      indicator: 'Confusing',
+      fodder: 'parrot',
+      answer: 'RAPTOR',
+      explanation: 'Anagram of "parrot" → RAPTOR'
     },
     {
       key: 'teacher',
