@@ -36,7 +36,7 @@ const CharadesExampleSlide = () => {
 
             <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-8 border-2 border-green-300 dark:border-green-600 text-center">
               <h4 className="text-3xl font-semibold text-foreground mb-4">Parts</h4>
-              <p className="text-3xl text-green-700 dark:text-green-300 font-medium">"Over" + "100" + "CU" + "runs"</p>
+              <p className="text-3xl text-green-700 dark:text-green-300 font-medium">"Over" + "100" + "College + University" + "runs"</p>
             </div>
 
             <div className="bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/30 dark:to-pink-900/20 rounded-2xl p-8 border-2 border-red-300 dark:border-red-600 text-center">

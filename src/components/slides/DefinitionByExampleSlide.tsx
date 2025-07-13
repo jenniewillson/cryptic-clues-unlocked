@@ -22,7 +22,7 @@ const DefinitionByExampleSlide = () => {
           <p className="text-4xl font-semibold text-foreground mb-6 leading-relaxed">
             {currentStep >= 1 ? (
               <>
-                "<span className="bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold">More for one</span> to <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">mash up</span> (6)"
+                "More <span className="bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold">for one</span> <span className="bg-green-200 dark:bg-green-800 px-2 py-1 rounded font-semibold">to mash</span> <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">up</span> (6)"
               </>
             ) : (
               "\"More for one to mash up (6)\""
@@ -40,12 +40,12 @@ const DefinitionByExampleSlide = () => {
 
             <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-6 border-2 border-amber-300 dark:border-amber-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-3">Anagram Indicator</h4>
-              <p className="text-2xl text-amber-700 dark:text-amber-300 font-medium">"mash up"</p>
+              <p className="text-2xl text-amber-700 dark:text-amber-300 font-medium">"up"</p>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center">
+            <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-6 border-2 border-green-300 dark:border-green-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-3">Fodder</h4>
-              <p className="text-2xl text-blue-700 dark:text-blue-300 font-medium">"one" → anagram</p>
+              <p className="text-2xl text-green-700 dark:text-green-300 font-medium">"to mash"</p>
             </div>
           </div>
         )}
