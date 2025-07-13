@@ -36,6 +36,14 @@ const StructureSlide = () => {
               to arrive at the same answer.
             </p>
           </div>
+
+          <div className="bg-gradient-to-br from-violet-100 to-purple-100 dark:from-violet-900/30 dark:to-purple-900/20 rounded-2xl p-8 border-2 border-violet-300 dark:border-violet-600 shadow-lg">
+            <h4 className="text-3xl font-semibold text-violet-800 dark:text-violet-300 mb-4">180° Rotational Symmetry</h4>
+            <p className="text-xl text-violet-700 dark:text-violet-400">
+              The grid pattern is identical when rotated 180 degrees. This creates elegant, 
+              balanced puzzles that are aesthetically pleasing and mathematically satisfying.
+            </p>
+          </div>
           
           <div className="bg-gradient-to-br from-orange-100 to-red-100 dark:from-orange-900/30 dark:to-red-900/20 rounded-2xl p-8 border-2 border-orange-300 dark:border-orange-600 shadow-lg">
             <h4 className="text-3xl font-semibold text-orange-800 dark:text-orange-300 mb-4">Maximum Unchecked</h4>
