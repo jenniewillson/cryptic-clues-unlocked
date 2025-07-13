@@ -20,7 +20,7 @@ const IntroSlide = () => {
         </div>
         
         <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-2 border-purple-200 dark:border-purple-700 rounded-2xl p-10">
-          <h3 className="text-3xl font-semibold text-foreground mb-6 text-center">Why Learn Them?</h3>
+          <h3 className="text-3xl font-semibold text-foreground mb-6 text-center">Why do people enjoy them?</h3>
           <p className="text-xl text-muted-foreground text-center leading-relaxed">
             They combine vocabulary, logic, and lateral thinking into deeply satisfying "aha!" moments.
           </p>

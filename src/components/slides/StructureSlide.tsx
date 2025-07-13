@@ -11,7 +11,7 @@ const StructureSlide = () => {
       <div className="grid grid-cols-2 gap-8 w-full h-full max-h-[calc(100vh-200px)]">
         <div className="bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900/50 dark:to-blue-900/20 border-2 border-slate-200 dark:border-slate-700 rounded-2xl p-6 text-center shadow-xl flex flex-col justify-center">
           <h3 className="text-2xl font-semibold text-slate-800 dark:text-slate-300 mb-4">The Standard Format</h3>
-          <div className="text-6xl font-bold text-blue-600 dark:text-blue-400 mb-4">15×15</div>
+          <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-4">15×15</div>
           <p className="text-lg text-slate-700 dark:text-slate-400 mb-6">
             The classic British cryptic crossword grid
           </p>
@@ -19,7 +19,7 @@ const StructureSlide = () => {
             <img 
               src="/lovable-uploads/131ba7f8-e9ae-4f64-97e1-0ed9700c9235.png" 
               alt="15x15 cryptic crossword grid showing numbered squares and black squares in a symmetric pattern"
-              className="max-w-[200px] w-full h-auto rounded-lg border border-border shadow-lg"
+              className="max-w-[300px] w-full h-auto rounded-lg border border-border shadow-lg"
             />
           </div>
         </div>
