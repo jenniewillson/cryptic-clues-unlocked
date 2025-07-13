@@ -3,29 +3,28 @@ import React from 'react';
 
 const IntroSlide = () => {
   return (
-    <div className="text-center space-y-12 max-w-6xl">
-      <div className="space-y-8">
-        <h1 className="text-7xl font-bold text-foreground bg-gradient-to-r from-primary via-blue-600 to-purple-600 bg-clip-text text-transparent">
-          Cryptic Crosswords
-        </h1>
-        <h2 className="text-4xl text-muted-foreground font-semibold">
-          An Introduction to the Art of Wordplay
-        </h2>
-      </div>
+    <div className="h-screen flex flex-col justify-center items-center max-w-6xl mx-auto px-8">
+      <h1 className="text-8xl font-bold text-center text-foreground mb-16 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+        Cryptic Crosswords
+      </h1>
+      <h2 className="text-4xl font-semibold text-center text-muted-foreground mb-20">
+        An Introduction to the Art of Wordplay
+      </h2>
       
-      <div className="space-y-8 text-2xl text-muted-foreground leading-relaxed">
-        <p className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/30 dark:to-purple-950/30 rounded-2xl p-8 border border-blue-200 dark:border-blue-800">
-          Welcome to the fascinating world of cryptic crosswords—where every clue is a puzzle within a puzzle.
-        </p>
-        <p className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-950/30 dark:to-blue-950/30 rounded-2xl p-8 border border-green-200 dark:border-green-800">
-          Today we'll explore the rich history, ingenious construction, and elegant complexity that makes cryptic crosswords the crown jewel of word puzzles.
-        </p>
-      </div>
-
-      <div className="bg-gradient-to-r from-orange-50 via-yellow-50 to-orange-50 dark:from-orange-950/20 dark:via-yellow-950/20 dark:to-orange-950/20 rounded-2xl p-10 border-2 border-orange-200 dark:border-orange-800">
-        <blockquote className="text-3xl italic text-foreground font-medium">
-          "A cryptic crossword is not just a test of vocabulary, but a celebration of language itself."
-        </blockquote>
+      <div className="grid grid-cols-2 gap-16 w-full">
+        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-2 border-blue-200 dark:border-blue-700 rounded-2xl p-10">
+          <h3 className="text-3xl font-semibold text-foreground mb-6 text-center">What Are Cryptic Crosswords?</h3>
+          <p className="text-xl text-muted-foreground text-center leading-relaxed">
+            Puzzles where each clue contains both a definition and wordplay that leads to the same answer.
+          </p>
+        </div>
+        
+        <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-2 border-purple-200 dark:border-purple-700 rounded-2xl p-10">
+          <h3 className="text-3xl font-semibold text-foreground mb-6 text-center">Why Learn Them?</h3>
+          <p className="text-xl text-muted-foreground text-center leading-relaxed">
+            They combine vocabulary, logic, and lateral thinking into deeply satisfying "aha!" moments.
+          </p>
+        </div>
       </div>
     </div>
   );

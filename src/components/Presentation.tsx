@@ -7,8 +7,12 @@ import CrypticHistorySlide from './slides/CrypticHistorySlide';
 import XimenesSlide from './slides/XimenesSlide';
 import StructureSlide from './slides/StructureSlide';
 import ClueStructureSlide from './slides/ClueStructureSlide';
+import ClueStructureExampleSlide from './slides/ClueStructureExampleSlide';
 import ClueTypesOverviewSlide from './slides/ClueTypesOverviewSlide';
-import AnagramsSlide from './slides/AnagramsSlide';
+import AnagramsIntroSlide from './slides/AnagramsIntroSlide';
+import AnagramsIndicatorsSlide from './slides/AnagramsIndicatorsSlide';
+import AnagramsExampleSlide from './slides/AnagramsExampleSlide';
+import AnagramsTipsSlide from './slides/AnagramsTipsSlide';
 import DoubleDefinitionsSlide from './slides/DoubleDefinitionsSlide';
 import CharadesSlide from './slides/CharadesSlide';
 import HiddenWordsSlide from './slides/HiddenWordsSlide';
@@ -22,13 +26,17 @@ const slides = [
   { id: 4, component: XimenesSlide, title: "Ximenes and the Golden Age" },
   { id: 5, component: StructureSlide, title: "Modern Structure" },
   { id: 6, component: ClueStructureSlide, title: "Clue Structure" },
-  { id: 7, component: ClueTypesOverviewSlide, title: "Types of Clues" },
-  { id: 8, component: AnagramsSlide, title: "Anagrams" },
-  { id: 9, component: DoubleDefinitionsSlide, title: "Double Definitions" },
-  { id: 10, component: CharadesSlide, title: "Charades" },
-  { id: 11, component: HiddenWordsSlide, title: "Hidden Words" },
-  { id: 12, component: HomophonesSlide, title: "Homophones" },
-  { id: 13, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" }
+  { id: 7, component: ClueStructureExampleSlide, title: "Clue Example" },
+  { id: 8, component: ClueTypesOverviewSlide, title: "Types of Clues" },
+  { id: 9, component: AnagramsIntroSlide, title: "Anagrams - Introduction" },
+  { id: 10, component: AnagramsIndicatorsSlide, title: "Anagrams - Indicators" },
+  { id: 11, component: AnagramsExampleSlide, title: "Anagrams - Example" },
+  { id: 12, component: AnagramsTipsSlide, title: "Anagrams - Tips" },
+  { id: 13, component: DoubleDefinitionsSlide, title: "Double Definitions" },
+  { id: 14, component: CharadesSlide, title: "Charades" },
+  { id: 15, component: HiddenWordsSlide, title: "Hidden Words" },
+  { id: 16, component: HomophonesSlide, title: "Homophones" },
+  { id: 17, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" }
 ];
 
 const Presentation = () => {
@@ -60,8 +68,8 @@ const Presentation = () => {
         </div>
       </div>
 
-      {/* Main content - Full landscape view */}
-      <div className="flex-1 bg-card p-6 overflow-y-auto">
+      {/* Main content - 16:9 optimized */}
+      <div className="flex-1 bg-card overflow-hidden">
         <div className="w-full h-full flex items-center justify-center">
           <CurrentSlideComponent />
         </div>
