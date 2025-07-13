@@ -51,27 +51,25 @@ const Presentation = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       {/* Header */}
-      <div className="bg-card border-b border-border p-4">
-        <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-foreground">Cryptic Crosswords: An Introduction</h1>
+      <div className="bg-card border-b border-border p-2">
+        <div className="w-full flex justify-between items-center px-6">
+          <h1 className="text-xl font-bold text-foreground">Cryptic Crosswords: An Introduction</h1>
           <div className="text-sm text-muted-foreground">
             Slide {currentSlide + 1} of {slides.length}
           </div>
         </div>
       </div>
 
-      {/* Main content */}
-      <div className="flex-1 flex items-center justify-center p-8">
-        <div className="w-full max-w-6xl h-full max-h-[600px] bg-card rounded-lg shadow-lg border border-border overflow-hidden">
-          <div className="h-full p-12 flex items-center justify-center">
-            <CurrentSlideComponent />
-          </div>
+      {/* Main content - Full landscape view */}
+      <div className="flex-1 bg-card p-6 overflow-y-auto">
+        <div className="w-full h-full flex items-center justify-center">
+          <CurrentSlideComponent />
         </div>
       </div>
 
       {/* Navigation */}
-      <div className="bg-card border-t border-border p-4">
-        <div className="max-w-6xl mx-auto flex justify-between items-center">
+      <div className="bg-card border-t border-border p-3">
+        <div className="w-full flex justify-between items-center px-6">
           <Button
             variant="outline"
             onClick={prevSlide}
