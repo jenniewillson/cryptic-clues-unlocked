@@ -17,24 +17,24 @@ const CharadesExampleSlide = () => {
       <div className="bg-gradient-to-br from-orange-50 to-yellow-50 dark:from-orange-900/20 dark:to-yellow-900/20 border-2 border-orange-200 dark:border-orange-700 rounded-2xl p-12 w-full">
         <div className="text-center mb-12">
           <p className="text-5xl font-semibold text-foreground mb-8 leading-relaxed">
-            "Star son ray (7)"
+            "Over 100 college and university runs take place (5)"
           </p>
         </div>
 
         <div className="grid grid-cols-3 gap-10 mb-12">
           <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-8 border-2 border-blue-300 dark:border-blue-600 text-center">
             <h4 className="text-3xl font-semibold text-foreground mb-4">Definition</h4>
-            <p className="text-3xl text-blue-700 dark:text-blue-300 font-medium">"ray"</p>
+            <p className="text-3xl text-blue-700 dark:text-blue-300 font-medium">"take place"</p>
           </div>
 
           <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-8 border-2 border-green-300 dark:border-green-600 text-center">
-            <h4 className="text-3xl font-semibold text-foreground mb-4">Part 1</h4>
-            <p className="text-3xl text-green-700 dark:text-green-300 font-medium">"Star" → SUN</p>
+            <h4 className="text-3xl font-semibold text-foreground mb-4">Parts</h4>
+            <p className="text-3xl text-green-700 dark:text-green-300 font-medium">"Over" + "100" + "CU" + "runs"</p>
           </div>
 
           <div className="bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/30 dark:to-pink-900/20 rounded-2xl p-8 border-2 border-red-300 dark:border-red-600 text-center">
-            <h4 className="text-3xl font-semibold text-foreground mb-4">Part 2</h4>
-            <p className="text-3xl text-red-700 dark:text-red-300 font-medium">"son" → BEAM</p>
+            <h4 className="text-3xl font-semibold text-foreground mb-4">Breakdown</h4>
+            <p className="text-3xl text-red-700 dark:text-red-300 font-medium">O + C + CU + R</p>
           </div>
         </div>
 
@@ -53,11 +53,11 @@ const CharadesExampleSlide = () => {
             <div className="space-y-6">
               <div className="bg-gradient-to-r from-slate-100 to-gray-100 dark:from-slate-900/30 dark:to-gray-900/20 rounded-2xl p-6 border-2 border-slate-300 dark:border-slate-600">
                 <p className="text-2xl text-foreground mb-4">
-                  "<span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">Star</span> <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">son</span> ray (7)"
+                  "<span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">Over</span> <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">100</span> <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">college and university</span> <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">runs</span> take place (5)"
                 </p>
                 <div className="space-y-2 text-lg text-muted-foreground">
-                  <p><span className="text-amber-600 dark:text-amber-400 font-semibold">Parts:</span> "Star" = SUN, "son" = BEAM</p>
-                  <p><span className="text-green-600 dark:text-green-400 font-semibold">Definition:</span> "ray"</p>
+                  <p><span className="text-amber-600 dark:text-amber-400 font-semibold">Parts:</span> "Over" = O, "100" = C, "college and university" = CU, "runs" = R</p>
+                  <p><span className="text-green-600 dark:text-green-400 font-semibold">Definition:</span> "take place"</p>
                 </div>
               </div>
               
@@ -74,10 +74,10 @@ const CharadesExampleSlide = () => {
           {currentStep === 2 && (
             <div className="bg-gradient-to-r from-emerald-100 to-green-100 dark:from-emerald-900/30 dark:to-green-900/20 rounded-2xl p-6 border-2 border-emerald-300 dark:border-emerald-600">
               <p className="text-4xl font-bold text-emerald-700 dark:text-emerald-300 mb-3">
-                SUNBEAM
+                OCCUR
               </p>
               <p className="text-xl text-muted-foreground">
-                SUN (star) + BEAM (son) = SUNBEAM (ray)
+                O (over) + C (100) + CU (college & university) + R (runs) = OCCUR
               </p>
             </div>
           )}
