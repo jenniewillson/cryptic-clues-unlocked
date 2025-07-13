@@ -14,7 +14,7 @@ const AnagramsTipsSlide = () => {
             <li>• Count the letters carefully</li>
             <li>• Look for obvious indicator words</li>
             <li>• The fodder gives you all the letters</li>
-            <li>• Definition is separate from wordplay</li>
+            <li>• Definition is separate from wordplay in the vast majority of clues</li>
           </ul>
         </div>
         
