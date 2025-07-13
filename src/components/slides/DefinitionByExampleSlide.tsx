@@ -30,10 +30,10 @@ const DefinitionByExampleSlide = () => {
               <p className="text-2xl text-foreground mb-4">
                 "More for <span className="bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold">one</span> to <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">mash up</span> (6)"
               </p>
-              <div className="space-y-2 text-lg text-muted-foreground">
-                <p><span className="text-purple-600 dark:text-purple-400 font-semibold">Definition by example:</span> "More for one" (example: Thomas More)</p>
-                <p><span className="text-amber-600 dark:text-amber-400 font-semibold">Anagram indicator:</span> "mash up"</p>
-                <p><span className="text-blue-600 dark:text-blue-400 font-semibold">Fodder:</span> "one" → anagram of "one"</p>
+              <div className="grid grid-cols-3 gap-4 text-lg text-muted-foreground">
+                <div><span className="text-purple-600 dark:text-purple-400 font-semibold">Definition by example:</span> "More for one" (example: Thomas More)</div>
+                <div><span className="text-amber-600 dark:text-amber-400 font-semibold">Anagram indicator:</span> "mash up"</div>
+                <div><span className="text-blue-600 dark:text-blue-400 font-semibold">Fodder:</span> "one" → anagram of "one"</div>
               </div>
             </div>
             
