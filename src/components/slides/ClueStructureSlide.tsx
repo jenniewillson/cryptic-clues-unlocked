@@ -49,10 +49,19 @@ const ClueStructureSlide = () => {
           <h3 className="text-lg font-semibold text-foreground mb-3 text-center">
             The Golden Rule: No Surplus Words
           </h3>
-          <p className="text-sm text-muted-foreground text-center leading-relaxed">
+          <p className="text-sm text-muted-foreground text-center leading-relaxed mb-3">
             Every word serves a purpose - either as part of the definition, an indicator, or fodder. 
             The clue is precise and economical, following the fair play principle.
           </p>
+          <div className="bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/20 rounded-xl p-3 border-2 border-amber-200 dark:border-amber-700">
+            <p className="text-xs text-amber-700 dark:text-amber-300 font-medium mb-2">Exception: Link Words</p>
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              'Link' words are permitted to connect wordplay and definition grammatically. Examples: 
+              <span className="font-medium text-amber-600 dark:text-amber-400"> WORDPLAY for DEFINITION</span>, 
+              <span className="font-medium text-amber-600 dark:text-amber-400"> DEFINITION is WORDPLAY</span>, or 
+              <span className="font-medium text-amber-600 dark:text-amber-400"> WORDPLAY to find DEFINITION</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
