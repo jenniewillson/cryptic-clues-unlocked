@@ -17,26 +17,34 @@ const HiddenWordsExampleSlide = () => {
       <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 border-2 border-cyan-200 dark:border-cyan-700 rounded-2xl p-10 w-full">
         <div className="text-center mb-10">
           <p className="text-4xl font-semibold text-foreground mb-6 leading-relaxed">
-            "Go the long way round, hiding in shade to urinate (6)"
+            {currentStep >= 1 ? (
+              <>
+                "<span className="bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold">Go the long way round</span>, <span className="bg-cyan-200 dark:bg-cyan-800 px-2 py-1 rounded font-semibold">hiding in</span> <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">shade to urinate</span> (6)"
+              </>
+            ) : (
+              "\"Go the long way round, hiding in shade to urinate (6)\""
+            )}
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-8 mb-10">
-          <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center">
-            <h4 className="text-2xl font-semibold text-foreground mb-3">Definition</h4>
-            <p className="text-2xl text-blue-700 dark:text-blue-300 font-medium">"Go the long way round"</p>
-          </div>
+        {currentStep >= 1 && (
+          <div className="grid grid-cols-3 gap-8 mb-10">
+            <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center">
+              <h4 className="text-2xl font-semibold text-foreground mb-3">Definition</h4>
+              <p className="text-2xl text-blue-700 dark:text-blue-300 font-medium">"Go the long way round"</p>
+            </div>
 
-          <div className="bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/30 dark:to-pink-900/20 rounded-2xl p-6 border-2 border-red-300 dark:border-red-600 text-center">
-            <h4 className="text-2xl font-semibold text-foreground mb-3">Indicator</h4>
-            <p className="text-2xl text-red-700 dark:text-red-300 font-medium">"hiding in"</p>
-          </div>
+            <div className="bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/30 dark:to-pink-900/20 rounded-2xl p-6 border-2 border-red-300 dark:border-red-600 text-center">
+              <h4 className="text-2xl font-semibold text-foreground mb-3">Indicator</h4>
+              <p className="text-2xl text-red-700 dark:text-red-300 font-medium">"hiding in"</p>
+            </div>
 
-          <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-6 border-2 border-green-300 dark:border-green-600 text-center">
-            <h4 className="text-2xl font-semibold text-foreground mb-3">Container</h4>
-            <p className="text-2xl text-green-700 dark:text-green-300 font-medium">"shade to urinate"</p>
+            <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-6 border-2 border-green-300 dark:border-green-600 text-center">
+              <h4 className="text-2xl font-semibold text-foreground mb-3">Container</h4>
+              <p className="text-2xl text-green-700 dark:text-green-300 font-medium">"shade to urinate"</p>
+            </div>
           </div>
-        </div>
+        )}
 
         <div className="text-center">
           {currentStep === 0 && (
@@ -50,25 +58,13 @@ const HiddenWordsExampleSlide = () => {
           )}
           
           {currentStep === 1 && (
-            <div className="space-y-6">
-              <div className="bg-gradient-to-r from-slate-100 to-gray-100 dark:from-slate-900/30 dark:to-gray-900/20 rounded-2xl p-6 border-2 border-slate-300 dark:border-slate-600">
-                <p className="text-2xl text-foreground mb-4">
-                  "Go the long way round, <span className="bg-cyan-200 dark:bg-cyan-800 px-2 py-1 rounded font-semibold">hiding in</span> <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">shade to urinate</span> (6)"
-                </p>
-                <div className="space-y-2 text-lg text-muted-foreground">
-                  <p><span className="text-cyan-600 dark:text-cyan-400 font-semibold">Indicator:</span> "hiding in" (signals hidden word)</p>
-                  <p><span className="text-amber-600 dark:text-amber-400 font-semibold">Container:</span> "shade to urinate"</p>
-                </div>
-              </div>
-              
-              <Button 
-                onClick={nextStep}
-                className="text-2xl px-12 py-6 rounded-xl"
-                size="lg"
-              >
-                Show Solution
-              </Button>
-            </div>
+            <Button 
+              onClick={nextStep}
+              className="text-2xl px-12 py-6 rounded-xl"
+              size="lg"
+            >
+              Show Solution
+            </Button>
           )}
           
           {currentStep === 2 && (

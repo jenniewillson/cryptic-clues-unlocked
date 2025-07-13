@@ -17,7 +17,13 @@ const ClueStructureExampleSlide = () => {
       <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 border-2 border-orange-200 dark:border-orange-700 rounded-2xl p-12 w-full">
         <div className="text-center mb-12">
           <p className="text-5xl font-semibold text-foreground mb-8 leading-relaxed">
-            "Confusing parrot for bird of prey (6)"
+            {currentStep >= 1 ? (
+              <>
+                "<span className="bg-red-200 dark:bg-red-800 px-2 py-1 rounded font-semibold">Confusing</span> <span className="bg-green-200 dark:bg-green-800 px-2 py-1 rounded font-semibold">parrot</span> for <span className="bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold">bird of prey</span> (6)"
+              </>
+            ) : (
+              "\"Confusing parrot for bird of prey (6)\""
+            )}
           </p>
         </div>
 
@@ -61,26 +67,13 @@ const ClueStructureExampleSlide = () => {
           )}
           
           {currentStep === 1 && (
-            <div className="space-y-6">
-              <div className="bg-gradient-to-r from-slate-100 to-gray-100 dark:from-slate-900/30 dark:to-gray-900/20 rounded-2xl p-6 border-2 border-slate-300 dark:border-slate-600">
-                <p className="text-2xl text-foreground mb-4">
-                  "<span className="bg-red-200 dark:bg-red-800 px-2 py-1 rounded font-semibold">Confusing</span> <span className="bg-green-200 dark:bg-green-800 px-2 py-1 rounded font-semibold">parrot</span> for <span className="bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold">bird of prey</span> (6)"
-                </p>
-                <div className="space-y-2 text-lg text-muted-foreground">
-                  <p><span className="text-red-600 dark:text-red-400 font-semibold">Indicator:</span> "Confusing" (signals anagram)</p>
-                  <p><span className="text-green-600 dark:text-green-400 font-semibold">Fodder:</span> "parrot" (letters to rearrange)</p>
-                  <p><span className="text-blue-600 dark:text-blue-400 font-semibold">Definition:</span> "bird of prey"</p>
-                </div>
-              </div>
-              
-              <Button 
-                onClick={nextStep}
-                className="text-2xl px-12 py-6 rounded-xl"
-                size="lg"
-              >
-                Reveal Answer
-              </Button>
-            </div>
+            <Button 
+              onClick={nextStep}
+              className="text-2xl px-12 py-6 rounded-xl"
+              size="lg"
+            >
+              Reveal Answer
+            </Button>
           )}
           
           {currentStep === 2 && (

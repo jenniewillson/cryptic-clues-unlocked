@@ -20,30 +20,32 @@ const DefinitionByExampleSlide = () => {
 
         <div className="text-center mb-10">
           <p className="text-4xl font-semibold text-foreground mb-6 leading-relaxed">
-            "More for one to mash up (6)"
+            {currentStep >= 1 ? (
+              <>
+                "<span className="bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold">More for one</span> to <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">mash up</span> (6)"
+              </>
+            ) : (
+              "\"More for one to mash up (6)\""
+            )}
           </p>
         </div>
 
         {currentStep >= 1 && (
-          <div className="space-y-6 mb-10">
-            <div className="bg-gradient-to-r from-slate-100 to-gray-100 dark:from-slate-900/30 dark:to-gray-900/20 rounded-2xl p-6 border-2 border-slate-300 dark:border-slate-600">
-              <p className="text-2xl text-foreground mb-4">
-                "More for <span className="bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold">one</span> to <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">mash up</span> (6)"
-              </p>
-              <div className="grid grid-cols-3 gap-4 text-lg text-muted-foreground">
-                <div><span className="text-purple-600 dark:text-purple-400 font-semibold">Definition by example:</span> "More for one" (example: Thomas More)</div>
-                <div><span className="text-amber-600 dark:text-amber-400 font-semibold">Anagram indicator:</span> "mash up"</div>
-                <div><span className="text-blue-600 dark:text-blue-400 font-semibold">Fodder:</span> "one" → anagram of "one"</div>
-              </div>
+          <div className="grid grid-cols-3 gap-6 mb-10">
+            <div className="bg-gradient-to-br from-purple-100 to-violet-100 dark:from-purple-900/30 dark:to-violet-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600 text-center">
+              <h4 className="text-2xl font-semibold text-foreground mb-3">Definition by Example</h4>
+              <p className="text-2xl text-purple-700 dark:text-purple-300 font-medium">"More for one"</p>
+              <p className="text-sm text-muted-foreground mt-2">(Thomas More)</p>
             </div>
-            
-            <div className="bg-gradient-to-r from-blue-100 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600">
-              <h4 className="text-2xl font-semibold text-foreground mb-3">Solving Process:</h4>
-              <div className="space-y-2 text-lg text-muted-foreground">
-                <p>1. "More for one" = example of someone called "More" (Thomas More)</p>
-                <p>2. "mash up" = anagram indicator</p>
-                <p>3. Anagram of "one" + "th" + "mas" = THOMAS</p>
-              </div>
+
+            <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-6 border-2 border-amber-300 dark:border-amber-600 text-center">
+              <h4 className="text-2xl font-semibold text-foreground mb-3">Anagram Indicator</h4>
+              <p className="text-2xl text-amber-700 dark:text-amber-300 font-medium">"mash up"</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center">
+              <h4 className="text-2xl font-semibold text-foreground mb-3">Fodder</h4>
+              <p className="text-2xl text-blue-700 dark:text-blue-300 font-medium">"one" → anagram</p>
             </div>
           </div>
         )}
@@ -60,9 +62,14 @@ const DefinitionByExampleSlide = () => {
         )}
 
         <div className="flex justify-center">
-          {currentStep < 2 && (
+          {currentStep === 0 && (
             <Button onClick={nextStep} size="lg" className="text-lg px-8 py-3">
-              {currentStep === 0 ? "Show Analysis" : "Show Solution"}
+              Break Down Clue
+            </Button>
+          )}
+          {currentStep === 1 && (
+            <Button onClick={nextStep} size="lg" className="text-lg px-8 py-3">
+              Reveal Answer
             </Button>
           )}
         </div>

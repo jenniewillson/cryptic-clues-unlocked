@@ -17,26 +17,34 @@ const AnagramsExampleSlide = () => {
       <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 border-2 border-cyan-200 dark:border-cyan-700 rounded-2xl p-12 w-full">
         <div className="text-center mb-12">
           <p className="text-5xl font-semibold text-foreground mb-8 leading-relaxed">
-            "BR sleeper is surprisingly able to be controlled (11)"
+            {currentStep >= 1 ? (
+              <>
+                "<span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">BR sleeper</span> is <span className="bg-cyan-200 dark:bg-cyan-800 px-2 py-1 rounded font-semibold">surprisingly</span> <span className="bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold">able to be controlled</span> (11)"
+              </>
+            ) : (
+              "\"BR sleeper is surprisingly able to be controlled (11)\""
+            )}
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-10 mb-12">
-          <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-8 border-2 border-blue-300 dark:border-blue-600 text-center">
-            <h4 className="text-3xl font-semibold text-foreground mb-4">Definition</h4>
-            <p className="text-3xl text-blue-700 dark:text-blue-300 font-medium">"able to be controlled"</p>
-          </div>
+        {currentStep >= 1 && (
+          <div className="grid grid-cols-3 gap-10 mb-12">
+            <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-8 border-2 border-blue-300 dark:border-blue-600 text-center">
+              <h4 className="text-3xl font-semibold text-foreground mb-4">Definition</h4>
+              <p className="text-3xl text-blue-700 dark:text-blue-300 font-medium">"able to be controlled"</p>
+            </div>
 
-          <div className="bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/30 dark:to-pink-900/20 rounded-2xl p-8 border-2 border-red-300 dark:border-red-600 text-center">
-            <h4 className="text-3xl font-semibold text-foreground mb-4">Indicator</h4>
-            <p className="text-3xl text-red-700 dark:text-red-300 font-medium">"surprisingly"</p>
-          </div>
+            <div className="bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/30 dark:to-pink-900/20 rounded-2xl p-8 border-2 border-red-300 dark:border-red-600 text-center">
+              <h4 className="text-3xl font-semibold text-foreground mb-4">Indicator</h4>
+              <p className="text-3xl text-red-700 dark:text-red-300 font-medium">"surprisingly"</p>
+            </div>
 
-          <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-8 border-2 border-green-300 dark:border-green-600 text-center">
-            <h4 className="text-3xl font-semibold text-foreground mb-4">Fodder</h4>
-            <p className="text-3xl text-green-700 dark:text-green-300 font-medium">"BR sleeper"</p>
+            <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-8 border-2 border-green-300 dark:border-green-600 text-center">
+              <h4 className="text-3xl font-semibold text-foreground mb-4">Fodder</h4>
+              <p className="text-3xl text-green-700 dark:text-green-300 font-medium">"BR sleeper"</p>
+            </div>
           </div>
-        </div>
+        )}
 
         <div className="text-center">
           {currentStep === 0 && (
@@ -50,25 +58,13 @@ const AnagramsExampleSlide = () => {
           )}
           
           {currentStep === 1 && (
-            <div className="space-y-6">
-              <div className="bg-gradient-to-r from-slate-100 to-gray-100 dark:from-slate-900/30 dark:to-gray-900/20 rounded-2xl p-6 border-2 border-slate-300 dark:border-slate-600">
-                <p className="text-2xl text-foreground mb-4">
-                  "<span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">BR sleeper</span> is <span className="bg-cyan-200 dark:bg-cyan-800 px-2 py-1 rounded font-semibold">surprisingly</span> able to be controlled (11)"
-                </p>
-                <div className="space-y-2 text-lg text-muted-foreground">
-                  <p><span className="text-cyan-600 dark:text-cyan-400 font-semibold">Indicator:</span> "surprisingly" (signals anagram)</p>
-                  <p><span className="text-amber-600 dark:text-amber-400 font-semibold">Fodder:</span> "BR sleeper"</p>
-                </div>
-              </div>
-              
-              <Button 
-                onClick={nextStep}
-                className="text-2xl px-12 py-6 rounded-xl"
-                size="lg"
-              >
-                Show Solution
-              </Button>
-            </div>
+            <Button 
+              onClick={nextStep}
+              className="text-2xl px-12 py-6 rounded-xl"
+              size="lg"
+            >
+              Show Solution
+            </Button>
           )}
           
           {currentStep === 2 && (
