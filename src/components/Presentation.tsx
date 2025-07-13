@@ -35,6 +35,7 @@ import CrypticDefinitionsSlide from './slides/CrypticDefinitionsSlide';
 import CombinationCluesIntroSlide from './slides/CombinationCluesIntroSlide';
 import CombinationCluesExampleSlide from './slides/CombinationCluesExampleSlide';
 import LastLettersExampleSlide from './slides/LastLettersExampleSlide';
+import DefinitionByExampleSlide from './slides/DefinitionByExampleSlide';
 
 const slides = [
   { id: 1, component: IntroSlide, title: "Introduction" },
@@ -62,8 +63,9 @@ const slides = [
   { id: 23, component: ReversalsSlide, title: "Reversals" },
   { id: 24, component: DeletionSubstitutionSlide, title: "Deletion/Substitution" },
   { id: 25, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" },
-  { id: 26, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
-  { id: 27, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" }
+  { id: 26, component: DefinitionByExampleSlide, title: "Definition by Example" },
+  { id: 27, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
+  { id: 28, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" }
 ];
 
 const Presentation = () => {
