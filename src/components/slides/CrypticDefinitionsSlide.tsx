@@ -62,10 +62,10 @@ const CrypticDefinitionsSlide = () => {
             ) : (
               <div className="bg-gradient-to-r from-purple-100 to-indigo-100 dark:from-purple-900/30 dark:to-indigo-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600">
                 <p className="text-4xl font-bold text-purple-700 dark:text-purple-300 mb-3">
-                  RESTAURANT
+                  WATCHTOWER
                 </p>
                 <p className="text-xl text-muted-foreground">
-                  A restaurant can be "trouble" if the food or service is bad!
+                  A watchtower is where you "watch" for "trouble" - perfect for looking for trouble!
                 </p>
               </div>
             )}
