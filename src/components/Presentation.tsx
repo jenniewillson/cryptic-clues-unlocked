@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 import IntroSlide from './slides/IntroSlide';
 import HistorySlide from './slides/HistorySlide';
 import CrypticHistorySlide from './slides/CrypticHistorySlide';
@@ -76,9 +82,28 @@ const Presentation = () => {
       <div className="bg-card border-b border-border p-2">
         <div className="w-full flex justify-between items-center px-6">
           <h1 className="text-xl font-bold text-foreground">Cryptic Crosswords: An Introduction</h1>
-          <div className="text-sm text-muted-foreground">
-            Slide {currentSlide + 1} of {slides.length}
-          </div>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" className="flex items-center gap-2 text-sm">
+                Slide {currentSlide + 1} of {slides.length}
+                <ChevronDown className="w-4 h-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-80 max-h-96 overflow-y-auto">
+              {slides.map((slide, index) => (
+                <DropdownMenuItem
+                  key={slide.id}
+                  onClick={() => goToSlide(index)}
+                  className={index === currentSlide ? "bg-accent" : ""}
+                >
+                  <span className="text-xs text-muted-foreground mr-3 w-6">
+                    {index + 1}.
+                  </span>
+                  {slide.title}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
 
