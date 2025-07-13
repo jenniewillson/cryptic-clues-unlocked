@@ -56,6 +56,33 @@ const ClueTypesOverviewSlide = () => {
                 Clever, indirect descriptions
               </p>
             </div>
+
+            <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-8 border-2 border-amber-300 dark:border-amber-600 transform hover:scale-105 transition-transform">
+              <h3 className="text-2xl font-semibold text-amber-800 dark:text-amber-300 mb-4">Letter Selections</h3>
+              <p className="text-lg text-amber-700 dark:text-amber-400">
+                Taking specific letters from words
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-indigo-100 to-blue-100 dark:from-indigo-900/30 dark:to-blue-900/20 rounded-2xl p-8 border-2 border-indigo-300 dark:border-indigo-600 transform hover:scale-105 transition-transform">
+              <h3 className="text-2xl font-semibold text-indigo-800 dark:text-indigo-300 mb-4">Reversals</h3>
+              <p className="text-lg text-indigo-700 dark:text-indigo-400">
+                Words or parts written backwards
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-slate-100 to-gray-100 dark:from-slate-900/30 dark:to-gray-900/20 rounded-2xl p-8 border-2 border-slate-300 dark:border-slate-600 transform hover:scale-105 transition-transform">
+              <h3 className="text-2xl font-semibold text-slate-800 dark:text-slate-300 mb-4">Deletion/Substitution</h3>
+              <p className="text-lg text-slate-700 dark:text-slate-400">
+                Removing or replacing letters
+              </p>
+            </div>
+          </div>
+          
+          <div className="mt-10 text-center">
+            <p className="text-2xl text-muted-foreground italic font-medium">
+              ...and many more fascinating techniques!
+            </p>
           </div>
         </div>
 
