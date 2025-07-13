@@ -46,7 +46,7 @@ const CrypticDefinitionsSlide = () => {
         <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 border-2 border-cyan-200 dark:border-cyan-700 rounded-2xl p-8">
           <div className="text-center mb-6">
             <p className="text-3xl font-semibold text-foreground mb-4">
-              "A wicked thing (6)"
+              "A good place to go if you're looking for trouble! (10)"
             </p>
           </div>
 
@@ -62,10 +62,10 @@ const CrypticDefinitionsSlide = () => {
             ) : (
               <div className="bg-gradient-to-r from-purple-100 to-indigo-100 dark:from-purple-900/30 dark:to-indigo-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600">
                 <p className="text-4xl font-bold text-purple-700 dark:text-purple-300 mb-3">
-                  CANDLE
+                  RESTAURANT
                 </p>
                 <p className="text-xl text-muted-foreground">
-                  A candle has a "wick" + "ed" thing = wicked thing!
+                  A restaurant can be "trouble" if the food or service is bad!
                 </p>
               </div>
             )}
