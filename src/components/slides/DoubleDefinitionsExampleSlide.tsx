@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 
 const DoubleDefinitionsExampleSlide = () => {
-  const [revealedAnswer, setRevealedAnswer] = useState(false);
+  const [currentStep, setCurrentStep] = useState(0);
 
-  const revealAnswer = () => {
-    setRevealedAnswer(true);
+  const nextStep = () => {
+    setCurrentStep(prev => prev + 1);
   };
 
   return (
@@ -34,21 +34,45 @@ const DoubleDefinitionsExampleSlide = () => {
         </div>
 
         <div className="text-center">
-          {!revealedAnswer ? (
+          {currentStep === 0 && (
             <Button 
-              onClick={revealAnswer}
+              onClick={nextStep}
               className="text-3xl px-16 py-8 rounded-xl"
               size="lg"
             >
-              Reveal Answer
+              Break Down Clue
             </Button>
-          ) : (
-            <div className="bg-gradient-to-r from-purple-100 to-indigo-100 dark:from-purple-900/30 dark:to-indigo-900/20 rounded-2xl p-10 border-2 border-purple-300 dark:border-purple-600">
-              <p className="text-6xl font-bold text-purple-700 dark:text-purple-300 mb-6">
+          )}
+          
+          {currentStep === 1 && (
+            <div className="space-y-6">
+              <div className="bg-gradient-to-r from-slate-100 to-gray-100 dark:from-slate-900/30 dark:to-gray-900/20 rounded-2xl p-6 border-2 border-slate-300 dark:border-slate-600">
+                <p className="text-2xl text-foreground mb-4">
+                  "<span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">Tree covering</span> made by <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">dog</span> (4)"
+                </p>
+                <div className="space-y-2 text-lg text-muted-foreground">
+                  <p><span className="text-amber-600 dark:text-amber-400 font-semibold">Two Definitions:</span> "Tree covering" and "made by dog"</p>
+                  <p>Both definitions refer to the same word with different meanings</p>
+                </div>
+              </div>
+              
+              <Button 
+                onClick={nextStep}
+                className="text-2xl px-12 py-6 rounded-xl"
+                size="lg"
+              >
+                Show Solution
+              </Button>
+            </div>
+          )}
+          
+          {currentStep === 2 && (
+            <div className="bg-gradient-to-r from-emerald-100 to-green-100 dark:from-emerald-900/30 dark:to-green-900/20 rounded-2xl p-6 border-2 border-emerald-300 dark:border-emerald-600">
+              <p className="text-4xl font-bold text-emerald-700 dark:text-emerald-300 mb-3">
                 BARK
               </p>
-              <p className="text-3xl text-muted-foreground">
-                BARK means both tree covering and the sound a dog makes
+              <p className="text-xl text-muted-foreground">
+                BARK = tree covering AND sound made by dog
               </p>
             </div>
           )}
