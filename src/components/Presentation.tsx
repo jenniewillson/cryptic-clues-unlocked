@@ -21,6 +21,9 @@ import HiddenWordsIntroSlide from './slides/HiddenWordsIntroSlide';
 import HiddenWordsExampleSlide from './slides/HiddenWordsExampleSlide';
 import HomophonesIntroSlide from './slides/HomophonesIntroSlide';
 import HomophonesExampleSlide from './slides/HomophonesExampleSlide';
+import LetterSelectionsSlide from './slides/LetterSelectionsSlide';
+import ReversalsSlide from './slides/ReversalsSlide';
+import DeletionSubstitutionSlide from './slides/DeletionSubstitutionSlide';
 import CrypticDefinitionsSlide from './slides/CrypticDefinitionsSlide';
 
 const slides = [
@@ -44,7 +47,10 @@ const slides = [
   { id: 18, component: HiddenWordsExampleSlide, title: "Hidden Words - Example" },
   { id: 19, component: HomophonesIntroSlide, title: "Homophones - Introduction" },
   { id: 20, component: HomophonesExampleSlide, title: "Homophones - Example" },
-  { id: 21, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" }
+  { id: 21, component: LetterSelectionsSlide, title: "Letter Selections" },
+  { id: 22, component: ReversalsSlide, title: "Reversals" },
+  { id: 23, component: DeletionSubstitutionSlide, title: "Deletion/Substitution" },
+  { id: 24, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" }
 ];
 
 const Presentation = () => {
