@@ -11,7 +11,7 @@ const CharadesExampleSlide = () => {
   return (
     <div className="h-screen flex flex-col justify-center items-center max-w-6xl mx-auto px-8">
       <h1 className="text-6xl font-bold text-center text-foreground mb-12 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-        Let's Solve One Together!
+        Here is an example:
       </h1>
       
       <div className="bg-gradient-to-br from-orange-50 to-yellow-50 dark:from-orange-900/20 dark:to-yellow-900/20 border-2 border-orange-200 dark:border-orange-700 rounded-2xl p-12 w-full">

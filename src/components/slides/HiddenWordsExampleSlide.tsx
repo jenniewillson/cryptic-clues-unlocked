@@ -11,7 +11,7 @@ const HiddenWordsExampleSlide = () => {
   return (
     <div className="h-screen flex flex-col justify-center items-center max-w-6xl mx-auto px-8 py-4">
       <h1 className="text-6xl font-bold text-center text-foreground mb-12 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-        Let's Solve One Together!
+        Here is an example:
       </h1>
       
       <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 border-2 border-cyan-200 dark:border-cyan-700 rounded-2xl p-10 w-full">
