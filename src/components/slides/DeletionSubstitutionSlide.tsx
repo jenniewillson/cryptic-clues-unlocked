@@ -47,7 +47,7 @@ const DeletionSubstitutionSlide = () => {
         <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 border-2 border-cyan-200 dark:border-cyan-700 rounded-2xl p-8">
           <div className="text-center mb-6">
             <p className="text-3xl font-semibold text-foreground mb-4">
-              "Beast losing head becomes a bird (5)"
+              "Fighter shelled veteran (5)"
             </p>
           </div>
 
@@ -63,10 +63,10 @@ const DeletionSubstitutionSlide = () => {
             ) : (
               <div className="bg-gradient-to-r from-purple-100 to-indigo-100 dark:from-purple-900/30 dark:to-indigo-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600">
                 <p className="text-4xl font-bold text-purple-700 dark:text-purple-300 mb-3">
-                  EAGLE
+                  OLDIE
                 </p>
                 <p className="text-xl text-muted-foreground">
-                  BEAGLE (beast) losing B (head) = EAGLE (bird)
+                  SOLDIER (fighter) shelled (remove outer letters S and R) = OLDIE (veteran)
                 </p>
               </div>
             )}
