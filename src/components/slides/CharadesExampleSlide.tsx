@@ -27,7 +27,7 @@ const CharadesExampleSlide = () => {
           </p>
         </div>
 
-        {currentStep >= 1 && (
+        {currentStep === 1 && (
           <div className="grid grid-cols-2 gap-10 mb-12">
             <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-8 border-2 border-amber-300 dark:border-amber-600 text-center">
               <h4 className="text-3xl font-semibold text-foreground mb-4">Parts</h4>
@@ -67,7 +67,7 @@ const CharadesExampleSlide = () => {
               <p className="text-4xl font-bold text-emerald-700 dark:text-emerald-300 mb-3">
                 OCCUR
               </p>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-3xl text-muted-foreground">
                 O (over) + C (100) + C (college) + U (university) + R (runs) = OCCUR
               </p>
             </div>

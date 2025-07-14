@@ -30,7 +30,7 @@ const DefinitionByExampleSlide = () => {
           </p>
         </div>
 
-        {currentStep >= 1 && (
+        {currentStep === 1 && (
           <div className="grid grid-cols-3 gap-6 mb-10">
             <div className="bg-gradient-to-br from-purple-100 to-violet-100 dark:from-purple-900/30 dark:to-violet-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-3">Definition by Example</h4>
@@ -55,9 +55,9 @@ const DefinitionByExampleSlide = () => {
             <p className="text-4xl font-bold text-emerald-700 dark:text-emerald-300 mb-3">
               THOMAS
             </p>
-            <p className="text-xl text-muted-foreground">
-              Thomas More is an example of "More for one" - the definition works by example rather than direct meaning
-            </p>
+              <p className="text-3xl text-muted-foreground">
+                Thomas More is an example of "More for one" - the definition works by example rather than direct meaning
+              </p>
           </div>
         )}
 

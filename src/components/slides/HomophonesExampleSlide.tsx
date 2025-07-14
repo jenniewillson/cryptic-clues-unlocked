@@ -27,7 +27,7 @@ const HomophonesExampleSlide = () => {
           </p>
         </div>
 
-        {currentStep >= 1 && (
+        {currentStep === 1 && (
           <div className="grid grid-cols-3 gap-8 mb-10">
             <div className="bg-gradient-to-br from-cyan-100 to-blue-100 dark:from-cyan-900/30 dark:to-blue-900/20 rounded-2xl p-6 border-2 border-cyan-300 dark:border-cyan-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-3">Sound Indicator</h4>
@@ -72,7 +72,7 @@ const HomophonesExampleSlide = () => {
               <p className="text-4xl font-bold text-emerald-700 dark:text-emerald-300 mb-3">
                 FINNISH
               </p>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-3xl text-muted-foreground">
                 FINNISH sounds like "finish" (end) when reported
               </p>
             </div>

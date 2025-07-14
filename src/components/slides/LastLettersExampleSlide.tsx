@@ -27,7 +27,7 @@ const LastLettersExampleSlide = () => {
           </p>
         </div>
 
-        {currentStep >= 1 && (
+        {currentStep === 1 && (
           <div className="grid grid-cols-3 gap-10 mb-12">
             <div className="bg-gradient-to-br from-cyan-100 to-blue-100 dark:from-cyan-900/30 dark:to-blue-900/20 rounded-2xl p-8 border-2 border-cyan-300 dark:border-cyan-600 text-center">
               <h4 className="text-3xl font-semibold text-foreground mb-4">Indicator</h4>
@@ -72,7 +72,7 @@ const LastLettersExampleSlide = () => {
               <p className="text-4xl font-bold text-emerald-700 dark:text-emerald-300 mb-3">
                 NICE
               </p>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-3xl text-muted-foreground">
                 Last letters: commo<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">N</span> + hippopotam<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">I</span> + hypnoti<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">C</span> + inimitabl<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">E</span> = NICE
               </p>
             </div>
