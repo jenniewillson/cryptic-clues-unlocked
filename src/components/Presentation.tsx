@@ -7,7 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import ExportSlides from './ExportSlides';
+
 import IntroSlide from './slides/IntroSlide';
 import HistorySlide from './slides/HistorySlide';
 import CrypticHistorySlide from './slides/CrypticHistorySlide';
@@ -102,10 +102,7 @@ const Presentation = () => {
       {/* Header */}
       <div className="bg-card border-b border-border p-2">
         <div className="w-full flex justify-between items-center px-6">
-          <div className="flex items-center gap-4">
-            <h1 className="text-xl font-bold text-foreground">Cryptic Crosswords: An Introduction</h1>
-            <ExportSlides />
-          </div>
+          <h1 className="text-xl font-bold text-foreground">Cryptic Crosswords: An Introduction</h1>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" className="flex items-center gap-2 text-sm">
