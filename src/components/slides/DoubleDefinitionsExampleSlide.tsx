@@ -19,7 +19,7 @@ const DoubleDefinitionsExampleSlide = () => {
           <p className="text-5xl font-semibold text-foreground mb-8 leading-relaxed">
             {currentStep >= 1 ? (
               <>
-                "<span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">Selfish</span> <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">aim</span> (4)"
+                "<span className="bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold">Selfish</span> <span className="bg-green-200 dark:bg-green-800 px-2 py-1 rounded font-semibold">aim</span> (4)"
               </>
             ) : (
               "\"Selfish aim (4)\""
