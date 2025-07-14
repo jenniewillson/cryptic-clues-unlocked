@@ -3,9 +3,15 @@ import React from 'react';
 const ClueTypesOverviewSlide = () => {
   return (
     <div className="h-screen flex flex-col justify-center items-center max-w-6xl mx-auto px-8 py-4">
-      <h1 className="text-5xl font-bold text-center text-foreground mb-8 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+      <h1 className="text-5xl font-bold text-center text-foreground mb-6 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
         Types of Cryptic Clues
       </h1>
+      
+      <div className="text-center mb-8">
+        <p className="text-2xl text-primary font-semibold italic">
+          "The setter's aim is to tease, amuse and then lose gracefully!"
+        </p>
+      </div>
       
       <div className="w-full">
         <div className="bg-gradient-to-br from-slate-50 to-gray-50 dark:from-slate-900/30 dark:to-gray-900/30 border-2 border-slate-200 dark:border-slate-700 rounded-2xl p-6">
