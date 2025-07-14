@@ -38,14 +38,14 @@ const DefinitionByExampleSlide = () => {
               <p className="text-sm text-muted-foreground mt-2">(Thomas More)</p>
             </div>
 
-            <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-6 border-2 border-amber-300 dark:border-amber-600 text-center">
-              <h4 className="text-2xl font-semibold text-foreground mb-3">Anagram Indicator</h4>
-              <p className="text-2xl text-amber-700 dark:text-amber-300 font-medium">"up"</p>
-            </div>
-
             <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-6 border-2 border-green-300 dark:border-green-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-3">Fodder</h4>
               <p className="text-2xl text-green-700 dark:text-green-300 font-medium">"to mash"</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-6 border-2 border-amber-300 dark:border-amber-600 text-center">
+              <h4 className="text-2xl font-semibold text-foreground mb-3">Anagram Indicator</h4>
+              <p className="text-2xl text-amber-700 dark:text-amber-300 font-medium">"up"</p>
             </div>
           </div>
         )}
