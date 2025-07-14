@@ -1,76 +1,109 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Button } from '@/components/ui/button';
 
 const ContainersExampleSlide = () => {
+  const [currentStep, setCurrentStep] = useState(0);
+
+  const nextStep = () => {
+    setCurrentStep(prev => prev + 1);
+  };
+
   return (
-    <div className="h-screen flex flex-col justify-center items-center max-w-6xl mx-auto px-8 py-4">
-      <h1 className="text-4xl font-bold text-center text-foreground mb-8 bg-gradient-to-r from-lime-600 via-green-600 to-emerald-600 bg-clip-text text-transparent">
-        Containers Example
+    <div className="h-screen flex flex-col justify-center items-center max-w-6xl mx-auto px-8">
+      <h1 className="text-6xl font-bold text-center text-foreground mb-12 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+        Here is an example:
       </h1>
       
-      <div className="w-full max-w-5xl">
-        <div className="bg-gradient-to-br from-lime-50 to-green-50 dark:from-lime-900/30 dark:to-green-900/30 border-2 border-lime-200 dark:border-lime-700 rounded-2xl p-8 shadow-xl">
+      <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 border-2 border-cyan-200 dark:border-cyan-700 rounded-2xl p-12 w-full">
+        <div className="text-center mb-12">
+          <p className="text-5xl font-semibold text-foreground mb-8 leading-relaxed">
+            {currentStep >= 1 ? (
+              <>
+                {currentStep >= 2 && <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">Brought about</span>}{currentStep >= 2 && " "}
+                <span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>fuel</span>
+                {currentStep >= 3 && " "}<span className={currentStep >= 3 ? "bg-cyan-200 dark:bg-cyan-800 px-2 py-1 rounded font-semibold" : ""}>{currentStep >= 3 ? "slump" : currentStep === 0 ? " slump" : ""}</span> (3)"
+              </>
+            ) : (
+              "\"Brought about fuel slump (3)\""
+            )}
+          </p>
+        </div>
+
+        {currentStep >= 1 && (
+          <div className="grid grid-cols-3 gap-10 mb-12">
+            <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-8 border-2 border-blue-300 dark:border-blue-600 text-center">
+              <h4 className="text-3xl font-semibold text-foreground mb-4">Definition</h4>
+              <p className="text-3xl text-blue-700 dark:text-blue-300 font-medium">"fuel"</p>
+            </div>
+
+            {currentStep >= 2 && (
+              <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-8 border-2 border-amber-300 dark:border-amber-600 text-center">
+                <h4 className="text-3xl font-semibold text-foreground mb-4">Container/Indicator</h4>
+                <p className="text-3xl text-amber-700 dark:text-amber-300 font-medium">"Brought about"</p>
+                <p className="text-xl text-amber-600 dark:text-amber-400 mt-2">G_A backwards</p>
+              </div>
+            )}
+
+            {currentStep >= 3 && (
+              <div className="bg-gradient-to-br from-cyan-100 to-blue-100 dark:from-cyan-900/30 dark:to-blue-900/20 rounded-2xl p-8 border-2 border-cyan-300 dark:border-cyan-600 text-center">
+                <h4 className="text-3xl font-semibold text-foreground mb-4">Contents</h4>
+                <p className="text-3xl text-cyan-700 dark:text-cyan-300 font-medium">"slump" = S</p>
+              </div>
+            )}
+          </div>
+        )}
+
+        <div className="text-center">
+          {currentStep === 0 && (
+            <Button 
+              onClick={nextStep}
+              className="text-3xl px-16 py-8 rounded-xl"
+              size="lg"
+            >
+              Show Definition
+            </Button>
+          )}
           
-          {/* The Clue */}
-          <div className="text-center mb-8">
-            <div className="bg-white dark:bg-slate-800 rounded-xl p-6 border-2 border-lime-300 dark:border-lime-600 shadow-lg">
-              <h2 className="text-2xl font-bold text-lime-800 dark:text-lime-300 mb-2">The Clue</h2>
-              <p className="text-3xl font-bold text-slate-800 dark:text-slate-200 italic">
-                "Brought about fuel slump"
+          {currentStep === 1 && (
+            <Button 
+              onClick={nextStep}
+              className="text-2xl px-12 py-6 rounded-xl"
+              size="lg"
+            >
+              Show Container
+            </Button>
+          )}
+
+          {currentStep === 2 && (
+            <Button 
+              onClick={nextStep}
+              className="text-2xl px-12 py-6 rounded-xl"
+              size="lg"
+            >
+              Show Contents
+            </Button>
+          )}
+
+          {currentStep === 3 && (
+            <Button 
+              onClick={nextStep}
+              className="text-2xl px-12 py-6 rounded-xl"
+              size="lg"
+            >
+              Show Solution
+            </Button>
+          )}
+          
+          {currentStep === 4 && (
+            <div className="bg-gradient-to-r from-emerald-100 to-green-100 dark:from-emerald-900/30 dark:to-green-900/20 rounded-2xl p-6 border-2 border-emerald-300 dark:border-emerald-600">
+              <p className="text-4xl font-bold text-emerald-700 dark:text-emerald-300 mb-3">
+                GAS
               </p>
-              <p className="text-lg text-muted-foreground mt-2">(3)</p>
+              <p className="text-3xl text-muted-foreground">
+                G + A backwards with S inside = GAS (fuel)
+              </p>
             </div>
-          </div>
-
-          {/* Analysis */}
-          <div className="grid grid-cols-2 gap-6 mb-8">
-            <div className="bg-white/70 dark:bg-slate-800/50 rounded-xl p-6 border border-lime-200 dark:border-lime-700">
-              <h3 className="text-xl font-semibold text-lime-800 dark:text-lime-300 mb-4">Breaking it down</h3>
-              <div className="space-y-3 text-lime-700 dark:text-lime-400">
-                <p><span className="font-semibold">Definition:</span> "fuel"</p>
-                <p><span className="font-semibold">Container word:</span> "brought about" = GA (Go Around backwards)</p>
-                <p><span className="font-semibold">Contents:</span> "slump" = S</p>
-                <p><span className="font-semibold">Indicator:</span> "about" (surrounding)</p>
-              </div>
-            </div>
-
-            <div className="bg-white/70 dark:bg-slate-800/50 rounded-xl p-6 border border-lime-200 dark:border-lime-700">
-              <h3 className="text-xl font-semibold text-lime-800 dark:text-lime-300 mb-4">The wordplay</h3>
-              <div className="space-y-3 text-lime-700 dark:text-lime-400">
-                <p>1. "brought" = GO</p>
-                <p>2. "about" = indicates reversal AND container</p>
-                <p>3. GO reversed = OG</p>
-                <p>4. "slump" = S (first letter)</p>
-                <p>5. Put S inside G_G</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Visual Solution */}
-          <div className="bg-gradient-to-r from-lime-100 to-green-100 dark:from-lime-900/50 dark:to-green-900/50 rounded-xl p-8 border-2 border-lime-300 dark:border-lime-600">
-            <h3 className="text-2xl font-bold text-center text-lime-800 dark:text-lime-300 mb-6">The Solution</h3>
-            
-            <div className="flex justify-center items-center space-x-6 text-2xl font-mono">
-              <div className="bg-orange-200 dark:bg-orange-800 px-4 py-2 rounded-lg">
-                <span className="text-orange-800 dark:text-orange-200">G</span>
-              </div>
-              <div className="text-lime-600 dark:text-lime-400 text-xl">+</div>
-              <div className="bg-blue-200 dark:bg-blue-800 px-4 py-2 rounded-lg">
-                <span className="text-blue-800 dark:text-blue-200">A</span>
-              </div>
-              <div className="text-lime-600 dark:text-lime-400 text-xl">+</div>
-              <div className="bg-purple-200 dark:bg-purple-800 px-4 py-2 rounded-lg">
-                <span className="text-purple-800 dark:text-purple-200">S</span>
-              </div>
-              <div className="text-lime-600 dark:text-lime-400 text-xl">=</div>
-              <div className="bg-emerald-200 dark:bg-emerald-800 px-6 py-3 rounded-lg border-2 border-emerald-400 dark:border-emerald-600">
-                <span className="text-emerald-800 dark:text-emerald-200 font-bold text-3xl">GAS</span>
-              </div>
-            </div>
-
-            <p className="text-center text-lime-700 dark:text-lime-400 mt-6 text-lg">
-              G (from "brought about") contains A + S = <strong>GAS</strong> (fuel)
-            </p>
-          </div>
+          )}
         </div>
       </div>
     </div>
