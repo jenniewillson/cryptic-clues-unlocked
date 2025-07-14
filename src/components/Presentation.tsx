@@ -30,6 +30,8 @@ import HiddenWordsIntroSlide from './slides/HiddenWordsIntroSlide';
 import HiddenWordsExampleSlide from './slides/HiddenWordsExampleSlide';
 import HomophonesIntroSlide from './slides/HomophonesIntroSlide';
 import HomophonesExampleSlide from './slides/HomophonesExampleSlide';
+import SpoonerismIntroSlide from './slides/SpoonerismIntroSlide';
+import SpoonerismExampleSlide from './slides/SpoonerismExampleSlide';
 import LetterSelectionsSlide from './slides/LetterSelectionsSlide';
 import LetterSelectionsExampleSlide from './slides/LetterSelectionsExampleSlide';
 import ReversalsSlide from './slides/ReversalsSlide';
@@ -69,21 +71,23 @@ const slides = [
   { id: 20, component: HiddenWordsExampleSlide, title: "Hidden Words - Example" },
   { id: 21, component: HomophonesIntroSlide, title: "Homophones - Introduction" },
   { id: 22, component: HomophonesExampleSlide, title: "Homophones - Example" },
-  { id: 23, component: LetterSelectionsSlide, title: "Letter Selections" },
-  { id: 24, component: LetterSelectionsExampleSlide, title: "Letter Selections - Example" },
-  { id: 25, component: LastLettersExampleSlide, title: "Last Letters - Example" },
-  { id: 26, component: ReversalsSlide, title: "Reversals" },
-  { id: 27, component: ReversalsExampleSlide, title: "Reversals - Example" },
-  { id: 28, component: DeletionSubstitutionSlide, title: "Deletion/Substitution" },
-  { id: 29, component: DeletionSubstitutionExampleSlide, title: "Deletion/Substitution - Example" },
-  { id: 30, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" },
-  { id: 31, component: CrypticDefinitionsExampleSlide, title: "Cryptic Definitions - Example" },
-  { id: 32, component: ContainersIntroSlide, title: "Containers - Introduction" },
-  { id: 33, component: ContainersExampleSlide, title: "Containers - Example" },
-  { id: 34, component: DefinitionByExampleSlide, title: "Definition by Example" },
-  { id: 35, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
-  { id: 36, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" },
-  { id: 37, component: LearningResourcesSlide, title: "Learning Resources" }
+  { id: 23, component: SpoonerismIntroSlide, title: "Spoonerisms - Introduction" },
+  { id: 24, component: SpoonerismExampleSlide, title: "Spoonerisms - Example" },
+  { id: 25, component: LetterSelectionsSlide, title: "Letter Selections" },
+  { id: 26, component: LetterSelectionsExampleSlide, title: "Letter Selections - Example" },
+  { id: 27, component: LastLettersExampleSlide, title: "Last Letters - Example" },
+  { id: 28, component: ReversalsSlide, title: "Reversals" },
+  { id: 29, component: ReversalsExampleSlide, title: "Reversals - Example" },
+  { id: 30, component: DeletionSubstitutionSlide, title: "Deletion/Substitution" },
+  { id: 31, component: DeletionSubstitutionExampleSlide, title: "Deletion/Substitution - Example" },
+  { id: 32, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" },
+  { id: 33, component: CrypticDefinitionsExampleSlide, title: "Cryptic Definitions - Example" },
+  { id: 34, component: ContainersIntroSlide, title: "Containers - Introduction" },
+  { id: 35, component: ContainersExampleSlide, title: "Containers - Example" },
+  { id: 36, component: DefinitionByExampleSlide, title: "Definition by Example" },
+  { id: 37, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
+  { id: 38, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" },
+  { id: 39, component: LearningResourcesSlide, title: "Learning Resources" }
 ];
 
 const Presentation = () => {
