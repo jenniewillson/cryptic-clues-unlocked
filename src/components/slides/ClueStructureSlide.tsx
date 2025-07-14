@@ -47,7 +47,7 @@ const ClueStructureSlide = () => {
 
         <div className="bg-gradient-to-br from-slate-100 to-gray-100 dark:from-slate-800/50 dark:to-gray-800/50 rounded-2xl p-4 border-2 border-slate-300 dark:border-slate-600">
           <h3 className="text-lg font-semibold text-foreground mb-3 text-center">
-            The Golden Rule: No Surplus Words
+            No Surplus Words
           </h3>
           <p className="text-sm text-muted-foreground text-center leading-relaxed mb-3">
             Every word serves a purpose - either as part of the definition, an indicator, or fodder. 
@@ -62,6 +62,24 @@ const ClueStructureSlide = () => {
               <span className="font-medium text-amber-600 dark:text-amber-400"> WORDPLAY to find DEFINITION</span>
             </p>
           </div>
+        </div>
+
+        <div className="bg-gradient-to-br from-purple-50 to-violet-50 dark:from-purple-900/20 dark:to-violet-900/20 rounded-2xl p-4 border-2 border-purple-200 dark:border-purple-700">
+          <h3 className="text-lg font-semibold text-foreground mb-3 text-center">
+            The Golden Rule Origins
+          </h3>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+            <strong className="text-foreground">Afrit's 1949</strong> introduction to his collection of puzzles set out (in bold type) for the first time what became the golden rule of cryptic cluing:
+          </p>
+          <div className="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-indigo-900/20 dark:to-blue-900/20 rounded-xl p-3 border-2 border-indigo-200 dark:border-indigo-700 mb-3">
+            <p className="text-sm font-bold text-indigo-700 dark:text-indigo-300 text-center">
+              "I need not mean what I say, but I must say what I mean."
+            </p>
+          </div>
+          <p className="text-xs text-muted-foreground leading-relaxed">
+            This key injunction to crossword setters was a play on the exchange in <em>Alice in Wonderland</em> where the March Hare says, 
+            "Then you should say what you mean." Alice replies, "I do, at least - at least I mean what I say - that's the same thing, you know."
+          </p>
         </div>
       </div>
     </div>
