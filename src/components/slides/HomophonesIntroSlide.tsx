@@ -40,6 +40,27 @@ const HomophonesIntroSlide = () => {
             </p>
           </div>
         </div>
+        
+        <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-8 border-2 border-amber-300 dark:border-amber-600 mt-10">
+          <h4 className="text-3xl font-semibold text-foreground mb-6 text-center">
+            Important Considerations
+          </h4>
+          <div className="space-y-4 text-xl text-muted-foreground leading-relaxed">
+            <p className="text-center">
+              <strong className="text-foreground">Pronunciation matters!</strong> Homophones depend on how words sound, which can vary based on:
+            </p>
+            <div className="grid grid-cols-2 gap-6 mt-6">
+              <div className="bg-white dark:bg-slate-800 rounded-xl p-4 border border-amber-200 dark:border-amber-600">
+                <p className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Regional Accents</p>
+                <p className="text-lg">Different regions may pronounce words differently, affecting what sounds alike</p>
+              </div>
+              <div className="bg-white dark:bg-slate-800 rounded-xl p-4 border border-amber-200 dark:border-amber-600">
+                <p className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Local Variations</p>
+                <p className="text-lg">Some homophones work better in certain dialects or pronunciations</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
