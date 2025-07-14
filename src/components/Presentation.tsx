@@ -14,6 +14,7 @@ import HistorySlide from './slides/HistorySlide';
 import CrypticHistorySlide from './slides/CrypticHistorySlide';
 import XimenesSlide from './slides/XimenesSlide';
 import StructureSlide from './slides/StructureSlide';
+import GridStylesSlide from './slides/GridStylesSlide';
 import ClueStructureSlide from './slides/ClueStructureSlide';
 import ClueStructureExampleSlide from './slides/ClueStructureExampleSlide';
 import ClueTypesOverviewSlide from './slides/ClueTypesOverviewSlide';
@@ -51,35 +52,36 @@ const slides = [
   { id: 4, component: CrypticHistorySlide, title: "Birth of Cryptic Crosswords" },
   { id: 5, component: XimenesSlide, title: "Ximenes and the Golden Age" },
   { id: 6, component: StructureSlide, title: "Modern Structure" },
-  { id: 7, component: ClueStructureSlide, title: "Clue Structure" },
-  { id: 8, component: ClueStructureExampleSlide, title: "Clue Example" },
-  { id: 9, component: ClueTypesOverviewSlide, title: "Types of Clues" },
-  { id: 10, component: AnagramsIntroSlide, title: "Anagrams - Introduction" },
-  { id: 11, component: AnagramsExampleSlide, title: "Anagrams - Example" },
-  { id: 12, component: AnagramsIndicatorsSlide, title: "Anagrams - Indicators" },
-  { id: 13, component: AnagramsTipsSlide, title: "Anagrams - Tips" },
-  { id: 14, component: DoubleDefinitionsIntroSlide, title: "Double Definitions - Introduction" },
-  { id: 15, component: DoubleDefinitionsExampleSlide, title: "Double Definitions - Example" },
-  { id: 16, component: CharadesIntroSlide, title: "Charades - Introduction" },
-  { id: 17, component: CharadesExampleSlide, title: "Charades - Example" },
-  { id: 18, component: HiddenWordsIntroSlide, title: "Hidden Words - Introduction" },
-  { id: 19, component: HiddenWordsExampleSlide, title: "Hidden Words - Example" },
-  { id: 20, component: HomophonesIntroSlide, title: "Homophones - Introduction" },
-  { id: 21, component: HomophonesExampleSlide, title: "Homophones - Example" },
-  { id: 22, component: LetterSelectionsSlide, title: "Letter Selections" },
-  { id: 23, component: LetterSelectionsExampleSlide, title: "Letter Selections - Example" },
-  { id: 24, component: LastLettersExampleSlide, title: "Last Letters - Example" },
-  { id: 25, component: ReversalsSlide, title: "Reversals" },
-  { id: 26, component: ReversalsExampleSlide, title: "Reversals - Example" },
-  { id: 27, component: DeletionSubstitutionSlide, title: "Deletion/Substitution" },
-  { id: 28, component: DeletionSubstitutionExampleSlide, title: "Deletion/Substitution - Example" },
-  { id: 29, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" },
-  { id: 30, component: CrypticDefinitionsExampleSlide, title: "Cryptic Definitions - Example" },
-  { id: 31, component: ContainersIntroSlide, title: "Containers - Introduction" },
-  { id: 32, component: ContainersExampleSlide, title: "Containers - Example" },
-  { id: 33, component: DefinitionByExampleSlide, title: "Definition by Example" },
-  { id: 34, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
-  { id: 35, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" }
+  { id: 7, component: GridStylesSlide, title: "Grid Styles" },
+  { id: 8, component: ClueStructureSlide, title: "Clue Structure" },
+  { id: 9, component: ClueStructureExampleSlide, title: "Clue Example" },
+  { id: 10, component: ClueTypesOverviewSlide, title: "Types of Clues" },
+  { id: 11, component: AnagramsIntroSlide, title: "Anagrams - Introduction" },
+  { id: 12, component: AnagramsExampleSlide, title: "Anagrams - Example" },
+  { id: 13, component: AnagramsIndicatorsSlide, title: "Anagrams - Indicators" },
+  { id: 14, component: AnagramsTipsSlide, title: "Anagrams - Tips" },
+  { id: 15, component: DoubleDefinitionsIntroSlide, title: "Double Definitions - Introduction" },
+  { id: 16, component: DoubleDefinitionsExampleSlide, title: "Double Definitions - Example" },
+  { id: 17, component: CharadesIntroSlide, title: "Charades - Introduction" },
+  { id: 18, component: CharadesExampleSlide, title: "Charades - Example" },
+  { id: 19, component: HiddenWordsIntroSlide, title: "Hidden Words - Introduction" },
+  { id: 20, component: HiddenWordsExampleSlide, title: "Hidden Words - Example" },
+  { id: 21, component: HomophonesIntroSlide, title: "Homophones - Introduction" },
+  { id: 22, component: HomophonesExampleSlide, title: "Homophones - Example" },
+  { id: 23, component: LetterSelectionsSlide, title: "Letter Selections" },
+  { id: 24, component: LetterSelectionsExampleSlide, title: "Letter Selections - Example" },
+  { id: 25, component: LastLettersExampleSlide, title: "Last Letters - Example" },
+  { id: 26, component: ReversalsSlide, title: "Reversals" },
+  { id: 27, component: ReversalsExampleSlide, title: "Reversals - Example" },
+  { id: 28, component: DeletionSubstitutionSlide, title: "Deletion/Substitution" },
+  { id: 29, component: DeletionSubstitutionExampleSlide, title: "Deletion/Substitution - Example" },
+  { id: 30, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" },
+  { id: 31, component: CrypticDefinitionsExampleSlide, title: "Cryptic Definitions - Example" },
+  { id: 32, component: ContainersIntroSlide, title: "Containers - Introduction" },
+  { id: 33, component: ContainersExampleSlide, title: "Containers - Example" },
+  { id: 34, component: DefinitionByExampleSlide, title: "Definition by Example" },
+  { id: 35, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
+  { id: 36, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" }
 ];
 
 const Presentation = () => {
