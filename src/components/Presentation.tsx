@@ -24,6 +24,7 @@ import AnagramsExampleSlide from './slides/AnagramsExampleSlide';
 import AnagramsTipsSlide from './slides/AnagramsTipsSlide';
 import DoubleDefinitionsIntroSlide from './slides/DoubleDefinitionsIntroSlide';
 import DoubleDefinitionsExampleSlide from './slides/DoubleDefinitionsExampleSlide';
+import AbbreviationsSlide from './slides/AbbreviationsSlide';
 import CharadesIntroSlide from './slides/CharadesIntroSlide';
 import CharadesExampleSlide from './slides/CharadesExampleSlide';
 import HiddenWordsIntroSlide from './slides/HiddenWordsIntroSlide';
@@ -65,29 +66,30 @@ const slides = [
   { id: 14, component: AnagramsTipsSlide, title: "Anagrams - Tips" },
   { id: 15, component: DoubleDefinitionsIntroSlide, title: "Double Definitions - Introduction" },
   { id: 16, component: DoubleDefinitionsExampleSlide, title: "Double Definitions - Example" },
-  { id: 17, component: CharadesIntroSlide, title: "Charades - Introduction" },
-  { id: 18, component: CharadesExampleSlide, title: "Charades - Example" },
-  { id: 19, component: HiddenWordsIntroSlide, title: "Hidden Words - Introduction" },
-  { id: 20, component: HiddenWordsExampleSlide, title: "Hidden Words - Example" },
-  { id: 21, component: HomophonesIntroSlide, title: "Homophones - Introduction" },
-  { id: 22, component: HomophonesExampleSlide, title: "Homophones - Example" },
-  { id: 23, component: SpoonerismIntroSlide, title: "Spoonerisms - Introduction" },
-  { id: 24, component: SpoonerismExampleSlide, title: "Spoonerisms - Example" },
-  { id: 25, component: LetterSelectionsSlide, title: "Letter Selections" },
-  { id: 26, component: LetterSelectionsExampleSlide, title: "Letter Selections - Example" },
-  { id: 27, component: LastLettersExampleSlide, title: "Last Letters - Example" },
-  { id: 28, component: ReversalsSlide, title: "Reversals" },
-  { id: 29, component: ReversalsExampleSlide, title: "Reversals - Example" },
-  { id: 30, component: DeletionSubstitutionSlide, title: "Deletion/Substitution" },
-  { id: 31, component: DeletionSubstitutionExampleSlide, title: "Deletion/Substitution - Example" },
-  { id: 32, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" },
-  { id: 33, component: CrypticDefinitionsExampleSlide, title: "Cryptic Definitions - Example" },
-  { id: 34, component: ContainersIntroSlide, title: "Containers - Introduction" },
-  { id: 35, component: ContainersExampleSlide, title: "Containers - Example" },
-  { id: 36, component: DefinitionByExampleSlide, title: "Definition by Example" },
-  { id: 37, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
-  { id: 38, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" },
-  { id: 39, component: LearningResourcesSlide, title: "Learning Resources" }
+  { id: 17, component: AbbreviationsSlide, title: "Abbreviations in Clues" },
+  { id: 18, component: CharadesIntroSlide, title: "Charades - Introduction" },
+  { id: 19, component: CharadesExampleSlide, title: "Charades - Example" },
+  { id: 20, component: HiddenWordsIntroSlide, title: "Hidden Words - Introduction" },
+  { id: 21, component: HiddenWordsExampleSlide, title: "Hidden Words - Example" },
+  { id: 22, component: HomophonesIntroSlide, title: "Homophones - Introduction" },
+  { id: 23, component: HomophonesExampleSlide, title: "Homophones - Example" },
+  { id: 24, component: SpoonerismIntroSlide, title: "Spoonerisms - Introduction" },
+  { id: 25, component: SpoonerismExampleSlide, title: "Spoonerisms - Example" },
+  { id: 26, component: LetterSelectionsSlide, title: "Letter Selections" },
+  { id: 27, component: LetterSelectionsExampleSlide, title: "Letter Selections - Example" },
+  { id: 28, component: LastLettersExampleSlide, title: "Last Letters - Example" },
+  { id: 29, component: ReversalsSlide, title: "Reversals" },
+  { id: 30, component: ReversalsExampleSlide, title: "Reversals - Example" },
+  { id: 31, component: DeletionSubstitutionSlide, title: "Deletion/Substitution" },
+  { id: 32, component: DeletionSubstitutionExampleSlide, title: "Deletion/Substitution - Example" },
+  { id: 33, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" },
+  { id: 34, component: CrypticDefinitionsExampleSlide, title: "Cryptic Definitions - Example" },
+  { id: 35, component: ContainersIntroSlide, title: "Containers - Introduction" },
+  { id: 36, component: ContainersExampleSlide, title: "Containers - Example" },
+  { id: 37, component: DefinitionByExampleSlide, title: "Definition by Example" },
+  { id: 38, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
+  { id: 39, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" },
+  { id: 40, component: LearningResourcesSlide, title: "Learning Resources" }
 ];
 
 const Presentation = () => {
