@@ -30,7 +30,7 @@ const HomophonesExampleSlide = () => {
         {currentStep === 1 && (
           <div className="grid grid-cols-3 gap-8 mb-10">
             <div className="bg-gradient-to-br from-cyan-100 to-blue-100 dark:from-cyan-900/30 dark:to-blue-900/20 rounded-2xl p-6 border-2 border-cyan-300 dark:border-cyan-600 text-center">
-              <h4 className="text-2xl font-semibold text-foreground mb-3">Sound Indicator</h4>
+              <h4 className="text-2xl font-semibold text-foreground mb-3">Homophone Indicator</h4>
               <p className="text-2xl text-cyan-700 dark:text-cyan-300 font-medium">"Reported"</p>
             </div>
 
