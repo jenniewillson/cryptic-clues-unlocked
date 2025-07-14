@@ -40,6 +40,7 @@ import CrypticDefinitionsSlide from './slides/CrypticDefinitionsSlide';
 import CrypticDefinitionsExampleSlide from './slides/CrypticDefinitionsExampleSlide';
 import CombinationCluesIntroSlide from './slides/CombinationCluesIntroSlide';
 import CombinationCluesExampleSlide from './slides/CombinationCluesExampleSlide';
+import LearningResourcesSlide from './slides/LearningResourcesSlide';
 import ContainersIntroSlide from './slides/ContainersIntroSlide';
 import ContainersExampleSlide from './slides/ContainersExampleSlide';
 import LastLettersExampleSlide from './slides/LastLettersExampleSlide';
@@ -81,7 +82,8 @@ const slides = [
   { id: 33, component: ContainersExampleSlide, title: "Containers - Example" },
   { id: 34, component: DefinitionByExampleSlide, title: "Definition by Example" },
   { id: 35, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
-  { id: 36, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" }
+  { id: 36, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" },
+  { id: 37, component: LearningResourcesSlide, title: "Learning Resources" }
 ];
 
 const Presentation = () => {
