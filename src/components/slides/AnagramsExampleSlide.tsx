@@ -19,7 +19,7 @@ const AnagramsExampleSlide = () => {
           <p className="text-5xl font-semibold text-foreground mb-8 leading-relaxed">
             {currentStep >= 1 ? (
               <>
-                "<span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">BR sleeper</span> is <span className="bg-cyan-200 dark:bg-cyan-800 px-2 py-1 rounded font-semibold">surprisingly</span> <span className="bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold">able to be controlled</span> (11)"
+                "<span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">BR sleeper is</span> <span className="bg-red-200 dark:bg-red-800 px-2 py-1 rounded font-semibold">surprisingly</span> <span className="bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold">able to be controlled</span> (11)"
               </>
             ) : (
               "\"BR sleeper is surprisingly able to be controlled (11)\""
@@ -39,9 +39,9 @@ const AnagramsExampleSlide = () => {
               <p className="text-3xl text-red-700 dark:text-red-300 font-medium">"surprisingly"</p>
             </div>
 
-            <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-8 border-2 border-green-300 dark:border-green-600 text-center">
+            <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-8 border-2 border-amber-300 dark:border-amber-600 text-center">
               <h4 className="text-3xl font-semibold text-foreground mb-4">Fodder</h4>
-              <p className="text-3xl text-green-700 dark:text-green-300 font-medium">"BR sleeper"</p>
+              <p className="text-3xl text-amber-700 dark:text-amber-300 font-medium">"BR sleeper is"</p>
             </div>
           </div>
         )}
