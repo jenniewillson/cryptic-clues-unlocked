@@ -11,9 +11,18 @@ const AnagramsIntroSlide = () => {
         <h3 className="text-5xl font-semibold text-foreground mb-10 text-center">
           How Anagrams Work
         </h3>
-        <p className="text-3xl text-muted-foreground mb-12 text-center leading-relaxed">
+        <p className="text-3xl text-muted-foreground mb-8 text-center leading-relaxed">
           The letters of one or more words are rearranged to form the answer.
         </p>
+        
+        <div className="bg-primary/10 p-6 rounded-lg border border-primary/20 mb-10 text-center">
+          <p className="text-2xl font-semibold text-primary">
+            ⭐ Most Common Clue Type ⭐
+          </p>
+          <p className="text-xl text-muted-foreground mt-2">
+            Most cryptic crosswords will have three, four or more anagrams in each puzzle
+          </p>
+        </div>
         
         <div className="grid grid-cols-3 gap-10">
           <div className="bg-gradient-to-br from-emerald-100 to-green-100 dark:from-emerald-900/30 dark:to-green-900/20 rounded-2xl p-8 border-2 border-emerald-300 dark:border-emerald-600 text-center">
