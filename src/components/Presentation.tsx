@@ -29,9 +29,13 @@ import HiddenWordsExampleSlide from './slides/HiddenWordsExampleSlide';
 import HomophonesIntroSlide from './slides/HomophonesIntroSlide';
 import HomophonesExampleSlide from './slides/HomophonesExampleSlide';
 import LetterSelectionsSlide from './slides/LetterSelectionsSlide';
+import LetterSelectionsExampleSlide from './slides/LetterSelectionsExampleSlide';
 import ReversalsSlide from './slides/ReversalsSlide';
+import ReversalsExampleSlide from './slides/ReversalsExampleSlide';
 import DeletionSubstitutionSlide from './slides/DeletionSubstitutionSlide';
+import DeletionSubstitutionExampleSlide from './slides/DeletionSubstitutionExampleSlide';
 import CrypticDefinitionsSlide from './slides/CrypticDefinitionsSlide';
+import CrypticDefinitionsExampleSlide from './slides/CrypticDefinitionsExampleSlide';
 import CombinationCluesIntroSlide from './slides/CombinationCluesIntroSlide';
 import CombinationCluesExampleSlide from './slides/CombinationCluesExampleSlide';
 import LastLettersExampleSlide from './slides/LastLettersExampleSlide';
@@ -59,13 +63,17 @@ const slides = [
   { id: 19, component: HomophonesIntroSlide, title: "Homophones - Introduction" },
   { id: 20, component: HomophonesExampleSlide, title: "Homophones - Example" },
   { id: 21, component: LetterSelectionsSlide, title: "Letter Selections" },
-  { id: 22, component: LastLettersExampleSlide, title: "Last Letters - Example" },
-  { id: 23, component: ReversalsSlide, title: "Reversals" },
-  { id: 24, component: DeletionSubstitutionSlide, title: "Deletion/Substitution" },
-  { id: 25, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" },
-  { id: 26, component: DefinitionByExampleSlide, title: "Definition by Example" },
-  { id: 27, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
-  { id: 28, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" }
+  { id: 22, component: LetterSelectionsExampleSlide, title: "Letter Selections - Example" },
+  { id: 23, component: LastLettersExampleSlide, title: "Last Letters - Example" },
+  { id: 24, component: ReversalsSlide, title: "Reversals" },
+  { id: 25, component: ReversalsExampleSlide, title: "Reversals - Example" },
+  { id: 26, component: DeletionSubstitutionSlide, title: "Deletion/Substitution" },
+  { id: 27, component: DeletionSubstitutionExampleSlide, title: "Deletion/Substitution - Example" },
+  { id: 28, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" },
+  { id: 29, component: CrypticDefinitionsExampleSlide, title: "Cryptic Definitions - Example" },
+  { id: 30, component: DefinitionByExampleSlide, title: "Definition by Example" },
+  { id: 31, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
+  { id: 32, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" }
 ];
 
 const Presentation = () => {
