@@ -76,6 +76,13 @@ const ClueTypesOverviewSlide = () => {
                 Removing or replacing letters
               </p>
             </div>
+
+            <div className="bg-gradient-to-br from-lime-100 to-green-100 dark:from-lime-900/30 dark:to-green-900/20 rounded-2xl p-4 border-2 border-lime-300 dark:border-lime-600 transform hover:scale-105 transition-transform text-center">
+              <h3 className="text-xl font-semibold text-lime-800 dark:text-lime-300 mb-2">Containers</h3>
+              <p className="text-sm text-lime-700 dark:text-lime-400">
+                One word placed inside another
+              </p>
+            </div>
           </div>
           
           <div className="mt-6 text-center">

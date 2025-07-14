@@ -38,6 +38,8 @@ import CrypticDefinitionsSlide from './slides/CrypticDefinitionsSlide';
 import CrypticDefinitionsExampleSlide from './slides/CrypticDefinitionsExampleSlide';
 import CombinationCluesIntroSlide from './slides/CombinationCluesIntroSlide';
 import CombinationCluesExampleSlide from './slides/CombinationCluesExampleSlide';
+import ContainersIntroSlide from './slides/ContainersIntroSlide';
+import ContainersExampleSlide from './slides/ContainersExampleSlide';
 import LastLettersExampleSlide from './slides/LastLettersExampleSlide';
 import DefinitionByExampleSlide from './slides/DefinitionByExampleSlide';
 
@@ -71,9 +73,11 @@ const slides = [
   { id: 27, component: DeletionSubstitutionExampleSlide, title: "Deletion/Substitution - Example" },
   { id: 28, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" },
   { id: 29, component: CrypticDefinitionsExampleSlide, title: "Cryptic Definitions - Example" },
-  { id: 30, component: DefinitionByExampleSlide, title: "Definition by Example" },
-  { id: 31, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
-  { id: 32, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" }
+  { id: 30, component: ContainersIntroSlide, title: "Containers - Introduction" },
+  { id: 31, component: ContainersExampleSlide, title: "Containers - Example" },
+  { id: 32, component: DefinitionByExampleSlide, title: "Definition by Example" },
+  { id: 33, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
+  { id: 34, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" }
 ];
 
 const Presentation = () => {
