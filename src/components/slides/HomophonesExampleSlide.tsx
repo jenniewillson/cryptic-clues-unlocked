@@ -73,7 +73,7 @@ const HomophonesExampleSlide = () => {
                 FINNISH
               </p>
               <p className="text-3xl text-muted-foreground">
-                FINNISH sounds like "finish" (end) when reported
+                FINNISH sounds like "finish" (end) when "reported"
               </p>
             </div>
           )}
