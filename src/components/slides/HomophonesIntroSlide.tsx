@@ -64,6 +64,15 @@ const HomophonesIntroSlide = () => {
             </p>
           </div>
         </div>
+        
+        <div className="bg-gradient-to-br from-orange-100 to-red-100 dark:from-orange-900/30 dark:to-red-900/20 rounded-2xl p-8 border-2 border-orange-300 dark:border-orange-600 mt-10">
+          <h4 className="text-3xl font-semibold text-foreground mb-6 text-center">
+            Local Variations
+          </h4>
+          <p className="text-xl text-muted-foreground leading-relaxed text-center">
+            These might be clued with a dialect indicator, such as 'as they say in London...' but this is rare and has to be done very carefully!
+          </p>
+        </div>
       </div>
     </div>
   );

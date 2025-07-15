@@ -44,6 +44,7 @@ import CrypticDefinitionsSlide from './slides/CrypticDefinitionsSlide';
 import CrypticDefinitionsExampleSlide from './slides/CrypticDefinitionsExampleSlide';
 import CombinationCluesIntroSlide from './slides/CombinationCluesIntroSlide';
 import CombinationCluesExampleSlide from './slides/CombinationCluesExampleSlide';
+import ImportantWordsSlide from './slides/ImportantWordsSlide';
 import LearningResourcesSlide from './slides/LearningResourcesSlide';
 import ContainersIntroSlide from './slides/ContainersIntroSlide';
 import ContainersExampleSlide from './slides/ContainersExampleSlide';
@@ -91,7 +92,8 @@ const slides = [
   { id: 38, component: DefinitionByExampleSlide, title: "Definition by Example" },
   { id: 39, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
   { id: 40, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" },
-  { id: 41, component: LearningResourcesSlide, title: "Learning Resources" }
+  { id: 41, component: ImportantWordsSlide, title: "Every Word Matters!" },
+  { id: 42, component: LearningResourcesSlide, title: "Learning Resources" }
 ];
 
 const Presentation = () => {

@@ -56,7 +56,7 @@ const DefinitionByExampleSlide = () => {
               THOMAS
             </p>
               <p className="text-3xl text-muted-foreground">
-                Thomas More is an example of "More for one" - the definition works by example rather than direct meaning
+                Thomas More is an example of a "More" - he's not the only one by far, but he is one example that we can use to find the solution we are looking for.
               </p>
           </div>
         )}

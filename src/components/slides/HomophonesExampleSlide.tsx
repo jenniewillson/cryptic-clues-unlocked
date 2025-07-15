@@ -19,7 +19,7 @@ const HomophonesExampleSlide = () => {
           <p className="text-4xl font-semibold text-foreground mb-6 leading-relaxed">
             {currentStep >= 1 ? (
               <>
-                {currentStep >= 2 && <span className="bg-cyan-200 dark:bg-cyan-800 px-2 py-1 rounded font-semibold">Reported</span>}{currentStep >= 2 && " "}{currentStep >= 3 && <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">end</span>}{currentStep >= 3 ? " of " : currentStep >= 2 ? "end of " : "Reported end of "}<span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>European country</span> (7)"
+                {currentStep >= 2 && <span className="bg-cyan-200 dark:bg-cyan-800 px-2 py-1 rounded font-semibold">Reported</span>}{currentStep >= 2 && " "}{currentStep >= 3 && <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">end</span>}{currentStep >= 3 ? " " : currentStep >= 2 ? "end " : "Reported end "}<span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>{currentStep >= 1 ? "of European country" : "of European country"}</span> (7)"
               </>
             ) : (
               "\"Reported end of European country (7)\""
@@ -31,7 +31,7 @@ const HomophonesExampleSlide = () => {
           <div className="grid grid-cols-3 gap-8 mb-10">
             <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-3">Definition</h4>
-              <p className="text-2xl text-blue-700 dark:text-blue-300 font-medium">"European country"</p>
+              <p className="text-2xl text-blue-700 dark:text-blue-300 font-medium">"of European country"</p>
             </div>
 
             {currentStep >= 2 && (

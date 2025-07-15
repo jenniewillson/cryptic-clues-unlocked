@@ -45,13 +45,13 @@ const ContainersIntroSlide = () => {
             <div className="bg-gradient-to-r from-lime-100 to-green-100 dark:from-lime-900/50 dark:to-green-900/50 rounded-xl p-6 border-2 border-lime-300 dark:border-lime-600">
               <h4 className="text-xl font-semibold text-lime-800 dark:text-lime-300 mb-3">Visual Example</h4>
               <p className="text-lg text-lime-700 dark:text-lime-400 mb-2">
-                Container word: <span className="font-mono bg-lime-200 dark:bg-lime-800 px-2 py-1 rounded">B_G</span>
+                Container word: <span className="font-mono bg-lime-200 dark:bg-lime-800 px-2 py-1 rounded">PO_O</span>
               </p>
               <p className="text-lg text-lime-700 dark:text-lime-400 mb-2">
-                Insert: <span className="font-mono bg-green-200 dark:bg-green-800 px-2 py-1 rounded">A</span>
+                Insert: <span className="font-mono bg-green-200 dark:bg-green-800 px-2 py-1 rounded">TAT</span>
               </p>
               <p className="text-lg text-lime-700 dark:text-lime-400">
-                Result: <span className="font-mono bg-emerald-200 dark:bg-emerald-800 px-2 py-1 rounded font-bold">BAG</span>
+                Result: <span className="font-mono bg-emerald-200 dark:bg-emerald-800 px-2 py-1 rounded font-bold">POTATO</span>
               </p>
             </div>
           </div>

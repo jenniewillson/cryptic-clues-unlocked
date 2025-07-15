@@ -43,6 +43,27 @@ const ReversalsSlide = () => {
             </div>
           </div>
         </div>
+        
+        <div className="bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/20 border-2 border-amber-200 dark:border-amber-700 rounded-2xl p-8">
+          <h3 className="text-3xl font-semibold text-foreground mb-6 text-center">
+            Direction Matters!
+          </h3>
+          <p className="text-xl text-muted-foreground mb-6 text-center leading-relaxed">
+            The reversal indicators must work with the direction of the clue itself:
+          </p>
+          
+          <div className="grid grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center">
+              <h4 className="text-xl font-semibold text-foreground mb-3">Down Clues</h4>
+              <p className="text-lg text-muted-foreground">"up" only works for down clues</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-100 to-violet-100 dark:from-purple-900/30 dark:to-violet-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600 text-center">
+              <h4 className="text-xl font-semibold text-foreground mb-3">Across Clues</h4>
+              <p className="text-lg text-muted-foreground">"from the East" only works for across clues</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

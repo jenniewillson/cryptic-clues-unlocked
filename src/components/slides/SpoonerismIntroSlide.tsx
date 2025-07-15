@@ -41,7 +41,7 @@ const SpoonerismIntroSlide = () => {
         <div className="mt-12 bg-amber-100 dark:bg-amber-900/30 p-8 rounded-2xl border-2 border-amber-300 dark:border-amber-600">
           <h4 className="text-2xl font-semibold text-foreground mb-4 text-center">Classic Example:</h4>
           <p className="text-2xl text-center text-muted-foreground">
-            "Three cheers" becomes "Thee creers" in a spoonerism
+            "Funny bone" becomes "Bunny phone" in a Spoonerism - don't forget we are only worried about the sounds, not the actual letters.
           </p>
         </div>
       </div>
