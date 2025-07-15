@@ -51,7 +51,7 @@ const DoubleDefinitionsExampleSlide = () => {
                 MEAN
               </p>
               <p className="text-xl text-muted-foreground">
-                MEAN = selfish (cruel) AND aim (average/target)
+                MEAN = selfish (cruel) AND intend (aim)
               </p>
             </div>
           )}

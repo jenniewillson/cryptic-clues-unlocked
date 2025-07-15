@@ -8,17 +8,17 @@ const AbbreviationsSlide = () => {
         Abbreviations in Clues
       </h1>
       
-      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-2 border-blue-200 dark:border-blue-700 rounded-2xl p-10 w-full">
-        <div className="text-center mb-8">
-          <p className="text-2xl text-muted-foreground mb-4">
+      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-2 border-blue-200 dark:border-blue-700 rounded-2xl p-8 w-full max-h-[calc(100vh-200px)] overflow-y-auto">
+        <div className="text-center mb-6">
+          <p className="text-xl text-muted-foreground mb-3">
             Many standard abbreviations are regularly used in cryptic clues
           </p>
-          <p className="text-xl text-primary font-semibold">
+          <p className="text-lg text-primary font-semibold">
             ⚡ They can work both ways round! ⚡
           </p>
         </div>
         
-        <div className="grid grid-cols-2 gap-8 mb-8">
+        <div className="grid grid-cols-2 gap-6 mb-6">
           {/* Elements */}
           <div className="bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/30 dark:to-pink-900/20 rounded-2xl p-6 border-2 border-red-300 dark:border-red-600">
             <div className="flex items-center gap-3 mb-4">
@@ -76,16 +76,16 @@ const AbbreviationsSlide = () => {
         </div>
 
         {/* Reference */}
-        <div className="bg-gradient-to-r from-cyan-100 to-blue-100 dark:from-cyan-900/30 dark:to-blue-900/20 rounded-2xl p-6 border-2 border-cyan-300 dark:border-cyan-600 text-center">
-          <div className="flex items-center justify-center gap-3 mb-3">
-            <Globe className="w-6 h-6 text-cyan-600" />
-            <Book className="w-6 h-6 text-cyan-600" />
+        <div className="bg-gradient-to-r from-cyan-100 to-blue-100 dark:from-cyan-900/30 dark:to-blue-900/20 rounded-2xl p-5 border-2 border-cyan-300 dark:border-cyan-600 text-center">
+          <div className="flex items-center justify-center gap-3 mb-2">
+            <Globe className="w-5 h-5 text-cyan-600" />
+            <Book className="w-5 h-5 text-cyan-600" />
           </div>
-          <h3 className="text-xl font-semibold text-foreground mb-2">Find More Abbreviations</h3>
-          <p className="text-lg text-muted-foreground mb-2">
+          <h3 className="text-lg font-semibold text-foreground mb-2">Find More Abbreviations</h3>
+          <p className="text-base text-muted-foreground mb-2">
             Lists of abbreviations can be found in dictionaries & on the web
           </p>
-          <p className="text-lg font-semibold text-cyan-700 dark:text-cyan-300">
+          <p className="text-base font-semibold text-cyan-700 dark:text-cyan-300">
             www.crosswordunclued.com
           </p>
         </div>

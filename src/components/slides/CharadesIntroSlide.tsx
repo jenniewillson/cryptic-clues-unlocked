@@ -36,7 +36,7 @@ const CharadesIntroSlide = () => {
           <div className="bg-gradient-to-br from-violet-100 to-purple-100 dark:from-violet-900/30 dark:to-purple-900/20 rounded-2xl p-8 border-2 border-violet-300 dark:border-violet-600 text-center">
             <h4 className="text-3xl font-semibold text-foreground mb-6">3. Assembly</h4>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Parts are joined in the order they appear
+              Parts are joined in the order they appear or extra instructions are given if not
             </p>
           </div>
         </div>

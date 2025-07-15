@@ -27,9 +27,9 @@ const HomophonesIntroSlide = () => {
           </div>
 
           <div className="bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/30 dark:to-pink-900/20 rounded-2xl p-6 border-2 border-red-300 dark:border-red-600 text-center">
-            <h4 className="text-2xl font-semibold text-foreground mb-4">2. Sound Indicator</h4>
+            <h4 className="text-2xl font-semibold text-foreground mb-4">2. Homophone Indicator</h4>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Shows that we're dealing with sounds
+              Shows that we are concerned with the 'sound' of a word, how we hear it or how someone might say it
             </p>
           </div>
 
@@ -43,22 +43,25 @@ const HomophonesIntroSlide = () => {
         
         <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-8 border-2 border-amber-300 dark:border-amber-600 mt-10">
           <h4 className="text-3xl font-semibold text-foreground mb-6 text-center">
-            Important Considerations
+            Homophone Indicators
           </h4>
           <div className="space-y-4 text-xl text-muted-foreground leading-relaxed">
-            <p className="text-center">
-              <strong className="text-foreground">Pronunciation matters!</strong> Homophones depend on how words sound, which can vary based on:
+            <p className="text-center mb-6">
+              <strong className="text-foreground">Common indicators include:</strong>
             </p>
-            <div className="grid grid-cols-2 gap-6 mt-6">
+            <div className="grid grid-cols-2 gap-6">
               <div className="bg-white dark:bg-slate-800 rounded-xl p-4 border border-amber-200 dark:border-amber-600">
-                <p className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Regional Accents</p>
-                <p className="text-lg">Different regions may pronounce words differently, affecting what sounds alike</p>
+                <p className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Basic Sound Words</p>
+                <p className="text-lg">sounds like, said, out loud</p>
               </div>
               <div className="bg-white dark:bg-slate-800 rounded-xl p-4 border border-amber-200 dark:border-amber-600">
-                <p className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Local Variations</p>
-                <p className="text-lg">Some homophones work better in certain dialects or pronunciations</p>
+                <p className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Communication</p>
+                <p className="text-lg">on the radio, broadcast</p>
               </div>
             </div>
+            <p className="text-center text-lg italic mt-4">
+              Note: "Broadcast" can also be an anagram indicator!
+            </p>
           </div>
         </div>
       </div>

@@ -73,7 +73,7 @@ const HiddenWordsExampleSlide = () => {
                 SEVERE
               </p>
               <p className="text-3xl text-muted-foreground">
-                Hidden in "peaks E<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">VER EST</span>" = SEVERE
+                Hidden in "peak<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">S E</span>v<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">ERE</span>st" = SEVERE
               </p>
             </div>
           )}

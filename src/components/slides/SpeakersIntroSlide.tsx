@@ -3,27 +3,27 @@ import React from 'react';
 const SpeakersIntroSlide = () => {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center p-8 bg-gradient-to-br from-background to-muted/20">
-      <div className="max-w-4xl mx-auto text-center space-y-8">
-        <h1 className="text-4xl font-bold text-foreground mb-8">Meet Your Presenters</h1>
+      <div className="max-w-5xl mx-auto text-center space-y-10">
+        <h1 className="text-6xl font-bold text-foreground mb-10">Meet Your Presenters</h1>
         
-        <div className="grid grid-cols-2 gap-8 mb-8">
-          <div className="bg-card p-6 rounded-lg border">
-            <h2 className="text-2xl font-semibold text-primary mb-2">Val</h2>
-            <p className="text-lg text-muted-foreground">Sets as <span className="font-semibold text-foreground">Clarsach</span></p>
+        <div className="grid grid-cols-2 gap-10 mb-10">
+          <div className="bg-card p-8 rounded-lg border">
+            <h2 className="text-4xl font-semibold text-primary mb-4">Val</h2>
+            <p className="text-2xl text-muted-foreground">Sets as <span className="font-semibold text-foreground">Clarsach</span></p>
           </div>
-          <div className="bg-card p-6 rounded-lg border">
-            <h2 className="text-2xl font-semibold text-primary mb-2">Jennie</h2>
-            <p className="text-lg text-muted-foreground">Sets as <span className="font-semibold text-foreground">Guinevere</span> or <span className="font-semibold text-foreground">Dice</span></p>
+          <div className="bg-card p-8 rounded-lg border">
+            <h2 className="text-4xl font-semibold text-primary mb-4">Jennie</h2>
+            <p className="text-2xl text-muted-foreground">Sets as <span className="font-semibold text-foreground">Guinevere</span> or <span className="font-semibold text-foreground">Dice</span></p>
           </div>
         </div>
 
-        <div className="bg-card p-6 rounded-lg border text-left">
-          <h3 className="text-xl font-semibold text-foreground mb-4 text-center">The Tradition of Setter Names</h3>
-          <p className="text-muted-foreground mb-6 text-center">
+        <div className="bg-card p-8 rounded-lg border text-left">
+          <h3 className="text-3xl font-semibold text-foreground mb-6 text-center">The Tradition of Setter Names</h3>
+          <p className="text-xl text-muted-foreground mb-8 text-center">
             It's traditional for cryptic crossword setters to not go by their real names. Here are some fascinating examples:
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
             <div className="space-y-3">
               <div>
                 <span className="font-semibold text-primary">Imogen:</span> A name the setter and his wife planned to give a daughter, but they only had sons
