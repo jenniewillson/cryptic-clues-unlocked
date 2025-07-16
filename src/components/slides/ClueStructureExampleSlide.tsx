@@ -17,13 +17,7 @@ const ClueStructureExampleSlide = () => {
       <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 border-2 border-orange-200 dark:border-orange-700 rounded-2xl p-12 w-full">
         <div className="text-center mb-12">
           <p className="text-5xl font-semibold text-foreground mb-8 leading-relaxed">
-            {currentStep >= 1 ? (
-              <>
-                "<span className="bg-red-200 dark:bg-red-800 px-2 py-1 rounded font-semibold">Confusing</span> <span className="bg-green-200 dark:bg-green-800 px-2 py-1 rounded font-semibold">parrot</span> for <span className="bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold">bird of prey</span> (6)"
-              </>
-            ) : (
-              "\"Confusing parrot for bird of prey (6)\""
-            )}
+            "Confusing parrot for <span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>bird of prey</span> (6)"
           </p>
         </div>
 
@@ -37,21 +31,25 @@ const ClueStructureExampleSlide = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/30 dark:to-pink-900/20 rounded-2xl p-8 border-2 border-red-300 dark:border-red-600 text-center">
-              <h4 className="text-3xl font-semibold text-foreground mb-4">Indicator</h4>
-              <p className="text-3xl text-red-700 dark:text-red-300 font-medium mb-3">"Confusing"</p>
-              <p className="text-xl text-muted-foreground">
-                Signals an anagram
-              </p>
-            </div>
+            {currentStep >= 2 && (
+              <div className="bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/30 dark:to-pink-900/20 rounded-2xl p-8 border-2 border-red-300 dark:border-red-600 text-center">
+                <h4 className="text-3xl font-semibold text-foreground mb-4">Indicator</h4>
+                <p className="text-3xl text-red-700 dark:text-red-300 font-medium mb-3">"Confusing"</p>
+                <p className="text-xl text-muted-foreground">
+                  Signals an anagram
+                </p>
+              </div>
+            )}
 
-            <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-8 border-2 border-green-300 dark:border-green-600 text-center">
-              <h4 className="text-3xl font-semibold text-foreground mb-4">Fodder</h4>
-              <p className="text-3xl text-green-700 dark:text-green-300 font-medium mb-3">"parrot"</p>
-              <p className="text-xl text-muted-foreground">
-                Letters to be rearranged
-              </p>
-            </div>
+            {currentStep >= 3 && (
+              <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-8 border-2 border-green-300 dark:border-green-600 text-center">
+                <h4 className="text-3xl font-semibold text-foreground mb-4">Fodder</h4>
+                <p className="text-3xl text-green-700 dark:text-green-300 font-medium mb-3">"parrot"</p>
+                <p className="text-xl text-muted-foreground">
+                  Letters to be rearranged
+                </p>
+              </div>
+            )}
           </div>
         )}
 
@@ -62,7 +60,7 @@ const ClueStructureExampleSlide = () => {
               className="text-3xl px-16 py-8 rounded-xl"
               size="lg"
             >
-              Break Down Clue
+              Show Definition
             </Button>
           )}
           
@@ -72,11 +70,31 @@ const ClueStructureExampleSlide = () => {
               className="text-2xl px-12 py-6 rounded-xl"
               size="lg"
             >
-              Reveal Answer
+              Show Indicator
             </Button>
           )}
           
           {currentStep === 2 && (
+            <Button 
+              onClick={nextStep}
+              className="text-2xl px-12 py-6 rounded-xl"
+              size="lg"
+            >
+              Show Fodder
+            </Button>
+          )}
+          
+          {currentStep === 3 && (
+            <Button 
+              onClick={nextStep}
+              className="text-2xl px-12 py-6 rounded-xl"
+              size="lg"
+            >
+              Reveal Answer
+            </Button>
+          )}
+          
+          {currentStep === 4 && (
             <div className="bg-gradient-to-r from-purple-100 to-indigo-100 dark:from-purple-900/30 dark:to-indigo-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600">
               <p className="text-4xl font-bold text-purple-700 dark:text-purple-300 mb-3">
                 RAPTOR

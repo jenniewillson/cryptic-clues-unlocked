@@ -24,6 +24,7 @@ import AnagramsIndicatorsSlide from './slides/AnagramsIndicatorsSlide';
 import AnagramsExampleSlide from './slides/AnagramsExampleSlide';
 import DoubleDefinitionsIntroSlide from './slides/DoubleDefinitionsIntroSlide';
 import DoubleDefinitionsExampleSlide from './slides/DoubleDefinitionsExampleSlide';
+import DoubleDefinitionsExample2Slide from './slides/DoubleDefinitionsExample2Slide';
 import AbbreviationsSlide from './slides/AbbreviationsSlide';
 import AbbreviationsMoreSlide from './slides/AbbreviationsMoreSlide';
 import CharadesIntroSlide from './slides/CharadesIntroSlide';
@@ -68,32 +69,33 @@ const slides = [
   { id: 14, component: AnagramsIndicatorsSlide, title: "Anagrams - Indicators" },
   { id: 15, component: DoubleDefinitionsIntroSlide, title: "Double Definitions - Introduction" },
   { id: 16, component: DoubleDefinitionsExampleSlide, title: "Double Definitions - Example" },
-  { id: 17, component: AbbreviationsSlide, title: "Abbreviations in Clues" },
-  { id: 18, component: AbbreviationsMoreSlide, title: "More Abbreviations" },
-  { id: 19, component: CharadesIntroSlide, title: "Charades - Introduction" },
-  { id: 20, component: CharadesExampleSlide, title: "Charades - Example" },
-  { id: 21, component: HiddenWordsIntroSlide, title: "Hidden Words - Introduction" },
-  { id: 22, component: HiddenWordsExampleSlide, title: "Hidden Words - Example" },
-  { id: 23, component: HomophonesIntroSlide, title: "Homophones - Introduction" },
-  { id: 24, component: HomophonesExampleSlide, title: "Homophones - Example" },
-  { id: 25, component: SpoonerismIntroSlide, title: "Spoonerisms - Introduction" },
-  { id: 26, component: SpoonerismExampleSlide, title: "Spoonerisms - Example" },
-  { id: 27, component: LetterSelectionsSlide, title: "Letter Selections" },
-  { id: 28, component: LetterSelectionsExampleSlide, title: "Letter Selections - Example" },
-  { id: 29, component: LastLettersExampleSlide, title: "Last Letters - Example" },
-  { id: 30, component: ReversalsSlide, title: "Reversals" },
-  { id: 31, component: ReversalsExampleSlide, title: "Reversals - Example" },
-  { id: 32, component: DeletionSubstitutionSlide, title: "Deletion/Substitution" },
-  { id: 33, component: DeletionSubstitutionExampleSlide, title: "Deletion/Substitution - Example" },
-  { id: 34, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" },
-  { id: 35, component: CrypticDefinitionsExampleSlide, title: "Cryptic Definitions - Example" },
-  { id: 36, component: ContainersIntroSlide, title: "Containers - Introduction" },
-  { id: 37, component: ContainersExampleSlide, title: "Containers - Example" },
-  { id: 38, component: DefinitionByExampleSlide, title: "Definition by Example" },
-  { id: 39, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
-  { id: 40, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" },
-  { id: 41, component: ImportantWordsSlide, title: "Every Word Matters!" },
-  { id: 42, component: LearningResourcesSlide, title: "Learning Resources" }
+  { id: 17, component: DoubleDefinitionsExample2Slide, title: "Double Definitions - Example 2" },
+  { id: 18, component: AbbreviationsSlide, title: "Abbreviations in Clues" },
+  { id: 19, component: AbbreviationsMoreSlide, title: "More Abbreviations" },
+  { id: 20, component: CharadesIntroSlide, title: "Charades - Introduction" },
+  { id: 21, component: CharadesExampleSlide, title: "Charades - Example" },
+  { id: 22, component: HiddenWordsIntroSlide, title: "Hidden Words - Introduction" },
+  { id: 23, component: HiddenWordsExampleSlide, title: "Hidden Words - Example" },
+  { id: 24, component: HomophonesIntroSlide, title: "Homophones - Introduction" },
+  { id: 25, component: HomophonesExampleSlide, title: "Homophones - Example" },
+  { id: 26, component: SpoonerismIntroSlide, title: "Spoonerisms - Introduction" },
+  { id: 27, component: SpoonerismExampleSlide, title: "Spoonerisms - Example" },
+  { id: 28, component: LetterSelectionsSlide, title: "Letter Selections" },
+  { id: 29, component: LetterSelectionsExampleSlide, title: "Letter Selections - Example" },
+  { id: 30, component: LastLettersExampleSlide, title: "Last Letters - Example" },
+  { id: 31, component: ReversalsSlide, title: "Reversals" },
+  { id: 32, component: ReversalsExampleSlide, title: "Reversals - Example" },
+  { id: 33, component: DeletionSubstitutionSlide, title: "Deletion/Substitution" },
+  { id: 34, component: DeletionSubstitutionExampleSlide, title: "Deletion/Substitution - Example" },
+  { id: 35, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" },
+  { id: 36, component: CrypticDefinitionsExampleSlide, title: "Cryptic Definitions - Example" },
+  { id: 37, component: ContainersIntroSlide, title: "Containers - Introduction" },
+  { id: 38, component: ContainersExampleSlide, title: "Containers - Example" },
+  { id: 39, component: DefinitionByExampleSlide, title: "Definition by Example" },
+  { id: 40, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
+  { id: 41, component: CombinationCluesExampleSlide, title: "Combination Clues - Examples" },
+  { id: 42, component: ImportantWordsSlide, title: "Every Word Matters!" },
+  { id: 43, component: LearningResourcesSlide, title: "Learning Resources" }
 ];
 
 const Presentation = () => {
@@ -145,7 +147,19 @@ const Presentation = () => {
       </div>
 
       {/* Main content - 16:9 optimized */}
-      <div className="flex-1 bg-card overflow-hidden">
+      <div className="flex-1 bg-card overflow-hidden relative">
+        {/* Left navigation area */}
+        <div 
+          className="absolute left-0 top-0 w-1/4 h-full z-10 cursor-pointer"
+          onClick={prevSlide}
+        ></div>
+        
+        {/* Right navigation area */}
+        <div 
+          className="absolute right-0 top-0 w-1/4 h-full z-10 cursor-pointer"
+          onClick={nextSlide}
+        ></div>
+        
         <div className="w-full h-full flex items-center justify-center">
           <CurrentSlideComponent />
         </div>

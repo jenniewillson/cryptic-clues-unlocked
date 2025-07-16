@@ -75,20 +75,6 @@ const AbbreviationsSlide = () => {
           </div>
         </div>
 
-        {/* Reference */}
-        <div className="bg-gradient-to-r from-cyan-100 to-blue-100 dark:from-cyan-900/30 dark:to-blue-900/20 rounded-2xl p-5 border-2 border-cyan-300 dark:border-cyan-600 text-center">
-          <div className="flex items-center justify-center gap-3 mb-2">
-            <Globe className="w-5 h-5 text-cyan-600" />
-            <Book className="w-5 h-5 text-cyan-600" />
-          </div>
-          <h3 className="text-lg font-semibold text-foreground mb-2">Find More Abbreviations</h3>
-          <p className="text-base text-muted-foreground mb-2">
-            Lists of abbreviations can be found in dictionaries & on the web
-          </p>
-          <p className="text-base font-semibold text-cyan-700 dark:text-cyan-300">
-            www.crosswordunclued.com
-          </p>
-        </div>
       </div>
     </div>
   );

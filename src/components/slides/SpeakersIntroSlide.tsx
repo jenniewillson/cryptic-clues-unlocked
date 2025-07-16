@@ -2,7 +2,7 @@ import React from 'react';
 
 const SpeakersIntroSlide = () => {
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center p-8 bg-gradient-to-br from-background to-muted/20">
+    <div className="w-full h-full flex flex-col justify-center items-center p-8 bg-gradient-to-br from-purple-50 via-blue-50 to-cyan-50 dark:from-purple-900/20 dark:via-blue-900/20 dark:to-cyan-900/20">
       <div className="max-w-5xl mx-auto text-center space-y-10">
         <h1 className="text-6xl font-bold text-foreground mb-10">Meet Your Presenters</h1>
         
