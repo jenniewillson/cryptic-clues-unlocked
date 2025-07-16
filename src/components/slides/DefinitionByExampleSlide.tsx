@@ -20,13 +20,7 @@ const DefinitionByExampleSlide = () => {
 
         <div className="text-center mb-10">
           <p className="text-4xl font-semibold text-foreground mb-6 leading-relaxed">
-            {currentStep >= 1 ? (
-              <>
-                "More <span className="bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold">for one</span> <span className="bg-green-200 dark:bg-green-800 px-2 py-1 rounded font-semibold">to mash</span> <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">up</span> (6)"
-              </>
-            ) : (
-              "\"More for one to mash up (6)\""
-            )}
+            "<span className={currentStep >= 1 ? "bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold" : ""}>More for one</span> <span className={currentStep >= 1 ? "bg-green-200 dark:bg-green-800 px-2 py-1 rounded font-semibold" : ""}>to mash</span> <span className={currentStep >= 1 ? "bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold" : ""}>up</span> (6)"
           </p>
         </div>
 

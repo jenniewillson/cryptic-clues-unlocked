@@ -42,16 +42,17 @@ const ContainersIntroSlide = () => {
           </div>
 
           <div className="mt-8 text-center">
-            <div className="bg-gradient-to-r from-lime-100 to-green-100 dark:from-lime-900/50 dark:to-green-900/50 rounded-xl p-6 border-2 border-lime-300 dark:border-lime-600">
-              <h4 className="text-xl font-semibold text-lime-800 dark:text-lime-300 mb-3">Visual Example</h4>
-              <p className="text-lg text-lime-700 dark:text-lime-400 mb-2">
-                Container word: <span className="font-mono bg-lime-200 dark:bg-lime-800 px-2 py-1 rounded">PO_O</span>
-              </p>
-              <p className="text-lg text-lime-700 dark:text-lime-400 mb-2">
-                Insert: <span className="font-mono bg-green-200 dark:bg-green-800 px-2 py-1 rounded">TAT</span>
-              </p>
-              <p className="text-lg text-lime-700 dark:text-lime-400">
-                Result: <span className="font-mono bg-emerald-200 dark:bg-emerald-800 px-2 py-1 rounded font-bold">POTATO</span>
+            <div className="bg-gradient-to-r from-purple-100 to-violet-100 dark:from-purple-900/50 dark:to-violet-900/50 rounded-xl p-6 border-2 border-purple-300 dark:border-purple-600">
+              <h4 className="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-3">Visual Example</h4>
+              <div className="flex items-center justify-center space-x-4 text-lg">
+                <span className="font-mono bg-purple-200 dark:bg-purple-800 px-3 py-2 rounded text-purple-800 dark:text-purple-200 font-bold">POO</span>
+                <span className="text-purple-700 dark:text-purple-300">contains</span>
+                <span className="font-mono bg-amber-200 dark:bg-amber-800 px-3 py-2 rounded text-amber-800 dark:text-amber-200 font-bold">TAT</span>
+                <span className="text-purple-700 dark:text-purple-300">=</span>
+                <span className="font-mono bg-emerald-200 dark:bg-emerald-800 px-3 py-2 rounded text-emerald-800 dark:text-emerald-200 font-bold">POTATO</span>
+              </div>
+              <p className="text-sm text-purple-600 dark:text-purple-400 mt-3">
+                POO splits to hold TAT inside: P-[TAT]-OO
               </p>
             </div>
           </div>

@@ -19,20 +19,10 @@ const CombinationCluesIntroSlide = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 max-w-3xl mx-auto">
-          <div className="bg-card p-4 rounded-lg border border-border">
-            <h3 className="text-lg font-semibold text-foreground mb-2">Common Combinations</h3>
-            <ul className="text-sm text-muted-foreground space-y-1">
-              <li>• Anagram + Hidden Word</li>
-              <li>• Charade + Reversal</li>
-              <li>• Homophone + Letter Selection</li>
-              <li>• Multiple techniques in sequence</li>
-            </ul>
-          </div>
-          
-          <div className="bg-card p-4 rounded-lg border border-border">
-            <h3 className="text-lg font-semibold text-foreground mb-2">Solving Strategy</h3>
-            <ul className="text-sm text-muted-foreground space-y-1">
+        <div className="max-w-2xl mx-auto mt-8">
+          <div className="bg-card p-6 rounded-lg border border-border">
+            <h3 className="text-xl font-semibold text-foreground mb-4 text-center">Solving Strategy</h3>
+            <ul className="text-lg text-muted-foreground space-y-3">
               <li>• Look for multiple indicators</li>
               <li>• Break down the wordplay step by step</li>
               <li>• Consider each part separately</li>

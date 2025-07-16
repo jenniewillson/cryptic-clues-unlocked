@@ -34,7 +34,7 @@ const CrypticDefinitionsSlide = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-6 border-2 border-green-300 dark:border-green-600 text-center">
+            <div className="bg-gradient-to-br from-purple-100 to-violet-100 dark:from-purple-900/30 dark:to-violet-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-4">⚡ No Wordplay</h4>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Unlike other cryptic clues, there's no separate construction mechanism.

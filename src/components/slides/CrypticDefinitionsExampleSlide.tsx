@@ -19,17 +19,11 @@ const CrypticDefinitionsExampleSlide = () => {
         <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 border-2 border-cyan-200 dark:border-cyan-700 rounded-2xl p-8">
           <div className="text-center mb-8">
             <p className="text-4xl font-semibold text-foreground mb-6 leading-relaxed">
-              {currentStep >= 1 ? (
-                <>
-                  "<span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">A good place to go if you're looking for trouble!</span> (10)"
-                </>
-              ) : (
-                "\"A good place to go if you're looking for trouble! (10)\""
-              )}
+              "<span className={currentStep >= 1 ? "bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold" : ""}>A good place to go if you're looking for trouble!</span> (10)"
             </p>
           </div>
 
-          {currentStep === 1 && (
+          {currentStep >= 1 && (
             <div className="grid grid-cols-1 gap-8 mb-8">
               <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-6 border-2 border-amber-300 dark:border-amber-600 text-center">
                 <h4 className="text-2xl font-semibold text-foreground mb-3">Cryptic Definition</h4>
@@ -39,7 +33,7 @@ const CrypticDefinitionsExampleSlide = () => {
             </div>
           )}
           
-          {currentStep === 2 && (
+          {currentStep >= 2 && (
             <div className="bg-gradient-to-r from-emerald-100 to-green-100 dark:from-emerald-900/30 dark:to-green-900/20 rounded-2xl p-4 border-2 border-emerald-300 dark:border-emerald-600 text-center">
               <p className="text-3xl font-bold text-emerald-700 dark:text-emerald-300 mb-2">
                 WATCHTOWER
@@ -50,44 +44,6 @@ const CrypticDefinitionsExampleSlide = () => {
             </div>
           )}
         </div>
-        
-        {/* Example 2: Spelling? */}
-        {currentStep >= 3 && (
-          <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-2 border-purple-200 dark:border-purple-700 rounded-2xl p-8">
-            <div className="text-center mb-8">
-              <p className="text-4xl font-semibold text-foreground mb-6 leading-relaxed">
-                {currentStep >= 4 ? (
-                  <>
-                    "<span className="bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold">Spelling?</span> (10)"
-                  </>
-                ) : (
-                  "\"Spelling? (10)\""
-                )}
-              </p>
-            </div>
-
-            {currentStep === 4 && (
-              <div className="grid grid-cols-1 gap-8 mb-8">
-                <div className="bg-gradient-to-br from-purple-100 to-violet-100 dark:from-purple-900/30 dark:to-violet-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600 text-center">
-                  <h4 className="text-2xl font-semibold text-foreground mb-3">Cryptic Definition</h4>
-                  <p className="text-2xl text-purple-700 dark:text-purple-300 font-medium mb-3">"Spelling?"</p>
-                  <p className="text-lg text-muted-foreground">What else could "spelling" mean besides the arrangement of letters? Think about magical practices...</p>
-                </div>
-              </div>
-            )}
-            
-            {currentStep === 5 && (
-              <div className="bg-gradient-to-r from-emerald-100 to-green-100 dark:from-emerald-900/30 dark:to-green-900/20 rounded-2xl p-4 border-2 border-emerald-300 dark:border-emerald-600 text-center">
-                <p className="text-3xl font-bold text-emerald-700 dark:text-emerald-300 mb-2">
-                  WITCHCRAFT
-                </p>
-                <p className="text-xl text-muted-foreground">
-                  "Spelling" = casting spells = WITCHCRAFT!
-                </p>
-              </div>
-            )}
-          </div>
-        )}
       </div>
 
       <div className="text-center mt-8">
@@ -97,41 +53,11 @@ const CrypticDefinitionsExampleSlide = () => {
             className="text-2xl px-12 py-6 rounded-xl"
             size="lg"
           >
-            Show First Example
+            Show Definition
           </Button>
         )}
         
         {currentStep === 1 && (
-          <Button 
-            onClick={nextStep}
-            className="text-2xl px-12 py-6 rounded-xl"
-            size="lg"
-          >
-            Show Solution
-          </Button>
-        )}
-        
-        {currentStep === 2 && (
-          <Button 
-            onClick={nextStep}
-            className="text-2xl px-12 py-6 rounded-xl"
-            size="lg"
-          >
-            Show Second Example
-          </Button>
-        )}
-        
-        {currentStep === 3 && (
-          <Button 
-            onClick={nextStep}
-            className="text-2xl px-12 py-6 rounded-xl"
-            size="lg"
-          >
-            Think About It
-          </Button>
-        )}
-        
-        {currentStep === 4 && (
           <Button 
             onClick={nextStep}
             className="text-2xl px-12 py-6 rounded-xl"
