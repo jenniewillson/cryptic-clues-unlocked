@@ -36,7 +36,6 @@ const StructureBasicsSlide = () => {
             <ul className="space-y-2 text-lg text-emerald-700 dark:text-emerald-400">
               <li>• <strong>15×15 grid</strong> - British standard</li>
               <li>• <strong>Usually 28-32 clues</strong> total</li>
-              <li>• <strong>13-16 across</strong>, 13-16 down</li>
               <li>• <strong>Each answer 3+ letters</strong> long</li>
             </ul>
           </div>

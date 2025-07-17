@@ -17,7 +17,7 @@ const DoubleDefinitionsExample2Slide = () => {
       <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-2 border-purple-200 dark:border-purple-700 rounded-2xl p-8 w-full">
         <div className="text-center mb-8">
           <p className="text-4xl font-semibold text-foreground mb-6 leading-relaxed">
-            "Film <span className={currentStep >= 1 ? "bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold" : ""}>hen</span>? (5)"
+            "<span className={currentStep >= 1 ? "bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold" : ""}>Film</span> <span className={currentStep >= 2 ? "bg-orange-200 dark:bg-orange-800 px-2 py-1 rounded font-semibold" : ""}>hen</span>? (5)"
           </p>
         </div>
 

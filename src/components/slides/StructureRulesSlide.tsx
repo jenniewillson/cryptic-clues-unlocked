@@ -7,24 +7,27 @@ const StructureRulesSlide = () => {
         Grid Construction Rules
       </h1>
       
-      <div className="space-y-6 w-full max-w-5xl">
-        
-        <div className="bg-gradient-to-br from-orange-100 to-red-100 dark:from-orange-900/30 dark:to-red-900/20 rounded-2xl p-8 border-2 border-orange-300 dark:border-orange-600 shadow-lg">
-          <h4 className="text-3xl font-semibold text-orange-800 dark:text-orange-300 mb-6">Maximum Unchecked Letters</h4>
-          <ul className="space-y-3 text-xl text-orange-700 dark:text-orange-400">
-            <li>• No more than <strong>two consecutive</strong> unchecked letters</li>
-            <li>• No more than <strong>half the word</strong> should be unchecked</li>
-            <li>• This ensures fair play and maintains solvability</li>
-          </ul>
-        </div>
-
-        <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-8 border-2 border-blue-300 dark:border-blue-600 shadow-lg">
-          <h4 className="text-3xl font-semibold text-blue-800 dark:text-blue-300 mb-6">Additional Guidelines</h4>
-          <ul className="space-y-3 text-xl text-blue-700 dark:text-blue-400">
-            <li>• No two-letter words allowed</li>
-            <li>• Grid should be fully connected (no isolated sections)</li>
-            <li>• About 1/4 to 1/3 of the grid is typically black squares</li>
-          </ul>
+      <div className="bg-gradient-to-br from-slate-100 to-blue-100 dark:from-slate-900/30 dark:to-blue-900/20 rounded-3xl p-12 border-2 border-slate-300 dark:border-slate-600 shadow-lg w-full max-w-5xl">
+        <div className="space-y-8 text-center">
+          <div className="space-y-4">
+            <p className="text-3xl text-slate-800 dark:text-slate-300">
+              • No more than <strong>two consecutive</strong> unchecked letters
+            </p>
+            <p className="text-3xl text-slate-800 dark:text-slate-300">
+              • No more than <strong>half the word</strong> should be unchecked
+            </p>
+            <p className="text-3xl text-slate-800 dark:text-slate-300">
+              • No two-letter words allowed
+            </p>
+            <p className="text-3xl text-slate-800 dark:text-slate-300">
+              • Grid should be fully connected (no isolated sections)
+            </p>
+          </div>
+          <div className="bg-primary/10 p-6 rounded-lg border border-primary/20 mt-8">
+            <p className="text-2xl font-semibold text-primary">
+              These rules ensure fair play and maintain solvability
+            </p>
+          </div>
         </div>
       </div>
     </div>

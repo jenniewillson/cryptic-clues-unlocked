@@ -4,7 +4,7 @@ const AnagramsIntroSlide = () => {
   return (
     <div className="h-screen flex flex-col justify-center items-center max-w-6xl mx-auto px-8">
       <h1 className="text-7xl font-bold text-center text-foreground mb-16 bg-gradient-to-r from-red-600 via-orange-600 to-yellow-600 bg-clip-text text-transparent">
-        Anagrams: Rearranging Letters
+        Anagrams
       </h1>
       
       <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-2 border-blue-200 dark:border-blue-700 rounded-2xl p-12 w-full">

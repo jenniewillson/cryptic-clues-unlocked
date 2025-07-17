@@ -17,7 +17,10 @@ const ClueStructureExampleSlide = () => {
       <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 border-2 border-orange-200 dark:border-orange-700 rounded-2xl p-12 w-full">
         <div className="text-center mb-12">
           <p className="text-5xl font-semibold text-foreground mb-8 leading-relaxed">
-            "Confusing parrot for <span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>bird of prey</span> (6)"
+            "
+            <span className={currentStep >= 2 ? "bg-red-200 dark:bg-red-800 px-2 py-1 rounded font-semibold" : ""}>Confusing</span> 
+            <span className={currentStep >= 3 ? "bg-green-200 dark:bg-green-800 px-2 py-1 rounded font-semibold" : ""}>parrot</span> 
+            for <span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>bird of prey</span> (6)"
           </p>
         </div>
 
