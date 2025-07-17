@@ -96,7 +96,7 @@ const HiddenWordsExampleSlide = () => {
                 SEVERE
               </p>
               <p className="text-3xl text-muted-foreground">
-                Hidden in "peak<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">s e</span>v<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">ere</span>st" = SEVERE
+                Hidden in Arduous peaks Everest included: peak<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">s</span> <span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">E</span><span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">v</span><span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">e</span><span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">r</span><span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">e</span>st = SEVERE
               </p>
             </div>
           )}
