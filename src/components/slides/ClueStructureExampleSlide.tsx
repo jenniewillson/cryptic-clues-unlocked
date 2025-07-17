@@ -18,8 +18,10 @@ const ClueStructureExampleSlide = () => {
         <div className="text-center mb-12">
           <p className="text-5xl font-semibold text-foreground mb-8 leading-relaxed">
             "
-            <span className={currentStep >= 2 ? "bg-red-200 dark:bg-red-800 px-2 py-1 rounded font-semibold" : ""}>Confusing</span> 
-            <span className={currentStep >= 3 ? "bg-green-200 dark:bg-green-800 px-2 py-1 rounded font-semibold" : ""}>parrot</span> 
+            <span className={currentStep >= 2 ? "bg-red-200 dark:bg-red-800 px-2 py-1 rounded font-semibold" : ""}>Confusing</span>
+            {" "}
+            <span className={currentStep >= 3 ? "bg-green-200 dark:bg-green-800 px-2 py-1 rounded font-semibold" : ""}>parrot</span>
+            {" "}
             for <span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>bird of prey</span> (6)"
           </p>
         </div>

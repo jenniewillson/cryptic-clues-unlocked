@@ -17,32 +17,35 @@ const HiddenWordsExampleSlide = () => {
       <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 border-2 border-cyan-200 dark:border-cyan-700 rounded-2xl p-10 w-full">
         <div className="text-center mb-10">
           <p className="text-4xl font-semibold text-foreground mb-6 leading-relaxed">
-            {currentStep >= 1 ? (
-              <>
-                "<span className="bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold">Arduous</span> <span className="bg-cyan-200 dark:bg-cyan-800 px-2 py-1 rounded font-semibold">peaks Everest included</span> (6)"
-              </>
-            ) : (
-              "\"Arduous peaks Everest included (6)\""
-            )}
+            "
+            <span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>Arduous</span>
+            {" "}
+            <span className={currentStep >= 2 ? "bg-cyan-200 dark:bg-cyan-800 px-2 py-1 rounded font-semibold" : ""}>peaks Everest</span>
+            {" "}
+            <span className={currentStep >= 3 ? "bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold" : ""}>included</span> (6)"
           </p>
         </div>
 
-        {currentStep === 1 && (
+        {currentStep >= 1 && (
           <div className="grid grid-cols-3 gap-8 mb-10">
             <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-3">Definition</h4>
               <p className="text-2xl text-blue-700 dark:text-blue-300 font-medium">"Arduous"</p>
             </div>
 
-            <div className="bg-gradient-to-br from-cyan-100 to-blue-100 dark:from-cyan-900/30 dark:to-blue-900/20 rounded-2xl p-6 border-2 border-cyan-300 dark:border-cyan-600 text-center">
-              <h4 className="text-2xl font-semibold text-foreground mb-3">Indicator</h4>
-              <p className="text-2xl text-cyan-700 dark:text-cyan-300 font-medium">"included"</p>
-            </div>
+            {currentStep >= 2 && (
+              <div className="bg-gradient-to-br from-cyan-100 to-blue-100 dark:from-cyan-900/30 dark:to-blue-900/20 rounded-2xl p-6 border-2 border-cyan-300 dark:border-cyan-600 text-center">
+                <h4 className="text-2xl font-semibold text-foreground mb-3">Container</h4>
+                <p className="text-2xl text-cyan-700 dark:text-cyan-300 font-medium">"peaks Everest"</p>
+              </div>
+            )}
 
-            <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-6 border-2 border-amber-300 dark:border-amber-600 text-center">
-              <h4 className="text-2xl font-semibold text-foreground mb-3">Container</h4>
-              <p className="text-2xl text-amber-700 dark:text-amber-300 font-medium">"peaks Everest"</p>
-            </div>
+            {currentStep >= 3 && (
+              <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-6 border-2 border-amber-300 dark:border-amber-600 text-center">
+                <h4 className="text-2xl font-semibold text-foreground mb-3">Indicator</h4>
+                <p className="text-2xl text-amber-700 dark:text-amber-300 font-medium">"included"</p>
+              </div>
+            )}
           </div>
         )}
 
@@ -53,7 +56,7 @@ const HiddenWordsExampleSlide = () => {
               className="text-2xl px-12 py-6 rounded-xl"
               size="lg"
             >
-              Break Down Clue
+              Show Definition
             </Button>
           )}
           
@@ -63,17 +66,37 @@ const HiddenWordsExampleSlide = () => {
               className="text-2xl px-12 py-6 rounded-xl"
               size="lg"
             >
-              Show Solution
+              Show Container
             </Button>
           )}
           
           {currentStep === 2 && (
+            <Button 
+              onClick={nextStep}
+              className="text-2xl px-12 py-6 rounded-xl"
+              size="lg"
+            >
+              Show Indicator
+            </Button>
+          )}
+          
+          {currentStep === 3 && (
+            <Button 
+              onClick={nextStep}
+              className="text-2xl px-12 py-6 rounded-xl"
+              size="lg"
+            >
+              Show Solution
+            </Button>
+          )}
+          
+          {currentStep === 4 && (
             <div className="bg-gradient-to-r from-emerald-100 to-green-100 dark:from-emerald-900/30 dark:to-green-900/20 rounded-2xl p-6 border-2 border-emerald-300 dark:border-emerald-600">
               <p className="text-4xl font-bold text-emerald-700 dark:text-emerald-300 mb-3">
                 SEVERE
               </p>
               <p className="text-3xl text-muted-foreground">
-                Hidden in "peak<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">S E</span>v<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">ERE</span>st" = SEVERE
+                Hidden in "peak<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">s e</span>v<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">ere</span>st" = SEVERE
               </p>
             </div>
           )}
