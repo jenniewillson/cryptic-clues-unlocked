@@ -22,7 +22,7 @@ const CombinationCluesExampleSlide = () => {
         </div>
 
         {currentStep >= 1 && (
-          <div className="grid grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-3 gap-8 mb-12">
             <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-3">Definition</h4>
               <p className="text-2xl text-blue-700 dark:text-blue-300 font-medium">"wood"</p>
@@ -39,13 +39,6 @@ const CombinationCluesExampleSlide = () => {
               <div className="bg-gradient-to-br from-orange-100 to-yellow-100 dark:from-orange-900/30 dark:to-yellow-900/20 rounded-2xl p-6 border-2 border-orange-300 dark:border-orange-600 text-center">
                 <h4 className="text-2xl font-semibold text-foreground mb-3">First Letters</h4>
                 <p className="text-2xl text-orange-700 dark:text-orange-300 font-medium">"Musk's head" = M</p>
-              </div>
-            )}
-
-            {currentStep >= 4 && (
-              <div className="bg-gradient-to-br from-purple-100 to-violet-100 dark:from-purple-900/30 dark:to-violet-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600 text-center">
-                <h4 className="text-2xl font-semibold text-foreground mb-3">Charades</h4>
-                <p className="text-2xl text-purple-700 dark:text-purple-300 font-medium">EL + M</p>
               </div>
             )}
           </div>
@@ -88,21 +81,11 @@ const CombinationCluesExampleSlide = () => {
               className="text-2xl px-12 py-6 rounded-xl"
               size="lg"
             >
-              Show Charades
-            </Button>
-          )}
-
-          {currentStep === 4 && (
-            <Button 
-              onClick={nextStep}
-              className="text-2xl px-12 py-6 rounded-xl"
-              size="lg"
-            >
               Show Solution
             </Button>
           )}
           
-          {currentStep === 5 && (
+          {currentStep === 4 && (
             <div className="bg-gradient-to-r from-emerald-100 to-green-100 dark:from-emerald-900/30 dark:to-green-900/20 rounded-2xl p-6 border-2 border-emerald-300 dark:border-emerald-600">
               <p className="text-4xl font-bold text-emerald-700 dark:text-emerald-300 mb-3">
                 ELM
