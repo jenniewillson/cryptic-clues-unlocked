@@ -10,7 +10,7 @@ const ProgressingSlide = () => {
         <div className="space-y-6">
           <h2 className="text-3xl font-bold text-center text-primary mb-6">Progressing...</h2>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="bg-card p-8 rounded-lg border">
               <h3 className="text-xl font-semibold text-foreground mb-4">Times Quick Cryptic</h3>
               <div className="space-y-2 text-muted-foreground">
@@ -28,6 +28,16 @@ const ProgressingSlide = () => {
                 <p>• <strong>Aim:</strong> Easier than main Guardian cryptic</p>
                 <p>• <strong>Perfect for:</strong> Weekend practice</p>
                 <p>• <strong>Style:</strong> Guardian's accessible approach</p>
+              </div>
+            </div>
+            
+            <div className="bg-card p-8 rounded-lg border">
+              <h3 className="text-xl font-semibold text-foreground mb-4">Everyman (Observer)</h3>
+              <div className="space-y-2 text-muted-foreground">
+                <p>• <strong>When:</strong> Sundays only</p>
+                <p>• <strong>Setter:</strong> Consistent setter</p>
+                <p>• <strong>Style:</strong> Reasonably straightforward clues</p>
+                <p>• <strong>Good for:</strong> Building cryptic confidence</p>
               </div>
             </div>
           </div>
