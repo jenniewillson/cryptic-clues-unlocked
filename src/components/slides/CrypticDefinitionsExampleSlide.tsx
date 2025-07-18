@@ -27,7 +27,6 @@ const CrypticDefinitionsExampleSlide = () => {
             <div className="grid grid-cols-1 gap-8 mb-8">
               <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-6 border-2 border-amber-300 dark:border-amber-600 text-center">
                 <h4 className="text-2xl font-semibold text-foreground mb-3">Cryptic Definition</h4>
-                <p className="text-2xl text-amber-700 dark:text-amber-300 font-medium mb-3">"A good place to go if you're looking for trouble!"</p>
                 <p className="text-lg text-muted-foreground">Think literally about where you would look for trouble - what kind of building would be used to "watch" or "look for" trouble?</p>
               </div>
             </div>

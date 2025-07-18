@@ -17,7 +17,7 @@ const ContainersExampleSlide = () => {
       <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 border-2 border-cyan-200 dark:border-cyan-700 rounded-2xl p-12 w-full">
         <div className="text-center mb-12">
           <p className="text-5xl font-semibold text-foreground mb-8 leading-relaxed">
-            "<span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>One</span> taken in by <span className={currentStep >= 2 ? "bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold" : ""}>unacceptable</span> <span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>idea</span> (6)"
+            "<span className={currentStep >= 3 ? "bg-cyan-200 dark:bg-cyan-800 px-2 py-1 rounded font-semibold" : ""}>One</span> taken in by <span className={currentStep >= 2 ? "bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold" : ""}>unacceptable</span> <span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>idea</span> (6)"
           </p>
         </div>
 

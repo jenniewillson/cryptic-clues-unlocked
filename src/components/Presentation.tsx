@@ -43,7 +43,7 @@ import DeletionSubstitutionSlide from './slides/DeletionSubstitutionSlide';
 import DeletionSubstitutionExampleSlide from './slides/DeletionSubstitutionExampleSlide';
 import CrypticDefinitionsSlide from './slides/CrypticDefinitionsSlide';
 import CrypticDefinitionsExampleSlide from './slides/CrypticDefinitionsExampleSlide';
-import CombinationCluesIntroSlide from './slides/CombinationCluesIntroSlide';
+
 import CombinationCluesExampleSlide from './slides/CombinationCluesExampleSlide';
 import CombinationCluesExample2Slide from './slides/CombinationCluesExample2Slide';
 import ImportantWordsSlide from './slides/ImportantWordsSlide';
@@ -93,11 +93,10 @@ const slides = [
   { id: 37, component: ContainersIntroSlide, title: "Containers - Introduction" },
   { id: 38, component: ContainersExampleSlide, title: "Containers - Example" },
   { id: 39, component: DefinitionByExampleSlide, title: "Definition by Example" },
-  { id: 40, component: CombinationCluesIntroSlide, title: "Combination Clues - Introduction" },
-  { id: 41, component: CombinationCluesExampleSlide, title: "Combination Clues - Example 1" },
-  { id: 42, component: CombinationCluesExample2Slide, title: "Combination Clues - Example 2" },
-  { id: 43, component: ImportantWordsSlide, title: "Every Word Matters!" },
-  { id: 44, component: LearningResourcesSlide, title: "Learning Resources" }
+  { id: 40, component: CombinationCluesExampleSlide, title: "Combination Clues - Example 1" },
+  { id: 41, component: CombinationCluesExample2Slide, title: "Combination Clues - Example 2" },
+  { id: 42, component: ImportantWordsSlide, title: "Every Word Matters!" },
+  { id: 43, component: LearningResourcesSlide, title: "Learning Resources" }
 ];
 
 const Presentation = () => {

@@ -41,21 +41,6 @@ const ContainersIntroSlide = () => {
             </div>
           </div>
 
-          <div className="mt-8 text-center">
-            <div className="bg-gradient-to-r from-purple-100 to-violet-100 dark:from-purple-900/50 dark:to-violet-900/50 rounded-xl p-6 border-2 border-purple-300 dark:border-purple-600">
-              <h4 className="text-xl font-semibold text-purple-800 dark:text-purple-300 mb-3">Visual Example</h4>
-              <div className="flex items-center justify-center space-x-4 text-lg">
-                <span className="font-mono bg-purple-200 dark:bg-purple-800 px-3 py-2 rounded text-purple-800 dark:text-purple-200 font-bold">POO</span>
-                <span className="text-purple-700 dark:text-purple-300">contains</span>
-                <span className="font-mono bg-amber-200 dark:bg-amber-800 px-3 py-2 rounded text-amber-800 dark:text-amber-200 font-bold">TAT</span>
-                <span className="text-purple-700 dark:text-purple-300">=</span>
-                <span className="font-mono bg-emerald-200 dark:bg-emerald-800 px-3 py-2 rounded text-emerald-800 dark:text-emerald-200 font-bold">POTATO</span>
-              </div>
-              <p className="text-sm text-purple-600 dark:text-purple-400 mt-3">
-                POO splits to hold TAT inside: P-[TAT]-OO
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
