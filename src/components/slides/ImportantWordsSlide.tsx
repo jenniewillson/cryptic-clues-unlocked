@@ -24,28 +24,24 @@ const ImportantWordsSlide = () => {
         {currentStep >= 1 && currentStep < 5 && (
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center">
-              <h4 className="text-2xl font-semibold text-foreground mb-3">Definition</h4>
-              <p className="text-2xl text-blue-700 dark:text-blue-300 font-medium">"Threat"</p>
+              <p className="text-3xl font-semibold text-foreground">Definition: <span className="text-blue-700 dark:text-blue-300 font-medium">"Threat"</span></p>
             </div>
 
             {currentStep >= 2 && (
               <div className="bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/30 dark:to-pink-900/20 rounded-2xl p-6 border-2 border-red-300 dark:border-red-600 text-center">
-                <h4 className="text-2xl font-semibold text-foreground mb-3">Container Indicator</h4>
-                <p className="text-2xl text-red-700 dark:text-red-300 font-medium">"circumvented"</p>
+                <p className="text-3xl font-semibold text-foreground">Container Indicator: <span className="text-red-700 dark:text-red-300 font-medium">"circumvented"</span></p>
               </div>
             )}
 
             {currentStep >= 3 && (
               <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-6 border-2 border-green-300 dark:border-green-600 text-center">
-                <h4 className="text-2xl font-semibold text-foreground mb-3">Chess Pieces</h4>
-                <p className="text-2xl text-green-700 dark:text-green-300 font-medium">"rook" = R, "king" = K</p>
+                <p className="text-3xl font-semibold text-foreground">Chess Pieces: <span className="text-green-700 dark:text-green-300 font-medium">"rook" = R, "king" = K</span></p>
               </div>
             )}
 
             {currentStep >= 4 && (
               <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-6 border-2 border-amber-300 dark:border-amber-600 text-center">
-                <h4 className="text-2xl font-semibold text-foreground mb-3">Key Word!</h4>
-                <p className="text-2xl text-amber-700 dark:text-amber-300 font-medium">"IS"</p>
+                <p className="text-3xl font-semibold text-foreground">Key Word: <span className="text-amber-700 dark:text-amber-300 font-medium">"IS"</span></p>
               </div>
             )}
           </div>
@@ -124,10 +120,10 @@ const ImportantWordsSlide = () => {
         {currentStep === 5 && (
           <div className="mt-10 bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/20 rounded-2xl p-8 border-2 border-blue-300 dark:border-blue-600">
             <h4 className="text-3xl font-semibold text-foreground mb-6 text-center">
-              About Link Words
+              NOTE: Link Words
             </h4>
             <p className="text-xl text-muted-foreground leading-relaxed text-center">
-              You will see link words in clues - more in some puzzles than others, but they should be really clearly link words (ideally quite short in most cases) that make sense and do not affect the cryptic reading of the clue.
+              This clue does not contain a link word, but that's why it's a bit of a sneaky one! 'is' is a valid and commonly used word to link Wordplay and Definition - but just remember, not everything that looks like a link word, is actually a link word!
             </p>
           </div>
         )}
