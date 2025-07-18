@@ -99,7 +99,7 @@ const LetterSelectionsExampleSlide = () => {
                 TABASCO
               </p>
               <p className="text-3xl text-muted-foreground">
-                Middle letters: ox<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">T</span>ail + keb<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">A</span>bs + Ains<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">B</span>ley + conco<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">A</span>cts + <span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">S</span>auce + <span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">C</span>entres + <span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">O</span>xtail = TABASCO
+                Middle letters: ox<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">T</span><span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">A</span>il + ke<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">B</span><span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">A</span>bs + Ain<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">S</span>ley + con<span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">C</span><span className="bg-emerald-200 dark:bg-emerald-700 px-1 rounded font-bold">O</span>cts = TABASCO
               </p>
             </div>
           )}
