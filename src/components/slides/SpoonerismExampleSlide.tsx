@@ -30,7 +30,7 @@ const SpoonerismExampleSlide = () => {
           </p>
         </div>
 
-        {currentStep === 1 && (
+        {currentStep === 1 && currentStep < 5 && (
           <div className="flex justify-center mb-10">
             <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center max-w-md">
               <h4 className="text-2xl font-semibold text-foreground mb-3">Definition</h4>
@@ -40,7 +40,7 @@ const SpoonerismExampleSlide = () => {
           </div>
         )}
 
-        {currentStep === 2 && (
+        {currentStep === 2 && currentStep < 5 && (
           <div className="grid grid-cols-2 gap-8 mb-10">
             <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-3">Definition</h4>
@@ -56,7 +56,7 @@ const SpoonerismExampleSlide = () => {
           </div>
         )}
 
-        {currentStep === 3 && (
+        {currentStep === 3 && currentStep < 5 && (
           <div className="grid grid-cols-3 gap-8 mb-10">
             <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-3">Definition</h4>
@@ -78,7 +78,7 @@ const SpoonerismExampleSlide = () => {
           </div>
         )}
 
-        {currentStep === 4 && (
+        {currentStep === 4 && currentStep < 5 && (
           <div className="mb-10 space-y-6">
             <div className="grid grid-cols-3 gap-8 mb-6">
               <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-4 border-2 border-blue-300 dark:border-blue-600 text-center">

@@ -24,7 +24,7 @@ const CombinationCluesExample2Slide = () => {
           </p>
         </div>
 
-        {currentStep >= 1 && (
+        {currentStep >= 1 && currentStep < 5 && (
           <div className="space-y-4 mb-12">
             <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-4 border-2 border-blue-300 dark:border-blue-600 text-center">
               <h4 className="text-lg font-semibold text-foreground mb-2">Definition</h4>

@@ -23,7 +23,7 @@ const CrypticDefinitionsExampleSlide = () => {
             </p>
           </div>
 
-          {currentStep >= 1 && (
+          {currentStep >= 1 && currentStep < 2 && (
             <div className="grid grid-cols-1 gap-8 mb-8">
               <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-6 border-2 border-amber-300 dark:border-amber-600 text-center">
                 <h4 className="text-2xl font-semibold text-foreground mb-3">Cryptic Definition</h4>

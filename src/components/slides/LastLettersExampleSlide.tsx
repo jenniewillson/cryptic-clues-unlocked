@@ -29,7 +29,7 @@ const LastLettersExampleSlide = () => {
           </p>
         </div>
 
-        {currentStep >= 1 && (
+        {currentStep >= 1 && currentStep < 4 && (
           <div className="grid grid-cols-3 gap-10 mb-12">
             <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-8 border-2 border-blue-300 dark:border-blue-600 text-center">
               <h4 className="text-3xl font-semibold text-foreground mb-4">Definition</h4>

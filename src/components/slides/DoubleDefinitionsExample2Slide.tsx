@@ -21,7 +21,7 @@ const DoubleDefinitionsExample2Slide = () => {
           </p>
         </div>
 
-        {currentStep >= 1 && (
+        {currentStep >= 1 && currentStep < 3 && (
           <div className="grid grid-cols-2 gap-8 mb-8">
             <div className="bg-gradient-to-br from-purple-100 to-violet-100 dark:from-purple-900/30 dark:to-violet-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-3">First Definition</h4>
