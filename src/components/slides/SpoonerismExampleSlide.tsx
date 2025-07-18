@@ -17,17 +17,46 @@ const SpoonerismExampleSlide = () => {
       <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-2 border-purple-200 dark:border-purple-700 rounded-2xl p-10 w-full">
         <div className="text-center mb-10">
           <p className="text-4xl font-semibold text-foreground mb-6 leading-relaxed">
-            {currentStep >= 1 ? (
-              <>
-                "<span className="bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold">Charon provides role model for</span> <span className="bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold">Spooner's</span> <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">inebriated supporter</span> (8)"
-              </>
-            ) : (
-              "\"Charon provides role model for Spooner's inebriated supporter (8)\""
-            )}
+            "
+            <span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>
+              Charon provides role model for
+            </span>{" "}
+            <span className={currentStep >= 2 ? "bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold" : ""}>
+              Spooner's
+            </span>{" "}
+            <span className={currentStep >= 3 ? "bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold" : ""}>
+              inebriated supporter
+            </span> (8)"
           </p>
         </div>
 
         {currentStep === 1 && (
+          <div className="flex justify-center mb-10">
+            <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center max-w-md">
+              <h4 className="text-2xl font-semibold text-foreground mb-3">Definition</h4>
+              <p className="text-2xl text-blue-700 dark:text-blue-300 font-medium">"Charon provides role model for"</p>
+              <p className="text-sm text-muted-foreground mt-2">(Charon was the ferryman in Greek mythology)</p>
+            </div>
+          </div>
+        )}
+
+        {currentStep === 2 && (
+          <div className="grid grid-cols-2 gap-8 mb-10">
+            <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center">
+              <h4 className="text-2xl font-semibold text-foreground mb-3">Definition</h4>
+              <p className="text-2xl text-blue-700 dark:text-blue-300 font-medium">"Charon provides role model for"</p>
+              <p className="text-sm text-muted-foreground mt-2">(Charon was the ferryman in Greek mythology)</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600 text-center">
+              <h4 className="text-2xl font-semibold text-foreground mb-3">Indicator</h4>
+              <p className="text-2xl text-purple-700 dark:text-purple-300 font-medium">"Spooner's"</p>
+              <p className="text-sm text-muted-foreground mt-2">(indicates spoonerism)</p>
+            </div>
+          </div>
+        )}
+
+        {currentStep === 3 && (
           <div className="grid grid-cols-3 gap-8 mb-10">
             <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-6 border-2 border-blue-300 dark:border-blue-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-3">Definition</h4>
@@ -49,8 +78,25 @@ const SpoonerismExampleSlide = () => {
           </div>
         )}
 
-        {currentStep === 2 && (
+        {currentStep === 4 && (
           <div className="mb-10 space-y-6">
+            <div className="grid grid-cols-3 gap-8 mb-6">
+              <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-4 border-2 border-blue-300 dark:border-blue-600 text-center">
+                <h4 className="text-xl font-semibold text-foreground mb-2">Definition</h4>
+                <p className="text-lg text-blue-700 dark:text-blue-300 font-medium">"Charon provides role model for"</p>
+              </div>
+
+              <div className="bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/20 rounded-2xl p-4 border-2 border-purple-300 dark:border-purple-600 text-center">
+                <h4 className="text-xl font-semibold text-foreground mb-2">Indicator</h4>
+                <p className="text-lg text-purple-700 dark:text-purple-300 font-medium">"Spooner's"</p>
+              </div>
+
+              <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-4 border-2 border-amber-300 dark:border-amber-600 text-center">
+                <h4 className="text-xl font-semibold text-foreground mb-2">Words to Swap</h4>
+                <p className="text-lg text-amber-700 dark:text-amber-300 font-medium">"inebriated supporter"</p>
+              </div>
+            </div>
+
             <div className="bg-gradient-to-r from-orange-100 to-red-100 dark:from-orange-900/30 dark:to-red-900/20 rounded-2xl p-6 border-2 border-orange-300 dark:border-orange-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-3">Step 1: Identify the Words</h4>
               <p className="text-2xl text-muted-foreground">
@@ -84,7 +130,7 @@ const SpoonerismExampleSlide = () => {
               className="text-2xl px-12 py-6 rounded-xl"
               size="lg"
             >
-              Show Spoonerism
+              Show Indicator
             </Button>
           )}
           
@@ -94,11 +140,31 @@ const SpoonerismExampleSlide = () => {
               className="text-2xl px-12 py-6 rounded-xl"
               size="lg"
             >
-              Show Answer
+              Show Words to Swap
             </Button>
           )}
           
           {currentStep === 3 && (
+            <Button 
+              onClick={nextStep}
+              className="text-2xl px-12 py-6 rounded-xl"
+              size="lg"
+            >
+              Show Spoonerism Process
+            </Button>
+          )}
+          
+          {currentStep === 4 && (
+            <Button 
+              onClick={nextStep}
+              className="text-2xl px-12 py-6 rounded-xl"
+              size="lg"
+            >
+              Show Answer
+            </Button>
+          )}
+          
+          {currentStep === 5 && (
             <div className="bg-gradient-to-r from-emerald-100 to-green-100 dark:from-emerald-900/30 dark:to-green-900/20 rounded-2xl p-6 border-2 border-emerald-300 dark:border-emerald-600">
               <p className="text-4xl font-bold text-emerald-700 dark:text-emerald-300 mb-3">
                 FERRYMAN
