@@ -5,7 +5,7 @@ const DefinitionByExampleSlide = () => {
   const [currentStep, setCurrentStep] = useState(0);
 
   const nextStep = () => {
-    setCurrentStep((prev) => Math.min(prev + 1, 2));
+    setCurrentStep((prev) => Math.min(prev + 1, 4));
   };
 
   return (
@@ -20,11 +20,19 @@ const DefinitionByExampleSlide = () => {
 
         <div className="text-center mb-10">
           <p className="text-4xl font-semibold text-foreground mb-6 leading-relaxed">
-            "<span className={currentStep >= 1 ? "bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold" : ""}>More for one</span> <span className={currentStep >= 1 ? "bg-green-200 dark:bg-green-800 px-2 py-1 rounded font-semibold" : ""}>to mash</span> <span className={currentStep >= 1 ? "bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold" : ""}>up</span> (6)"
+            {currentStep >= 1 ? (
+              <>
+                <span className={currentStep >= 1 ? "bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold" : ""}>More for one</span>{" "}
+                <span className={currentStep >= 2 ? "bg-green-200 dark:bg-green-800 px-2 py-1 rounded font-semibold" : ""}>to mash</span>{" "}
+                <span className={currentStep >= 3 ? "bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold" : ""}>up</span> (6)
+              </>
+            ) : (
+              "More for one to mash up (6)"
+            )}
           </p>
         </div>
 
-        {currentStep === 1 && (
+        {currentStep >= 1 && (
           <div className="grid grid-cols-3 gap-6 mb-10">
             <div className="bg-gradient-to-br from-purple-100 to-violet-100 dark:from-purple-900/30 dark:to-violet-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-3">Definition by Example</h4>
@@ -32,19 +40,23 @@ const DefinitionByExampleSlide = () => {
               <p className="text-sm text-muted-foreground mt-2">(Thomas More)</p>
             </div>
 
-            <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-6 border-2 border-green-300 dark:border-green-600 text-center">
-              <h4 className="text-2xl font-semibold text-foreground mb-3">Fodder</h4>
-              <p className="text-2xl text-green-700 dark:text-green-300 font-medium">"to mash"</p>
-            </div>
+            {currentStep >= 2 && (
+              <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-6 border-2 border-green-300 dark:border-green-600 text-center">
+                <h4 className="text-2xl font-semibold text-foreground mb-3">Fodder</h4>
+                <p className="text-2xl text-green-700 dark:text-green-300 font-medium">"to mash"</p>
+              </div>
+            )}
 
-            <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-6 border-2 border-amber-300 dark:border-amber-600 text-center">
-              <h4 className="text-2xl font-semibold text-foreground mb-3">Anagram Indicator</h4>
-              <p className="text-2xl text-amber-700 dark:text-amber-300 font-medium">"up"</p>
-            </div>
+            {currentStep >= 3 && (
+              <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-6 border-2 border-amber-300 dark:border-amber-600 text-center">
+                <h4 className="text-2xl font-semibold text-foreground mb-3">Anagram Indicator</h4>
+                <p className="text-2xl text-amber-700 dark:text-amber-300 font-medium">"up"</p>
+              </div>
+            )}
           </div>
         )}
 
-        {currentStep === 2 && (
+        {currentStep === 4 && (
           <div className="bg-gradient-to-r from-emerald-100 to-green-100 dark:from-emerald-900/30 dark:to-green-900/20 rounded-2xl p-6 border-2 border-emerald-300 dark:border-emerald-600 mb-10">
             <p className="text-4xl font-bold text-emerald-700 dark:text-emerald-300 mb-3">
               THOMAS
@@ -58,10 +70,20 @@ const DefinitionByExampleSlide = () => {
         <div className="flex justify-center">
           {currentStep === 0 && (
             <Button onClick={nextStep} size="lg" className="text-lg px-8 py-3">
-              Break Down Clue
+              Show Definition
             </Button>
           )}
           {currentStep === 1 && (
+            <Button onClick={nextStep} size="lg" className="text-lg px-8 py-3">
+              Show Fodder
+            </Button>
+          )}
+          {currentStep === 2 && (
+            <Button onClick={nextStep} size="lg" className="text-lg px-8 py-3">
+              Show Anagram Indicator
+            </Button>
+          )}
+          {currentStep === 3 && (
             <Button onClick={nextStep} size="lg" className="text-lg px-8 py-3">
               Reveal Answer
             </Button>
