@@ -48,6 +48,9 @@ import CombinationCluesExampleSlide from './slides/CombinationCluesExampleSlide'
 import CombinationCluesExample2Slide from './slides/CombinationCluesExample2Slide';
 import ImportantWordsSlide from './slides/ImportantWordsSlide';
 import LearningResourcesSlide from './slides/LearningResourcesSlide';
+import ProgressingSlide from './slides/ProgressingSlide';
+import DailyPapersSlide from './slides/DailyPapersSlide';
+import ChallengeSlide from './slides/ChallengeSlide';
 import ContainersIntroSlide from './slides/ContainersIntroSlide';
 import ContainersExampleSlide from './slides/ContainersExampleSlide';
 import LastLettersExampleSlide from './slides/LastLettersExampleSlide';
@@ -96,7 +99,10 @@ const slides = [
   { id: 40, component: CombinationCluesExampleSlide, title: "Combination Clues - Example 1" },
   { id: 41, component: CombinationCluesExample2Slide, title: "Combination Clues - Example 2" },
   { id: 42, component: ImportantWordsSlide, title: "Every Word Matters!" },
-  { id: 43, component: LearningResourcesSlide, title: "Learning Resources" }
+  { id: 43, component: LearningResourcesSlide, title: "Starting off" },
+  { id: 44, component: ProgressingSlide, title: "Progressing..." },
+  { id: 45, component: DailyPapersSlide, title: "Daily papers" },
+  { id: 46, component: ChallengeSlide, title: "Need even more of a challenge?" }
 ];
 
 const Presentation = () => {
