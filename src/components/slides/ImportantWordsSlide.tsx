@@ -17,7 +17,7 @@ const ImportantWordsSlide = () => {
       <div className="bg-gradient-to-br from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 border-2 border-red-200 dark:border-red-700 rounded-2xl p-12 w-full">
         <div className="text-center mb-12">
           <p className="text-5xl font-semibold text-foreground mb-8 leading-relaxed">
-            "Threat is circumvented by rook and king (4)"
+            "<span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>Threat</span> <span className={currentStep >= 3 ? "bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold" : ""}>is</span> circumvented by <span className={currentStep >= 2 ? "bg-green-200 dark:bg-green-800 px-2 py-1 rounded font-semibold" : ""}>rook</span> and <span className={currentStep >= 2 ? "bg-green-200 dark:bg-green-800 px-2 py-1 rounded font-semibold" : ""}>king</span>" (4)
           </p>
         </div>
 
