@@ -19,10 +19,12 @@ const DeletionSubstitutionExampleSlide = () => {
           <p className="text-5xl font-semibold text-foreground mb-8 leading-relaxed">
             {currentStep >= 1 ? (
               <>
-                {currentStep >= 2 && <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">Fighter</span>}{currentStep >= 2 && " "}{currentStep >= 3 && <span className="bg-cyan-200 dark:bg-cyan-800 px-2 py-1 rounded font-semibold">shelled</span>}{currentStep >= 3 ? " " : currentStep >= 2 ? "shelled " : "Fighter shelled "}<span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>veteran</span> (5)"
+                <span className={currentStep >= 2 ? "bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold" : ""}>Fighter</span>{" "}
+                <span className={currentStep >= 3 ? "bg-cyan-200 dark:bg-cyan-800 px-2 py-1 rounded font-semibold" : ""}>shelled</span>{" "}
+                <span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>veteran</span> (5)
               </>
             ) : (
-              "\"Fighter shelled veteran (5)\""
+              "Fighter shelled veteran (5)"
             )}
           </p>
         </div>

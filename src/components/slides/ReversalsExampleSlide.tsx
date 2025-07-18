@@ -19,34 +19,33 @@ const ReversalsExampleSlide = () => {
           <p className="text-5xl font-semibold text-foreground mb-8 leading-relaxed">
             {currentStep >= 1 ? (
               <>
-                {currentStep >= 2 && <span className="bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold">Brought about</span>}{currentStep >= 2 && " "}
-                <span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>fuel</span>
-                {currentStep >= 3 && " "}<span className={currentStep >= 3 ? "bg-cyan-200 dark:bg-cyan-800 px-2 py-1 rounded font-semibold" : ""}>{currentStep >= 3 ? "slump" : currentStep === 0 ? " slump" : ""}</span> (3)"
+                <span className={currentStep >= 2 ? "bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold" : ""}>Brought about</span>{" "}
+                <span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>fuel</span>{" "}
+                <span className={currentStep >= 3 ? "bg-cyan-200 dark:bg-cyan-800 px-2 py-1 rounded font-semibold" : ""}>slump</span> (3)
               </>
             ) : (
-              "\"Brought about fuel slump (3)\""
+              "Brought about fuel slump (3)"
             )}
           </p>
         </div>
 
         {currentStep >= 1 && (
           <div className="grid grid-cols-3 gap-10 mb-12">
-            {currentStep >= 2 && (
-              <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-8 border-2 border-amber-300 dark:border-amber-600 text-center">
-                <h4 className="text-3xl font-semibold text-foreground mb-4">Word to Reverse</h4>
-                <p className="text-3xl text-amber-700 dark:text-amber-300 font-medium">"Brought about"</p>
-                <p className="text-xl text-amber-600 dark:text-amber-400 mt-2">(SAG backwards)</p>
-              </div>
-            )}
-
             <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-8 border-2 border-blue-300 dark:border-blue-600 text-center">
               <h4 className="text-3xl font-semibold text-foreground mb-4">Definition</h4>
               <p className="text-3xl text-blue-700 dark:text-blue-300 font-medium">"fuel"</p>
             </div>
 
+            {currentStep >= 2 && (
+              <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-8 border-2 border-amber-300 dark:border-amber-600 text-center">
+                <h4 className="text-3xl font-semibold text-foreground mb-4">Reversal Indicator</h4>
+                <p className="text-3xl text-amber-700 dark:text-amber-300 font-medium">"Brought about"</p>
+              </div>
+            )}
+
             {currentStep >= 3 && (
               <div className="bg-gradient-to-br from-cyan-100 to-blue-100 dark:from-cyan-900/30 dark:to-blue-900/20 rounded-2xl p-8 border-2 border-cyan-300 dark:border-cyan-600 text-center">
-                <h4 className="text-3xl font-semibold text-foreground mb-4">Wordplay</h4>
+                <h4 className="text-3xl font-semibold text-foreground mb-4">Word to Reverse</h4>
                 <p className="text-3xl text-cyan-700 dark:text-cyan-300 font-medium">"slump" = SAG</p>
                 <p className="text-xl text-cyan-600 dark:text-cyan-400 mt-2">reversed by "about"</p>
               </div>
@@ -71,7 +70,7 @@ const ReversalsExampleSlide = () => {
               className="text-2xl px-12 py-6 rounded-xl"
               size="lg"
             >
-              Show Word to Reverse
+              Show Reversal Indicator
             </Button>
           )}
 
@@ -81,7 +80,7 @@ const ReversalsExampleSlide = () => {
               className="text-2xl px-12 py-6 rounded-xl"
               size="lg"
             >
-              Show Wordplay
+              Show Word to Reverse
             </Button>
           )}
           
