@@ -37,7 +37,6 @@ const DefinitionByExampleSlide = () => {
             <div className="bg-gradient-to-br from-purple-100 to-violet-100 dark:from-purple-900/30 dark:to-violet-900/20 rounded-2xl p-6 border-2 border-purple-300 dark:border-purple-600 text-center">
               <h4 className="text-2xl font-semibold text-foreground mb-3">Definition by Example</h4>
               <p className="text-2xl text-purple-700 dark:text-purple-300 font-medium">"More for one"</p>
-              <p className="text-sm text-muted-foreground mt-2">(Thomas More)</p>
             </div>
 
             {currentStep >= 2 && (
