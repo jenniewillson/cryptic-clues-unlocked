@@ -8,6 +8,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
+import ScaleToFit from './ScaleToFit';
 import IntroSlide from './slides/IntroSlide';
 import SpeakersIntroSlide from './slides/SpeakersIntroSlide';
 import AncientHistorySlide from './slides/AncientHistorySlide';
@@ -170,7 +171,9 @@ const Presentation = () => {
         ></div>
         
         <div className="w-full h-full flex items-center justify-center">
-          <CurrentSlideComponent />
+          <ScaleToFit>
+            <CurrentSlideComponent />
+          </ScaleToFit>
         </div>
       </div>
 
