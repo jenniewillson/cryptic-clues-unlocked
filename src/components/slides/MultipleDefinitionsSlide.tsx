@@ -31,7 +31,7 @@ const MultipleDefinitionsSlide = () => {
             </p>
           </div>
 
-          {step === 1 && (
+          {false && (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
               <div className="bg-gradient-to-br from-cyan-100 to-sky-100 dark:from-cyan-900/30 dark:to-sky-900/20 rounded-2xl p-4 md:p-6 border-2 border-cyan-300 dark:border-cyan-600 text-center">
                 <h4 className="text-lg md:text-2xl font-semibold text-foreground mb-2">Definition 1</h4>
@@ -51,7 +51,7 @@ const MultipleDefinitionsSlide = () => {
             </div>
           )}
 
-          {step === 2 && (
+          {step === 1 && (
             <div className="bg-gradient-to-r from-emerald-100 to-green-100 dark:from-emerald-900/30 dark:to-green-900/20 rounded-2xl p-4 border-2 border-emerald-300 dark:border-emerald-600 text-center">
               <p className="text-3xl font-bold text-emerald-700 dark:text-emerald-300 mb-1">ROSE</p>
               <p className="text-base md:text-lg text-muted-foreground">
@@ -63,9 +63,6 @@ const MultipleDefinitionsSlide = () => {
 
         <div className="text-center">
           {step === 0 && (
-            <Button onClick={next} size="lg" className="text-xl md:text-2xl px-8 md:px-12 py-5 md:py-6 rounded-xl">Show Definitions</Button>
-          )}
-          {step === 1 && (
             <Button onClick={next} size="lg" className="text-xl md:text-2xl px-8 md:px-12 py-5 md:py-6 rounded-xl">Show Solution</Button>
           )}
         </div>
