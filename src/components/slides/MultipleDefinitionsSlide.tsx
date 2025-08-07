@@ -22,7 +22,7 @@ const MultipleDefinitionsSlide = () => {
           <div className="text-center mb-6">
             <p className="text-2xl md:text-4xl font-semibold text-foreground leading-relaxed">
               "
-              <span className={step >= 1 ? 'bg-cyan-200/70 dark:bg-cyan-800/60 px-2 py-1 rounded font-semibold' : ''}>woman</span>
+              <span className={step >= 1 ? 'bg-cyan-200/70 dark:bg-cyan-800/60 px-2 py-1 rounded font-semibold' : ''}>Woman</span>
               {' '} 
               <span className={step >= 2 ? 'bg-blue-200/70 dark:bg-blue-800/60 px-2 py-1 rounded font-semibold' : ''}>grew</span>
               {' '} 
@@ -35,7 +35,7 @@ const MultipleDefinitionsSlide = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
               <div className="bg-gradient-to-br from-cyan-100 to-sky-100 dark:from-cyan-900/30 dark:to-sky-900/20 rounded-2xl p-4 md:p-6 border-2 border-cyan-300 dark:border-cyan-600 text-center">
                 <h4 className="text-lg md:text-2xl font-semibold text-foreground mb-2">Definition 1</h4>
-                <p className="text-xl text-cyan-700 dark:text-cyan-300 font-medium">woman</p>
+                <p className="text-xl text-cyan-700 dark:text-cyan-300 font-medium">Woman</p>
                 <p className="text-sm text-muted-foreground mt-1">A woman's name: Rose</p>
               </div>
               {step >= 2 && (
