@@ -31,14 +31,14 @@ const ContainersExampleSlide = () => {
             {currentStep >= 2 && (
               <div className="bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-8 border-2 border-amber-300 dark:border-amber-600 text-center">
                 <h4 className="text-3xl font-semibold text-foreground mb-4">Container</h4>
-                <p className="text-3xl text-amber-700 dark:text-amber-300 font-medium">"unacceptable" = NOT ON</p>
+                <p className="text-3xl text-amber-700 dark:text-amber-300 font-medium">"unacceptable"</p>
               </div>
             )}
 
             {currentStep >= 3 && (
               <div className="bg-gradient-to-br from-cyan-100 to-blue-100 dark:from-cyan-900/30 dark:to-blue-900/20 rounded-2xl p-8 border-2 border-cyan-300 dark:border-cyan-600 text-center">
                 <h4 className="text-3xl font-semibold text-foreground mb-4">Contents</h4>
-                <p className="text-3xl text-cyan-700 dark:text-cyan-300 font-medium">"One" = I (Roman numeral)</p>
+                <p className="text-3xl text-cyan-700 dark:text-cyan-300 font-medium">One</p>
               </div>
             )}
           </div>
