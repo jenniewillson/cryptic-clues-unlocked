@@ -7,7 +7,7 @@ const History20thAmericaSlide = () => {
         History & Development – 20th Century America
       </h1>
 
-      <section className="space-y-6 md:space-y-8 w-full">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 w-full">
         <article className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border-2 border-amber-200 dark:border-amber-700 rounded-2xl p-6 md:p-8 shadow-xl">
           
           <p className="text-lg text-muted-foreground text-balance">
