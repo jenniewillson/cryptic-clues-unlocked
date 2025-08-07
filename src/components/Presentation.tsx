@@ -27,6 +27,7 @@ import AnagramsExampleSlide from './slides/AnagramsExampleSlide';
 import DoubleDefinitionsIntroSlide from './slides/DoubleDefinitionsIntroSlide';
 import DoubleDefinitionsExampleSlide from './slides/DoubleDefinitionsExampleSlide';
 import DoubleDefinitionsExample2Slide from './slides/DoubleDefinitionsExample2Slide';
+import MultipleDefinitionsSlide from './slides/MultipleDefinitionsSlide';
 import AbbreviationsSlide from './slides/AbbreviationsSlide';
 import AbbreviationsMoreSlide from './slides/AbbreviationsMoreSlide';
 import CharadesIntroSlide from './slides/CharadesIntroSlide';
@@ -77,35 +78,36 @@ const slides = [
   { id: 16, component: DoubleDefinitionsIntroSlide, title: "Double Definitions - Introduction" },
   { id: 17, component: DoubleDefinitionsExampleSlide, title: "Double Definitions - Example" },
   { id: 18, component: DoubleDefinitionsExample2Slide, title: "Double Definitions - Example 2" },
-  { id: 19, component: AbbreviationsSlide, title: "Abbreviations in Clues" },
-  { id: 20, component: AbbreviationsMoreSlide, title: "More Abbreviations" },
-  { id: 21, component: CharadesIntroSlide, title: "Charades - Introduction" },
-  { id: 22, component: CharadesExampleSlide, title: "Charades - Example" },
-  { id: 23, component: HiddenWordsIntroSlide, title: "Hidden Words - Introduction" },
-  { id: 24, component: HiddenWordsExampleSlide, title: "Hidden Words - Example" },
-  { id: 25, component: HomophonesIntroSlide, title: "Homophones - Introduction" },
-  { id: 26, component: HomophonesExampleSlide, title: "Homophones - Example" },
-  { id: 27, component: SpoonerismIntroSlide, title: "Spoonerisms - Introduction" },
-  { id: 28, component: SpoonerismExampleSlide, title: "Spoonerisms - Example" },
-  { id: 29, component: LetterSelectionsSlide, title: "Letter Selections" },
-  { id: 30, component: LetterSelectionsExampleSlide, title: "Letter Selections - Example" },
-  { id: 31, component: LastLettersExampleSlide, title: "Last Letters - Example" },
-  { id: 32, component: ReversalsSlide, title: "Reversals" },
-  { id: 33, component: ReversalsExampleSlide, title: "Reversals - Example" },
-  { id: 34, component: DeletionSubstitutionSlide, title: "Deletion/Substitution" },
-  { id: 35, component: DeletionSubstitutionExampleSlide, title: "Deletion/Substitution - Example" },
-  { id: 36, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" },
-  { id: 37, component: CrypticDefinitionsExampleSlide, title: "Cryptic Definitions - Example" },
-  { id: 38, component: ContainersIntroSlide, title: "Containers - Introduction" },
-  { id: 39, component: ContainersExampleSlide, title: "Containers - Example" },
-  { id: 40, component: DefinitionByExampleSlide, title: "Definition by Example" },
-  { id: 41, component: CombinationCluesExampleSlide, title: "Combination Clues - Example 1" },
-  { id: 42, component: CombinationCluesExample2Slide, title: "Combination Clues - Example 2" },
-  { id: 43, component: ImportantWordsSlide, title: "Every Word Matters!" },
-  { id: 44, component: LearningResourcesSlide, title: "Starting off" },
-  { id: 45, component: ProgressingSlide, title: "Progressing..." },
-  { id: 46, component: DailyPapersSlide, title: "Daily papers" },
-  { id: 47, component: ChallengeSlide, title: "Need even more of a challenge?" }
+  { id: 19, component: MultipleDefinitionsSlide, title: "Multiple Definitions (Triple Definition)" },
+  { id: 20, component: AbbreviationsSlide, title: "Abbreviations in Clues" },
+  { id: 21, component: AbbreviationsMoreSlide, title: "More Abbreviations" },
+  { id: 22, component: CharadesIntroSlide, title: "Charades - Introduction" },
+  { id: 23, component: CharadesExampleSlide, title: "Charades - Example" },
+  { id: 24, component: HiddenWordsIntroSlide, title: "Hidden Words - Introduction" },
+  { id: 25, component: HiddenWordsExampleSlide, title: "Hidden Words - Example" },
+  { id: 26, component: HomophonesIntroSlide, title: "Homophones - Introduction" },
+  { id: 27, component: HomophonesExampleSlide, title: "Homophones - Example" },
+  { id: 28, component: SpoonerismIntroSlide, title: "Spoonerisms - Introduction" },
+  { id: 29, component: SpoonerismExampleSlide, title: "Spoonerisms - Example" },
+  { id: 30, component: LetterSelectionsSlide, title: "Letter Selections" },
+  { id: 31, component: LetterSelectionsExampleSlide, title: "Letter Selections - Example" },
+  { id: 32, component: LastLettersExampleSlide, title: "Last Letters - Example" },
+  { id: 33, component: ReversalsSlide, title: "Reversals" },
+  { id: 34, component: ReversalsExampleSlide, title: "Reversals - Example" },
+  { id: 35, component: DeletionSubstitutionSlide, title: "Deletion/Substitution" },
+  { id: 36, component: DeletionSubstitutionExampleSlide, title: "Deletion/Substitution - Example" },
+  { id: 37, component: CrypticDefinitionsSlide, title: "Cryptic Definitions" },
+  { id: 38, component: CrypticDefinitionsExampleSlide, title: "Cryptic Definitions - Example" },
+  { id: 39, component: ContainersIntroSlide, title: "Containers - Introduction" },
+  { id: 40, component: ContainersExampleSlide, title: "Containers - Example" },
+  { id: 41, component: DefinitionByExampleSlide, title: "Definition by Example" },
+  { id: 42, component: CombinationCluesExampleSlide, title: "Combination Clues - Example 1" },
+  { id: 43, component: CombinationCluesExample2Slide, title: "Combination Clues - Example 2" },
+  { id: 44, component: ImportantWordsSlide, title: "Every Word Matters!" },
+  { id: 45, component: LearningResourcesSlide, title: "Starting off" },
+  { id: 46, component: ProgressingSlide, title: "Progressing..." },
+  { id: 47, component: DailyPapersSlide, title: "Daily papers" },
+  { id: 48, component: ChallengeSlide, title: "Need even more of a challenge?" }
 ];
 
 const Presentation = () => {
