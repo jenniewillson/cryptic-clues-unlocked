@@ -31,14 +31,14 @@ const CombinationCluesExampleSlide = () => {
             {currentStep >= 2 && (
               <div className="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/20 rounded-2xl p-6 border-2 border-green-300 dark:border-green-600 text-center">
                 <h4 className="text-2xl font-semibold text-foreground mb-3">Letter Selection</h4>
-                <p className="text-2xl text-green-700 dark:text-green-300 font-medium">"Half of Elon" = EL</p>
+                <p className="text-2xl text-green-700 dark:text-green-300 font-medium">"Half of Elon"</p>
               </div>
             )}
 
             {currentStep >= 3 && (
               <div className="bg-gradient-to-br from-orange-100 to-yellow-100 dark:from-orange-900/30 dark:to-yellow-900/20 rounded-2xl p-6 border-2 border-orange-300 dark:border-orange-600 text-center">
                 <h4 className="text-2xl font-semibold text-foreground mb-3">First Letters</h4>
-                <p className="text-2xl text-orange-700 dark:text-orange-300 font-medium">"Musk's head" = M</p>
+                <p className="text-2xl text-orange-700 dark:text-orange-300 font-medium">"Musk's head"</p>
               </div>
             )}
           </div>
