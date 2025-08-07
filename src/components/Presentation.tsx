@@ -11,6 +11,7 @@ import {
 import ScaleToFit from './ScaleToFit';
 import IntroSlide from './slides/IntroSlide';
 import SpeakersIntroSlide from './slides/SpeakersIntroSlide';
+import SetterNamesImagesSlide from './slides/SetterNamesImagesSlide';
 import AncientHistorySlide from './slides/AncientHistorySlide';
 import LaterHistory19thSlide from './slides/LaterHistory19thSlide';
 import History20thAmericaSlide from './slides/History20thAmericaSlide';
@@ -64,6 +65,7 @@ import DefinitionByExampleSlide from './slides/DefinitionByExampleSlide';
 const slides = [
   { id: 1, component: IntroSlide, title: "Introduction" },
   { id: 2, component: SpeakersIntroSlide, title: "Meet Your Presenters" },
+  { id: 2.1, component: SetterNamesImagesSlide, title: "Famous Setter Names – Visual Clues" },
   { id: 3, component: AncientHistorySlide, title: "History & Development - Ancient History" },
   { id: 4, component: LaterHistory19thSlide, title: "History & Development - Later History (19th Century)" },
   { id: 5, component: History20thAmericaSlide, title: "History & Development - 20th Century America" },
