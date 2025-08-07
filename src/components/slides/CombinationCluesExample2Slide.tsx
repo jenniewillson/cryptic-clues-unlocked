@@ -20,7 +20,7 @@ const CombinationCluesExample2Slide = () => {
             <span className={currentStep >= 1 ? "bg-blue-200 dark:bg-blue-800 px-2 py-1 rounded font-semibold" : ""}>Scientist's</span>{" "}
             <span className={currentStep >= 2 ? "bg-red-200 dark:bg-red-800 px-2 py-1 rounded font-semibold" : ""}>rampant sheep</span>{" "}
             <span className={currentStep >= 3 ? "bg-amber-200 dark:bg-amber-800 px-2 py-1 rounded font-semibold" : ""}>that is repeatedly</span>{" "}
-            <span className={currentStep >= 4 ? "bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold" : ""}>straddling dog</span> (11)
+            <span className={currentStep >= 4 ? "bg-purple-200 dark:bg-purple-800 px-2 py-1 rounded font-semibold" : ""}>straddling dog</span> (5, 5)
           </p>
         </div>
 
