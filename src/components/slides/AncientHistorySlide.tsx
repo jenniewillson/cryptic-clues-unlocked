@@ -22,13 +22,27 @@ const AncientHistorySlide = () => {
             Two were famously found in Pompeii.
           </p>
           <div className="flex justify-center">
-            <pre aria-label="SATOR square" className="text-2xl font-mono tracking-widest text-foreground text-center leading-9 bg-card/60 rounded-xl p-6 border border-border">
-ROTAS
-OPERA
-TENET
-AREPO
-SATOR
-            </pre>
+            <div
+              role="grid"
+              aria-label="ROTAS word square"
+              className="inline-grid grid-cols-5 gap-1 sm:gap-2 bg-card/60 rounded-xl p-4 border border-border"
+            >
+              {[
+                "R","O","T","A","S",
+                "O","P","E","R","A",
+                "T","E","N","E","T",
+                "A","R","E","P","O",
+                "S","A","T","O","R",
+              ].map((ch, i) => (
+                <div
+                  key={i}
+                  role="gridcell"
+                  className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center rounded-md bg-background/60 text-foreground text-lg sm:text-xl md:text-2xl font-mono font-semibold"
+                >
+                  {ch}
+                </div>
+              ))}
+            </div>
           </div>
         </article>
       </section>
