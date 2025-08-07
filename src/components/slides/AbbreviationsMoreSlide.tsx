@@ -3,13 +3,13 @@ import { Compass, Globe2, Ruler, Hash } from 'lucide-react';
 
 const AbbreviationsMoreSlide = () => {
   return (
-    <div className="h-screen flex flex-col justify-center items-center max-w-6xl mx-auto px-8 py-4">
-      <h1 className="text-5xl font-bold text-center text-foreground mb-8 bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
+    <div className="h-full flex flex-col justify-center items-center max-w-6xl mx-auto px-8 py-4">
+      <h1 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-6 md:mb-8 bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
         More Standard Abbreviations
       </h1>
       
       <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-2 border-blue-200 dark:border-blue-700 rounded-2xl p-8 w-full">
-        <div className="grid grid-cols-2 gap-6 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           {/* Geographic Directions */}
           <div className="bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/20 rounded-2xl p-5 border-2 border-blue-300 dark:border-blue-600">
             <div className="flex items-center gap-3 mb-3">

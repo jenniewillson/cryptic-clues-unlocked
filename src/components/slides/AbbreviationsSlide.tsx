@@ -1,14 +1,14 @@
 import React from 'react';
-import { Book, Globe, Music, Calendar } from 'lucide-react';
+import { Book, Globe, Music, Calendar } from 'lucide-react'; // lucide icons used directly per docs
 
 const AbbreviationsSlide = () => {
   return (
-    <div className="h-screen flex flex-col justify-center items-center max-w-6xl mx-auto px-8">
-      <h1 className="text-6xl font-bold text-center text-foreground mb-12 bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
+    <div className="h-full flex flex-col justify-center items-center max-w-6xl mx-auto px-8">
+      <h1 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-6 md:mb-10 bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
         Abbreviations in Clues
       </h1>
       
-      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-2 border-blue-200 dark:border-blue-700 rounded-2xl p-8 w-full max-h-[calc(100vh-200px)] overflow-y-auto">
+      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-2 border-blue-200 dark:border-blue-700 rounded-2xl p-6 md:p-8 w-full">
         <div className="text-center mb-6">
           <p className="text-xl text-muted-foreground mb-3">
             Many standard abbreviations are regularly used in cryptic clues
@@ -18,7 +18,7 @@ const AbbreviationsSlide = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 gap-6 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           {/* Elements */}
           <div className="bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/30 dark:to-pink-900/20 rounded-2xl p-6 border-2 border-red-300 dark:border-red-600">
             <div className="flex items-center gap-3 mb-4">
