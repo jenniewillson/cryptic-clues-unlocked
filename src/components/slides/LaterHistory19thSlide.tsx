@@ -30,12 +30,26 @@ const LaterHistory19thSlide = () => {
         </article>
 
         <aside className="bg-gradient-to-br from-cyan-100 to-sky-100 dark:from-cyan-900/30 dark:to-sky-900/30 border-2 border-cyan-300 dark:border-cyan-700 rounded-2xl p-6 md:p-8 shadow-xl flex items-center justify-center">
-          <pre aria-label="Example word square" className="text-xl md:text-2xl font-mono tracking-widest text-foreground text-center leading-8 bg-card/60 rounded-xl p-6 border border-border">
-RIPA
-ODER
-SERA
-AMEN
-          </pre>
+          <div
+            role="grid"
+            aria-label="4x4 word square example"
+            className="inline-grid grid-cols-4 gap-1 sm:gap-2 bg-card/60 rounded-xl p-4 border border-border"
+          >
+            {[
+              "R","I","P","A",
+              "O","D","E","R",
+              "S","E","R","A",
+              "A","M","E","N",
+            ].map((ch, i) => (
+              <div
+                key={i}
+                role="gridcell"
+                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center rounded-md bg-background/60 text-foreground text-lg sm:text-xl md:text-2xl font-mono font-semibold"
+              >
+                {ch}
+              </div>
+            ))}
+          </div>
         </aside>
       </section>
     </div>
