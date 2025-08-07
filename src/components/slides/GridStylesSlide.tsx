@@ -32,6 +32,17 @@ const GridStylesSlide = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <div>
               <h3 className="font-semibold text-foreground mb-2">Shaped Crosswords</h3>
+              <figure className="bg-muted p-3 rounded border flex flex-col items-center">
+                <img
+                  src="/lovable-uploads/b214b32d-1cde-40a3-a9b1-699b03406eb5.png"
+                  alt="Shaped crossword example in a swan outline (Christmas Swan by Clarsach)"
+                  loading="lazy"
+                  className="w-56 md:w-72 h-auto object-contain"
+                />
+                <figcaption className="mt-2 text-xs text-muted-foreground">
+                  Example of a shaped grid (the entries form a swan)
+                </figcaption>
+              </figure>
             </div>
             <div>
               <h3 className="font-semibold text-foreground mb-2">Different Sizes</h3>
