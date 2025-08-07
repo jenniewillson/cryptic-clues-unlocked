@@ -9,28 +9,28 @@ const History20thAmericaSlide = () => {
 
       <section className="space-y-6 md:space-y-8 w-full">
         <article className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border-2 border-amber-200 dark:border-amber-700 rounded-2xl p-6 md:p-8 shadow-xl">
-          <h2 className="text-2xl font-semibold text-foreground mb-2">1913</h2>
+          
           <p className="text-lg text-muted-foreground text-balance">
             Arthur Wynne created a new puzzle for the New York World – FUN’s “Word-Cross Puzzle”.
           </p>
         </article>
 
         <article className="bg-gradient-to-br from-orange-50 to-rose-50 dark:from-orange-900/20 dark:to-rose-900/20 border-2 border-orange-200 dark:border-orange-700 rounded-2xl p-6 md:p-8 shadow-xl">
-          <h2 className="text-2xl font-semibold text-foreground mb-2">Inspiration</h2>
+          
           <p className="text-lg text-muted-foreground text-balance">
             Modelled on puzzles he remembered from his childhood in Liverpool, England.
           </p>
         </article>
 
         <article className="bg-gradient-to-br from-rose-50 to-pink-50 dark:from-rose-900/20 dark:to-pink-900/20 border-2 border-rose-200 dark:border-rose-700 rounded-2xl p-6 md:p-8 shadow-xl">
-          <h2 className="text-2xl font-semibold text-foreground mb-2">1924</h2>
+          
           <p className="text-lg text-muted-foreground text-balance">
             First book of crossword puzzles published — bundled with a free pencil.
           </p>
         </article>
 
         <article className="bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30 border-2 border-amber-300 dark:border-amber-700 rounded-2xl p-6 md:p-8 shadow-xl text-center">
-          <h2 className="text-2xl font-semibold text-foreground mb-2">Crossword Fever!</h2>
+          
           <p className="text-lg text-muted-foreground">Half a million copies sold in the first year.</p>
         </article>
       </section>
