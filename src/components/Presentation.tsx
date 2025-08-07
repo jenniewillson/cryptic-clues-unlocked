@@ -30,6 +30,7 @@ import DoubleDefinitionsExample2Slide from './slides/DoubleDefinitionsExample2Sl
 import MultipleDefinitionsSlide from './slides/MultipleDefinitionsSlide';
 import AbbreviationsSlide from './slides/AbbreviationsSlide';
 import AbbreviationsMoreSlide from './slides/AbbreviationsMoreSlide';
+import ForeignWordsSlide from './slides/ForeignWordsSlide';
 import CharadesIntroSlide from './slides/CharadesIntroSlide';
 import CharadesExampleSlide from './slides/CharadesExampleSlide';
 import HiddenWordsIntroSlide from './slides/HiddenWordsIntroSlide';
@@ -81,6 +82,7 @@ const slides = [
   { id: 19, component: MultipleDefinitionsSlide, title: "Multiple Definitions (Triple Definition)" },
   { id: 20, component: AbbreviationsSlide, title: "Abbreviations in Clues" },
   { id: 21, component: AbbreviationsMoreSlide, title: "More Abbreviations" },
+  { id: 100, component: ForeignWordsSlide, title: "Foreign Words in Clues" },
   { id: 22, component: CharadesIntroSlide, title: "Charades - Introduction" },
   { id: 23, component: CharadesExampleSlide, title: "Charades - Example" },
   { id: 24, component: HiddenWordsIntroSlide, title: "Hidden Words - Introduction" },
