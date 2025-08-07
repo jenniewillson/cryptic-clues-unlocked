@@ -126,7 +126,7 @@ const Presentation = () => {
   const CurrentSlideComponent = slides[currentSlide].component;
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="h-screen bg-background flex flex-col">
       {/* Header */}
       <div className="bg-card border-b border-border p-2">
         <div className="w-full flex justify-between items-center px-6">

@@ -19,12 +19,11 @@ const ScaleToFit: React.FC<ScaleToFitProps> = ({ children, padding = 16 }) => {
     const cw = Math.max(container.clientWidth - padding * 2, 0);
     const ch = Math.max(container.clientHeight - padding * 2, 0);
 
-    // Measure natural size (not affected by transform)
-    const contentRect = content.getBoundingClientRect();
-    const naturalWidth = content.offsetWidth || contentRect.width;
-    const naturalHeight = content.offsetHeight || contentRect.height;
+    // Use scroll size to capture full natural content regardless of overflow or transforms
+    const naturalWidth = content.scrollWidth || content.offsetWidth;
+    const naturalHeight = content.scrollHeight || content.offsetHeight;
 
-    if (naturalWidth === 0 || naturalHeight === 0 || cw === 0 || ch === 0) {
+    if (!naturalWidth || !naturalHeight || !cw || !ch) {
       setScale(1);
       return;
     }
