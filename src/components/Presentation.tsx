@@ -62,6 +62,7 @@ import ContainersExampleSlide from './slides/ContainersExampleSlide';
 import LastLettersExampleSlide from './slides/LastLettersExampleSlide';
 import DefinitionByExampleSlide from './slides/DefinitionByExampleSlide';
 import AnyQuestionsSlide from './slides/AnyQuestionsSlide';
+import LetsSolveTogetherSlide from './slides/LetsSolveTogetherSlide';
 
 const slides = [
   { id: 1, component: IntroSlide, title: "Introduction" },
@@ -115,7 +116,8 @@ const slides = [
   { id: 46, component: ProgressingSlide, title: "Progressing..." },
   { id: 47, component: DailyPapersSlide, title: "Daily papers" },
   { id: 48, component: ChallengeSlide, title: "Need even more of a challenge?" },
-  { id: 49, component: AnyQuestionsSlide, title: "Any questions?" }
+  { id: 49, component: AnyQuestionsSlide, title: "Any questions?" },
+  { id: 50, component: LetsSolveTogetherSlide, title: "Let's solve some puzzles together" }
 ];
 
 const Presentation = () => {
