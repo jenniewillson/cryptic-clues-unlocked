@@ -56,7 +56,7 @@ const ScaleToFit: React.FC<ScaleToFitProps> = ({ children, padding = 16 }) => {
       <div
         ref={contentRef}
         style={{ transform: `scale(${scale})`, transformOrigin: "center center" }}
-        className="will-change-transform"
+        className="will-change-transform pb-4 md:pb-6"
       >
         {children}
       </div>

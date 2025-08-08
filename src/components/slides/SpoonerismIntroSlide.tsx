@@ -3,7 +3,7 @@ import React from 'react';
 const SpoonerismIntroSlide = () => {
   return (
     <div className="min-h-[80vh] flex flex-col justify-center items-center max-w-6xl mx-auto px-8 py-8">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight font-bold text-center text-foreground mb-12 bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 bg-clip-text text-transparent">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-snug font-bold text-center text-foreground mb-12 bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 bg-clip-text text-transparent">
         Spoonerisms: Swapping Sounds
       </h1>
       
