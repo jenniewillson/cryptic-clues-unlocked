@@ -49,6 +49,17 @@ const DoubleDefinitionsExample2Slide = () => {
             </p>
           </div>
         )}
+        
+        <div className="mt-6 flex justify-center">
+          <figure className="overflow-hidden rounded-2xl border-2 border-purple-200 dark:border-purple-700 bg-white/50 dark:bg-white/5">
+            <img
+              src="/lovable-uploads/574dbf16-a9e3-4d8a-a5c7-25ff460ef7cd.png"
+              alt="Claymation chickens in a coop scene, playful hen reference"
+              loading="lazy"
+              className="max-h-72 w-auto object-cover"
+            />
+          </figure>
+        </div>
       </div>
 
       <div className="text-center mt-8">
