@@ -52,7 +52,7 @@ const ScaleToFit: React.FC<ScaleToFitProps> = ({ children, padding = 16 }) => {
   }, [children]);
 
   return (
-    <div ref={containerRef} className="w-full h-full flex items-center justify-center overflow-hidden">
+    <div ref={containerRef} className="w-full h-full flex items-center justify-center overflow-visible">
       <div
         ref={contentRef}
         style={{ transform: `scale(${scale})`, transformOrigin: "center center" }}
